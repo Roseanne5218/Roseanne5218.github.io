@@ -1,45 +1,20 @@
-# Leonids Gatsby starter
+# Hydejack Starter Kit
 
-**[Leonids](http://renyuanz.github.io/leonids)** is a clean, fixed sidebar Gatsby starter which is perfect for powering your GitHub hosted blog.
+A quicker, cleaner way to get started blogging with [Hydejack](https://hydejack.com/).
 
-### Preview
+## Quick Start
+### Running locally
+1. Clone repository (git users), or [download] and unzip.
+2. Open terminal, `cd` into root directory (where `_config.yml` is located)
+3. Run `bundle install` [^1]
+4. Run `bundle exec jekyll serve`
+5. Open <http://localhost:4000/hydejack-starter-kit/>
 
-![theme-preview](./content/assets/theme-preview.gif)
+## What's next?
+* Open files and read the comments
+* Read the [docs](https://hydejack.com/docs/)
+* Buy the [PRO version](https://hydejack.com/download/) to get the project and resume layout, newsletter subscription box, custom forms, and more.
 
-## What is Leonids?
+[^1]: Requires Bundler. Install with `gem install bundler`.
 
-A blazing fast static blog theme built on Gatsby.js
-
-![lighthouse-performance](./content/assets/lighthouse-performance.png)
-
-- Responsive templates. Looking good on any viewport.
-- Fixed sidebar to provide a good navigation experience while reading.
-- Light/Dark mode.
-- **And** the Leonids (/ˈliːənɪdz/ lee-ə-nidz) are a prolific meteor shower associated with the comet [Tempel-Tuttle](https://en.wikipedia.org/wiki/55P/Tempel%E2%80%93Tuttle).
-
-See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub pages.
-
-## Getting Started (Recommended)
-
-### Vercel.com deploy button
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Frenyuanz%2Fleonids)
-
-### Netlify CMS deploy button
-
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/renyuanz/leonids&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
-
-## Local development setup
-
-```
-gatsby new my-blog https://github.com/renyuanz/leonids
-cd my-blog
-gatsby develop
-```
-
-Check out your awesome blog at `http://localhost:8000` and Cheers!
-
-
-## Legacy Jekyll theme
-
-This project was a Jekyll blog theme, which is archived and not maintained any more. You can still find the source code in [leonids-jekyll](https://github.com/renyuanz/leonids/tree/leonids-jekyll) branch.
+[download]: https://github.com/hydecorp/hydejack-starter-kit/archive/master.zip
