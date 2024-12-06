@@ -51,11 +51,32 @@ author:
 menu:
   - title:             GAME ENGINE
     url:               /gameEngine/
+    submenu:
+    - title:           UNREAL
+      url:             /ureanl/
+    - title:           UNITY
+      url:             /unity/
+    - title:           DIRECT X
+      url:             /directX/
   - title:             LANGUAGE
     url:               /language/
+    submenu:
+    - title:           C++
+      url:             /clanguage1/
+    - title:           C#
+      url:             /clanguage2/
+  - title:             PORTFOLIO
+    url:               /portfolio/
+    submenu:           
+    - title:           UNREAL
+      url:             /unrealPortfolio/
+    - title:           DIRECTX
+      url:             /directXPortfolio/
   - title:             OS
     url:               /os/
-  - title:             About
+  - title:             CORDING TEST
+    url:               /cordingTest/
+  - title:             ABOUT
     url:               /about/
 
 # Add links to the footer.
@@ -83,7 +104,7 @@ paginate_path:         /:num/
 # ---------------------------------------------------------------------------------------
 
 # This will use the gem `jekyll-theme-hydejack`, as defined in the sibling `Gemfile`.
-#theme: jekyll-theme-hydejack
+theme: jekyll-theme-hydejack
 
 # You can uncomment `theme` above and replace it with `remote_theme` here iff you are using the 
 # `jekyll-remote-theme` plugin (which is the case when using the legacy GitHub Pages pipeline).
