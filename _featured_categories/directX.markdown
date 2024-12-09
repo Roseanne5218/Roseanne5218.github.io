@@ -4,4 +4,5 @@ title: Direct X
 slug: directX
 description: >
   Direct X Engine
+sitemap: true
 ---

@@ -4,4 +4,5 @@ title: DIRECTX
 slug: directXPortfolio
 description: >
   Direct X Portfolio
+sitemap: true
 ---
