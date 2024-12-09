@@ -1,8 +1,6 @@
 ---
 layout: post
-related_posts:
-  - /portfolio/directXPortfolio/example/
-title:  "Example"
+title:  "DIRECT X PORTFOLIO"
 date:   2024-12-09 17:35:00 + 0900
 categories:
   - portfolio

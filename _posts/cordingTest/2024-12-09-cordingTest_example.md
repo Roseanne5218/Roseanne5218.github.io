@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Example"
+title:  "CORDING TEST"
 date:   2024-12-09 17:35:00 + 0900
 categories:
   - cordingTest
