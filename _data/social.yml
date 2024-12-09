@@ -21,9 +21,9 @@ facebook:
   icon: icon-facebook
   prepend: 'https://facebook.com/'
 instagram:
-  name: Instagram
+  name: roseanne_5218
   icon: icon-instagram
-  prepend: 'https://instagram.com/'
+  prepend: 'https://www.instagram.com/roseanne_5218/'
 whatsapp:
   name: WhatsApp
   icon: icon-whatsapp
@@ -110,9 +110,9 @@ ondrive:
   name: OneDrive
   icon: icon-ondrive
 github:
-  name: GitHub
+  name: Roseanne5218
   icon: icon-github
-  prepend: "https://github.com/"
+  prepend: "https://github.com/Roseanne5218"
 npm:
   name: npm
   icon: icon-npm
