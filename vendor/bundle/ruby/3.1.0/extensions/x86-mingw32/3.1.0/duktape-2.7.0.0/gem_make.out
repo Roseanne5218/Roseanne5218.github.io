@@ -1,0 +1,18 @@
+current directory: D:/RoseanneGitHub/Roseanne5218.github.io/vendor/bundle/ruby/3.1.0/gems/duktape-2.7.0.0/ext/duktape
+D:/Ruby31/bin/ruby.exe -I D:/Ruby31/lib/ruby/3.1.0 extconf.rb
+checking for rb_sym2str()... yes
+creating Makefile
+
+current directory: D:/RoseanneGitHub/Roseanne5218.github.io/vendor/bundle/ruby/3.1.0/gems/duktape-2.7.0.0/ext/duktape
+make DESTDIR\= sitearchdir\=./.gem.20241205-30856-c0ric6 sitelibdir\=./.gem.20241205-30856-c0ric6 clean
+
+current directory: D:/RoseanneGitHub/Roseanne5218.github.io/vendor/bundle/ruby/3.1.0/gems/duktape-2.7.0.0/ext/duktape
+make DESTDIR\= sitearchdir\=./.gem.20241205-30856-c0ric6 sitelibdir\=./.gem.20241205-30856-c0ric6
+generating duktape_ext-i386-mingw32.def
+compiling duktape.c
+compiling duktape_ext.c
+linking shared-object duktape_ext.so
+
+current directory: D:/RoseanneGitHub/Roseanne5218.github.io/vendor/bundle/ruby/3.1.0/gems/duktape-2.7.0.0/ext/duktape
+make DESTDIR\= sitearchdir\=./.gem.20241205-30856-c0ric6 sitelibdir\=./.gem.20241205-30856-c0ric6 install
+/usr/bin/install -c -m 0755 duktape_ext.so ./.gem.20241205-30856-c0ric6
