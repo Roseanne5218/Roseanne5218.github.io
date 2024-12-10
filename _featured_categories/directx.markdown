@@ -1,7 +1,7 @@
 ---
 layout: list
-title: DIRECT X
+title: GAME ENGINE
 slug: directx
 description: >
-  Direct X
+  Game Engine
 ---
