@@ -1,7 +1,7 @@
 ---
 layout: list
-title: GAME ENGINE
+title: DIRECT X PORTFOLIO
 slug: directxportfolio
 description: >
-  Game Engine
+  Direct X Portfolio
 ---

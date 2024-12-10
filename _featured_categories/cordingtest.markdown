@@ -1,7 +1,7 @@
 ---
 layout: list
-title: GAME ENGINE
+title: CORDING TEST
 slug: cordingtest
 description: >
-  Game Engine
+  Cording Test
 ---
