@@ -3,7 +3,7 @@ layout: post
 title:  "CORDING TEST"
 date:   2024-12-09 17:35:00 + 0900
 categories:
-  - cordingTest
+  - cordingtest
 description: >
   예시글 입니다.
 ---

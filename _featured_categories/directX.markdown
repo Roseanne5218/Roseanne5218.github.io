@@ -1,7 +1,7 @@
 ---
 layout: list
 title: DIRECT X
-slug: directX
+slug: directx
 description: >
   Direct X
 ---

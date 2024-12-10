@@ -1,7 +1,7 @@
 ---
 layout: list
 title: UNREAL PROTFOLIO
-slug: unrealPortfolio
+slug: unrealportfolio
 description: >
   Unreal Portfolio
 ---
