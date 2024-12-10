@@ -1,7 +1,7 @@
 ---
 layout: list
-title: Direct X
+title: DIRECT X
 slug: directX
 description: >
-  Direct X Engine
+  Unreal Engine
 ---
