@@ -8,10 +8,10 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-# gem "jekyll", "~> 4.3"
+gem "jekyll", "~> 4.3"
 # gem "github-pages", group: :jekyll_plugins
 gem "jekyll-theme-hydejack", "~> 9.1"
-gem "minimal-mistakes-jekyll"
+# gem "minimal-mistakes-jekyll"
 
 # If you are part of the ["Customers" team](https://github.com/orgs/hydecorp/teams/pro-customers), 
 # you can fetch the theme from a private repository. 
@@ -43,7 +43,6 @@ gem "webrick"
 # gem "classifier-reborn"
 
 group :jekyll_plugins do
-  gem "github-pages"
   gem "jekyll-default-layout"
   gem "jekyll-feed"
   gem "jekyll-optional-front-matter"
