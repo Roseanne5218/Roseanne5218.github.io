@@ -1,7 +1,7 @@
 ---
 layout: list
 title: GAME ENGINE
-slug: gameEngine
+slug: gameengine
 description: >
   Game Engine
 ---
