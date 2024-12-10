@@ -1,7 +1,7 @@
 ---
 layout: list
-title: UNREAL
+title: DIRECT X PORTFOLIO
 slug: directXPortfolio
 description: >
-  Unreal Engine
+  Direct X Portfolio
 ---
