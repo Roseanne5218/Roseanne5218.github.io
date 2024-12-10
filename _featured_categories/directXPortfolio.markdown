@@ -1,6 +1,6 @@
 ---
 layout: list
-title: DIRECTX
+title: DIRECT X Portfolio
 slug: directXPortfolio
 description: >
   Direct X Portfolio

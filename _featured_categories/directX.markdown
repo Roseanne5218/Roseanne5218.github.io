@@ -1,6 +1,6 @@
 ---
 layout: list
-title: DirectX
+title: Direct X
 slug: directX
 description: >
   Direct X Engine
