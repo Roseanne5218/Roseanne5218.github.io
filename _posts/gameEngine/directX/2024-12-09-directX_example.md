@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "DIRECT X"
+title:  "DIRECTX"
 date:   2024-12-09 17:35:00 + 0900
 categories:
   - gameEngine
