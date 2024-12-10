@@ -1,6 +1,6 @@
 ---
 layout: list
-title: CORDINGTEST
+title: CORDING TEST
 slug: cordingtest
 description: >
   Cording Test
