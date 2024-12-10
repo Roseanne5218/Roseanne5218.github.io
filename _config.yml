@@ -57,7 +57,7 @@ menu:
     - title:           UNITY
       url:             /unity/
     - title:           DIRECT X
-      url:             /directX/
+      url:             /directx/
   - title:             LANGUAGE
     url:               /language/
     submenu:
@@ -69,13 +69,13 @@ menu:
     url:               /portfolio/
     submenu:           
     - title:           UNREAL
-      url:             /unrealPortfolio/
+      url:             /unrealportfolio/
     - title:           DIRECT X
-      url:             /directXPortfolio/
+      url:             /directxportfolio/
   - title:             OS
     url:               /os/
   - title:             CORDING TEST
-    url:               /cordingTest/
+    url:               /cordingtest/
   - title:             ABOUT
     url:               /about/
 
