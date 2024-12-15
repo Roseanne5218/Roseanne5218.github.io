@@ -65,6 +65,10 @@ menu:
       url:             /clanguage1/
     - title:           C#
       url:             /clanguage2/
+    - title:           VISUAL C++
+      url:             /visualc/
+  - title:             KEY WORDS
+    url:               /keywords/
   - title:             PORTFOLIO
     url:               /portfolio/
     submenu:           
