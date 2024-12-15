@@ -61,12 +61,12 @@ menu:
   - title:             LANGUAGE
     url:               /language/
     submenu:
+    - title:           VISUAL C++
+      url:             /visualc/
     - title:           C++
       url:             /clanguage1/
     - title:           C#
       url:             /clanguage2/
-    - title:           VISUAL C++
-      url:             /visualc/
   - title:             KEY WORDS
     url:               /keywords/
   - title:             PORTFOLIO
