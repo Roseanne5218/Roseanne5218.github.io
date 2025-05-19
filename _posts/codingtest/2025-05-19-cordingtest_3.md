@@ -7,7 +7,7 @@ categories:
 description: >
   BackJoon - 1546
 ---
-## 숫자의 합
+## 평균
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 문제
