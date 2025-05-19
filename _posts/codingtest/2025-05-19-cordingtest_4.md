@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CORDING TEST"
+title:  "CODING TEST"
 date:   2025-05-19 17:35:00 + 0900
 categories:
   - codingtest
