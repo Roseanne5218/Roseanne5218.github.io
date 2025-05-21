@@ -7,7 +7,7 @@ categories:
 description: >
   Programmers - 12932
 ---
-## 자릿수 뒤집어 배열로 만들기
+## 자연수 뒤집어 배열로 만들기
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
