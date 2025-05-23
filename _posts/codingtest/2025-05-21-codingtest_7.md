@@ -16,12 +16,14 @@ description: >
 예를들어 N = 123이면 1 + 2 + 3 = 6을 return 하면 됩니다.
 
 <br/>
+<br/>
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 제한 사항
 </p>
 N의 범위 : 100,000,000 이하의 자연수
 
+<br/>
 <br/>
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
