@@ -12,17 +12,17 @@ description: >
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
 </p>
+
 자연수 n을 뒤집어 각 자리 숫자를 원소로 가지는 배열 형태로 리턴해주세요. 예를들어 n이 12345이면 [5,4,3,2,1]을 리턴합니다.
 
-<br/>
 <br/>
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 제한 사항
 </p>
-n은 10,000,000,000이하인 자연수입니다.
 
-<br/>
+- n은 10,000,000,000이하인 자연수입니다.
+
 <br/>
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
