@@ -9,13 +9,15 @@ description: >
 ---
 ## 약수의 합
 
+---
+
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
 </p>
 
 정수 n을 입력받아 n의 약수를 모두 더한 값을 리턴하는 함수, solution을 완성해주세요.
 
-<br/>
+---
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 제한 사항
@@ -23,7 +25,7 @@ description: >
 
 - n은 0 이상 3000이하인 정수입니다.
 
-<br/>
+---
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 입출력 예
@@ -37,7 +39,7 @@ description: >
 입출력 예 #2
 - 5의 약수는 1, 5입니다. 이를 모두 더하면 6입니다.
 
-<br/>
+---
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 작성 내용
@@ -59,7 +61,7 @@ int solution(int n) {
 }
 ```
 
-<br/>
+---
 
 <p style = "color:#ed9ece; font-size:20px; font-weight:bold">
 정답 여부 O

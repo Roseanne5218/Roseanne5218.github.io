@@ -9,9 +9,12 @@ description: >
 ---
 ## 구간 합 구하기 5
 
+---
+
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 문제
 </p>
+
 N×N개의 수가 N×N 크기의 표에 채워져 있다. (x1, y1)부터 (x2, y2)까지 합을 구하는 프로그램을 작성하시오. (x, y)는 x행 y열을 의미한다.
 
 예를 들어, N = 4이고, 표가 아래와 같이 채워져 있는 경우를 살펴보자.
@@ -27,24 +30,23 @@ N×N개의 수가 N×N 크기의 표에 채워져 있다. (x1, y1)부터 (x2, y2
 
 표에 채워져 있는 수와 합을 구하는 연산이 주어졌을 때, 이를 처리하는 프로그램을 작성하시오.
 
-<br/>
-
+---
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 입력
 </p>
+
 첫째 줄에 표의 크기 N과 합을 구해야 하는 횟수 M이 주어진다. (1 ≤ N ≤ 1024, 1 ≤ M ≤ 100,000) 둘째 줄부터 N개의 줄에는 표에 채워져 있는 수가 1행부터 차례대로 주어진다. 다음 M개의 줄에는 네 개의 정수 x1, y1, x2, y2 가 주어지며, (x1, y1)부터 (x2, y2)의 합을 구해 출력해야 한다. 표에 채워져 있는 수는 1,000보다 작거나 같은 자연수이다. (x1 ≤ x2, y1 ≤ y2)
 
-<br/>
-<br/>
+---
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 출력
 </p>
+
 총 M줄에 걸쳐 (x1, y1)부터 (x2, y2)까지 합을 구해 출력한다.
 
-<br/>
-<br/>
+---
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 작성 내용
@@ -102,8 +104,7 @@ int main()
 }
 ```
 
-<br/>
-<br/>
+---
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 정답 내용
@@ -146,7 +147,7 @@ int main()
 }
 ```
 
-<br/>
+---
 
 <p style = "color:#ed9ece; font-size:20px; font-weight:bold">
 정답 여부 X
@@ -160,4 +161,4 @@ int main()
 문제 소감
 </p>
 
-테스트 케이스가 적어 어디서 오류 나는지 판별이 좀 힘들다. 책에 있는 예시를 그대로 적어도 시간 초과 오류가 나서 다른 책을 풀어볼까 생각 중이다.
+- 테스트 케이스가 적어 어디서 오류 나는지 판별이 좀 힘들다. 책에 있는 예시를 그대로 적어도 시간 초과 오류가 나서 다른 책을 풀어볼까 생각 중이다.

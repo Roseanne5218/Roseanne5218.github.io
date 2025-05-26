@@ -9,29 +9,31 @@ description: >
 ---
 ## 구간 합 구하기 4
 
+---
+
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 문제
 </p>
+
 수 N개가 주어졌을 때, i번째 수부터 j번째 수까지 합을 구하는 프로그램을 작성하시오.
 
-<br/>
-<br/>
+---
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 입력
 </p>
+
 첫째 줄에 수의 개수 N과 합을 구해야 하는 횟수 M이 주어진다. 둘째 줄에는 N개의 수가 주어진다. 수는 1,000보다 작거나 같은 자연수이다. 셋째 줄부터 M개의 줄에는 합을 구해야 하는 구간 i와 j가 주어진다.
 
-<br/>
-<br/>
+---
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 출력
 </p>
+
 총 M개의 줄에 입력으로 주어진 i번째 수부터 j번째 수까지 합을 출력한다.
 
-<br/>
-<br/>
+---
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 작성 내용
@@ -93,8 +95,7 @@ int main()
 }
 ```
 
-<br/>
-<br/>
+---
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 정답 내용
@@ -130,7 +131,7 @@ int main()
 }
 ```
 
-<br/>
+---
 
 <p style = "color:#ed9ece; font-size:20px; font-weight:bold">
 정답 여부 X
@@ -144,11 +145,11 @@ int main()
 문제 소감
 </p>
 
-vector를 잘 사용 안 해봐서 NULL을 삽입 시 오류가 나는 현상을 몰랐다.
+- vector를 잘 사용 안 해봐서 NULL을 삽입 시 오류가 나는 현상을 몰랐다.
 
-답안에서는 계산 시간을 줄이기 위하여 해당 연산들을 사용하였다.
-```
-ios::sync_with_stdio(false);
-cin.tie(NULL);
-cout.tie(NULL);
-```
+- 답안에서는 계산 시간을 줄이기 위하여 해당 연산들을 사용하였다.
+	```
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
+	```
