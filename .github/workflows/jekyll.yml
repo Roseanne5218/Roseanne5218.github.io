@@ -9,17 +9,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout source
         uses: actions/checkout@v4
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: '3.1'  # Ruby 3.1로 설정
 
       - name: Install dependencies
         run: |
           gem install bundler
+          bundle add ffi -v 1.16.3  # ffi 버전 고정
           bundle install
 
       - name: Build Jekyll site
