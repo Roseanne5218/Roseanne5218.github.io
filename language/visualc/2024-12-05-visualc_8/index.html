@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="ko"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v9.2.1 <https://hydejack.com/>
+-->
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Visual C++ - 8 | Roseanne</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Visual C++ - 8" />
+<meta name="author" content="Roseanne5218" />
+<meta property="og:locale" content="ko" />
+<meta name="description" content="Visual C++" />
+<meta property="og:description" content="Visual C++" />
+<meta property="og:site_name" content="Roseanne" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-12-05T18:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Visual C++ - 8" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-02T05:08:36+00:00","datePublished":"2024-12-05T18:00:00+00:00","description":"Visual C++","headline":"Visual C++ - 8","mainEntityOfPage":{"@type":"WebPage","@id":"/language/visualc/2024-12-05-visualc_8/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/language/visualc/2024-12-05-visualc_8/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+
+
+  <meta name="color-scheme" content="dark light">
+
+
+
+  <meta name="theme-color" content="rgb(25,55,71)">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Roseanne">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Roseanne">
+
+<meta name="generator" content="Hydejack v9.2.1" />
+
+
+<link rel="alternate" href="/language/visualc/2024-12-05-visualc_8/" hreflang="ko">
+
+<link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Roseanne" />
+
+
+<link rel="shortcut icon"    href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+
+
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+
+  
+  <link rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.css" id="_katexPreload">
+  <noscript><link rel="stylesheet" href="/assets/bower_components/katex/dist/katex.min.css"></noscript>
+
+
+
+
+
+<script>((r,a)=>{function d(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=a.createElement("script"),e=(n.src=e,t&&d(n,"load",t,{once:!0}),a.scripts[0]);return e.parentNode.insertBefore(n,e),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=a.createElement("script");function o(){r._loaded=!0,t&&d(n,"load",t,{once:!0});var e=a.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():d(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){d(a.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}})(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2025-06-02T05:09:23+00:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.2.1.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.5);--accent-color-highlight: rgba(79, 177, 186, 0.1);--accent-color-darkened: rgb(63.8602040816, 154.5602040816, 162.8897959184);--theme-color: rgb(25,55,71);--dark-mode-body-bg: hsl(200.8695652174, 5.9895833333%, 17.5%);--dark-mode-border-color: hsl(200.8695652174, 5.9895833333%, 22.5%)}
+</style>
+
+
+<!--<![endif]-->
+
+
+<!-- Add HTML tags here to be included in the head. You can delete the below: -->
+<link rel="dns-prefetch" href="https://assets.gumroad.com">
+<script type="module">
+  const loadJS = x => new Promise(r => window.loadJS(x).addEventListener('load', r));
+
+  let p1, p2, io1, io2, embedCreated, overlayCreated;
+  document.querySelector('hy-push-state').addEventListener('load', () => {
+    io1 ||= new IntersectionObserver(async (entries) => {
+      if (entries.some(x => x.isIntersecting)) {
+        p1 = p1 || loadJS('https://gumroad.com/js/gumroad-embed.js');
+        await p1;
+        !embedCreated && await new Promise(function check1(res) {
+          if (typeof createGumroadEmbed !== 'undefined')  {
+            embedCreated = 1;
+            res(createGumroadEmbed());
+          }
+          else setTimeout(() => check1(res), 200);
+        });
+        await new Promise(function check2(res) {
+          if (typeof GumroadEmbed !== 'undefined') res(GumroadEmbed.reload());
+          else setTimeout(() => check2(res), 200);
+        });
+      }
+    }, { rootMargin: '1440px' });
+
+    io2 ||= new IntersectionObserver(async (entries) => {
+      if (entries.some(x => x.isIntersecting)) {
+        p2 = p2 || loadJS('https://gumroad.com/js/gumroad.js');
+        await p2;
+        !overlayCreated && await new Promise(function check(res) {
+          if (typeof createGumroadOverlay !== 'undefined') {
+            overlayCreated = 1;
+            res(createGumroadOverlay());
+          }
+          else setTimeout(() => check(res), 200);
+        });
+      }
+    }, { rootMargin: '300px' });
+
+    document.querySelectorAll('.gumroad-product-embed').forEach(el => io1.observe(el));
+    document.querySelectorAll('.gumroad-button').forEach(el => io2.observe(el));
+  });
+</script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="/assets/js/sidebar-folder.js"></script>
+
+</head>
+
+<body class="no-break-layout">
+  
+<script>
+  window._sunrise = 6;
+  window._sunset =  18;
+  ((e,s)=>{var d="light-mode",a="dark-mode",o=(new Date).getHours();"matchMedia"in e&&e.matchMedia("(prefers-color-scheme)")||(e=(o=o<=e._sunrise||o>=e._sunset?a:d)==a?d:a,s.body.classList.add(o),s.body.classList.remove(e))})(window,document);
+
+</script>
+
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-post"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+        
+          <span>/</span>
+          
+          
+          <a href="/language/">language</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          
+          
+          <a href="/language/visualc/">visualc</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>2024-12-05-visualc_8</span>
+        
+      </li>
+    
+  
+</ul></nav>
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-language-visualc-visualc_8" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      
+        Visual C++ - 8
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2024-12-05T18:00:00+00:00">05 Dec 2024</time> in <a href="/language/" class="flip-title">LANGUAGE</a> / <a href="/visualc/" class="flip-title">VISUAL C++</a> 
+      </span>
+      
+        
+          
+          
+          
+            
+            
+            <span class="ellipsis" data-tippy-content="Last modified at: 02 Jun 2025">
+              <span class="sr-only">Last modified at:</span>
+              <span class="icon-history"></span>
+              <time datetime="2025-06-02T05:08:36+00:00">2025-06-02</time>
+            </span>
+          
+        
+      
+    </div>
+
+    
+    
+
+    
+
+
+
+  
+    <p class="note-sm" >
+      Visual C++
+
+    </p>
+  
+
+
+  </header>
+
+  
+    <p style="color:#8f7cee; font-size:25px; font-weight:bold">
+Process 
+</p>
+
+<hr />
+
+<p>메모리에 로드 되어 cpu에 의해 실행되고 있는 실행 프로그램이다.
+레지스터(register), 스택(stack), 포인트(point), 프로그램, 데이터 등의 집합체로 실행 중인 프로그램 인스턴트
+프로세스는 기본적으로 병행성이고 거기에서 병행성으로 나뉜다.</p>
+
+<p>하나나의 프로그램이자 하나의 프로세스가 io를 거쳐 ram으로 가면 pcb 영역과 pcb 따라가는 pcm 구역이 생긴다. pcb에는 데이터 pma는 영역의 주소를 가진다. cpu가 ram에 접근하여 pcb의 코드를 읽으라 명령을 내리면 code 영역에 있는 데이터를 읽는다. core 영역에 있는 cu가 읽고 decoder이 해석하고 alu가 계산을 한다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+프로세스 구성 정보
+</p>
+
+<hr />
+
+<ul>
+  <li>PID(프로세스 식별자) - 각 프로세스에 대한 고유 식별자(숫자, 색인 항목)</li>
+  <li>프로세스 상태 - 생성, 준비, 실행, 대기, 중단 등의 프로세스 상태</li>
+  <li>프로그램 카운터 - 프로세스 실행을 위한 다음 명령의 주소 표시</li>
+  <li>레지스터 저장 영역 - 누산기, 인덱스 레지스터, 범용 레지스터, 조건 코드 등에 관한 정보, 컴퓨터 구조에 따라 다른 형태, 인터럽트가 발생 시 프로그램 카운터와 함께 다시 저장, 다시 실행 시 원상 복귀</li>
+  <li>프로세서 스케줄링 정보 - 우선순위 스케줄링 큐 포인터, 스케줄 매개변수</li>
+  <li>계정 정보 - 프로세서 사용시간, 실제 사용시간, 사용 상한 시간, 계정 정보, 작업이나 프로세스 번호 등</li>
+  <li>입출력 상태 정보 - 입출력 요구 프로세스에 할당된 입출력 장치, 개방된 파일 목록</li>
+  <li>메모리 관리 정보 - 메모리 영역 정의에 필요한 상한/하한 레지스터(경계 레지스터) 또는 페이지 테이블 정보</li>
+</ul>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+프로세스 라이프 사이클
+</p>
+
+<hr />
+
+<p>생성 중(new) - 프로세스가 생성 중</p>
+
+<p>준비 상태(ready) - 프로세스가 실행을 준비하고 있는 상태, 디스패치를 통해 실행상태로 전이</p>
+
+<p>실행 상태(running) - 프로세스가 cpu를 차지하고 실행 중인 상태</p>
+
+<p>보류 상태(blocked/waiting) - 프로세스가 어떤 event를 기다리는 상태</p>
+
+<p>종료(terminate) - 프로세스의 실행이 종료된 상태</p>
+
+<p>운영체제 스케줄러에 의해 프로세스는 생성 → 준비 → 실행 → 종료 순서로 진행되고 실행에서 인터럽트가 발생하여 대기 상태로 가면 대기를 하다가 다시 준비 상태로 오게 된다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+프로세스 스케줄링
+</p>
+
+<hr />
+
+<p>프로세스 라이프 사이클에서 코어는 프로세스를 생성하고 준비(a와 b 둘 다 들어옴) 하는데 생성하고 준비하고 누가 실행될지 정하는 과정을 스케줄링이라고 한다. 스케줄링은 준비 상태에서 실행 상태로 넘어갈 때 실행된다.</p>
+
+<p>프로세스의 스케줄링에는 선점형 스케줄링과 비선점형 스케줄링이 있다. 선점형 스케줄링은 운영체제가 코어에서 이미 실행 중인 프로세스를 대기시키고 다른 프로세스를 실행시킨다. 비선점형은 이미 실행 중인 프로세스를 대기시키지 않고 기다렸다가 다른 프로세스를 실행시키는 것을 말한다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+프로세스 스케줄링 - 스케줄링 큐
+</p>
+
+<hr />
+
+<p>프로세스의 스케줄링을 위해 운영체제는 여러 종류의 큐를 유지하고 링크드 리스트로 구현한다. Process가 끝날 때까지 아래 주기를 반복한다. Process가 종료되면 모든 큐에서 삭제되고 PCB와 자원을 반납한다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+큐의 종류
+</p>
+
+<hr />
+
+<ul>
+  <li>작업 큐(job Queue) - 프로세스가 시스템에 처음 들어와 대기하는 큐</li>
+  <li>준비 완료 큐(Ready Queue) - 주 기억장치에 적재되어 실행을 기다리는 프로세스를 유지하는 큐</li>
+  <li>장치 큐(Device Queue) - 장치를 사용하기 위해 기다리는 큐로서, 각 장치는 자신만의 장치 큐를 가짐</li>
+  <li>대기 큐(wating Queue) - 특정한 사건마다 그 사건을 기다리는 프로세스를 유지하는큐</li>
+</ul>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+프로세스 제어 블록(PCB)
+</p>
+
+<hr />
+
+<p>특정한 프로세스를 관리할 필요가 있는 정보를 포함하는 운영 체제 커널의 자료구조</p>
+
+<p>프로세스가 생성될 때 pcb도 생성, 모든 프로세스는 고유 pcb 보유</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+IPC(Inter Process communication)
+</p>
+
+<hr />
+
+<p>프로세스가 같은 주소 공간을 공유하지 않아도, 프로세스들 사이에 데이터를 주고받는 행위 또는 그에 대한 방법이나 경로(동기화)</p>
+
+<p>a 프로세스와 b 프로세스가 서로 통신하는 것을 IPC라고 한다.</p>
+
+<p>통신 방법으로는 파이프, 메시지, 공유 메모리가 있다. 파이프나 공유 메모리를 주로 사용한다. 파이프, 메시지, 공유 메모리의 문제점은 ssd와 ram 사이에 io가 있는데 io를 지나갈 때마다 interupt가 걸린다. 프로세스 상태에서 보류 상태의 종류 중 하나가 interupt이다.</p>
+
+<p>a와 b의 코드가 같고 서로 같은 구역을 사용하자고 a가 메시지를 보낼 때 인터럽트가 걸리고 b가 메시지를 받기 위해서도 인터럽트가 발생하기 때문에 ipc는 인터럽트 해결 방법이 아니다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+Thread
+</p>
+
+<hr />
+
+<p>process를 분할한 것이다. 1 core는 game을 돌리고 window는 2 core를 돌리고 3, 4 core는 아무것도 안 할 때 game을 a, b, c로 나눠 1 core는 a, 3core는 b, 4core는 c를 돌린다. 이때 1, 3, 4 core는 같은 ram, pma를 사용한다. 하나의 프로세스에 코드를 나눠서 실행하자는 것으로 a라는 구역을 다 같이 사용이 가능하다. 이를 스레드라고 하고 스레드는 각 코어에 할당된다. 스레드에는 tcb라는 것이 붙는다.</p>
+
+<p>GPU는 작은 core 많이 가지고 있어서 thread로 동작한다.</p>
+
+<p>하나의 프로세스가 한번 도는 것(unity), 여러 개의 스레드가 같이 도는 것 (unreal)</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+스레드 제어 블럭(TCB : Thread Control Block)
+</p>
+
+<hr />
+
+<p>Thread의 실행 시간 동안 상태 정보를 유지하기 위해 관리되는 데이터 구조이다. thread에서 인터럽트가 걸리면 TCB에서 걸리기 때문에 다른 Thread의 tcd에는 영향이 없다. function으로 정의한 부분이 사용자 스택, Sleep 부분이 커널 스택이다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+공유 자원
+</p>
+
+<hr />
+
+<p>프로세스의 공간을 할당해 주는 것을 스케줄링 할당해 준 공간을 공유자원이라고 한다.</p>
+
+<p>여러 개의 프로세스(스레드)가 동일한 메모리 구역에 접근하는 시점</p>
+
+<p>램 하나에 여러 코어가 있을 때 어떤 코어가 어떤 메모리에 들어갈지를 제어하는 것으로 여러 코어가 같은 주소에 접근할 때 공유자원 문제가 발생한다. 1 번 코어에는 a 프로세스 1번 스레드 2번 코어에는 b 프로세스 2번 스레드 3번 코어에는 a 프로세스 2스레드 4번 코어에는 a 프로레스 3 스레드일 때 4개의 코어가 같은 주소를 가지고 동시에 주소에 접근할 때 공유 문제가 발생한다. 이러한 과정은 운영체제에서 실행 단계에 일어난다. 에임 핵은 공유자원의 문제 중 하나이다.</p>
+
+<p>스레드가 생기면서 프로세스의 라이프 사이클은 스레드마다 진행된다. 만약 4개의 코어가 있으면 4번의 프로세스 라이플 사이클이 일어나고 4번의 스케줄링이 발생한다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+병행성, 병렬성
+</p>
+
+<hr />
+
+<p>병행성(concurrency), 동시성 - 하나의 cpu를 쪼개 쓰기 위한 개념, 하나의 프로세스를 이용해 두 개 이상의 프로그램을 동시에 실행되는 성질, 한순간에는 하나의 프로그램만 실행하고 게임의 sound에서 사용된다. 코어 하나에 프로세스(프로그램)을 하나 더 실행하면 a와 b가 동시에 번갈아가며 실행하는 것을 병행성이라고 한다. 이때 ram은 하나이지만 구역은 나눠 저서 서로 다른 영역을 가지고 있다.
+병렬성(parallelism) - 복수 프로세서가 여러 개 또는 한 프로그램의 분할된 부분을 동시에 처리하는 성질, 한순간에 두 개 이상의 프로그램이 처리한다. 두 개 이상의 프로세스가 두 개 이상의 코어에 할당되는 것을 병렬성이라고 한다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+멀티 프로세스
+</p>
+
+<hr />
+
+<p>1번 코어가 a 프로세스를 처리하고 2번 코어가 b 프로세스를 처리하는 것을 멀티 프로세스이라 한다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+GPGPU
+</p>
+
+<hr />
+
+<p>gpu를 그래픽 연산뿐 아니라 일반 컴퓨터 영역에도 활용하고자 하는 컴퓨팅 체계, GPU가 다수의 코어들을 기반으로 병렬처리가 가능하여 그래픽 렌더링에 쓰이는 행렬과 벡터 연산에 높은 계산 성능을 보이는 것에 기인, gpu의 계산 결과를 cpu와 주고받아야 한다. 대표적으로 쿠다가 있다</p>
+
+<p>cpu와 ram은 h/w, process와 Thread는 s/w에 해당된다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+선점형 스케쥴링
+</p>
+
+<hr />
+
+<p>자원에 하나의 thread가 있는데 다른 thread가 원래 있던 thread를 끌어내고 본인이 들어가는 것을 말한다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+경쟁 상태(Race Condition)
+</p>
+
+<hr />
+
+<p>자원에 thread들이 서로 들어가려고 경쟁하는 상태를 말한다. 운영체제 스케줄러에서도 서로 들어가려고 경쟁 상태가 발생한다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+비선점형 스케줄링
+</p>
+
+<hr />
+
+<p>자원에 하나의 thread가 있는데 다른 thread가 못 들어오는 것을 말한다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+임계 영역(Critical Section)
+</p>
+
+<hr />
+
+<p>임계 영역(Critical Section)은 변수 공간을 사용하고 있을 때 다른 thread가 못 들어오게 하는 것을 말한다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+상호배제(Mutex)
+</p>
+
+<hr />
+
+<p>상호 배제를 통해 임계 영역을 만든다. 임계 영역을 만드는 과정이라고 볼 수 있다. 경쟁 상태를 해결하는 방법에 해당된다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+문맥교환(Context Switching)
+</p>
+
+<hr />
+
+<p>처음에 자원을 사용하는 thread가 있고 사용하기 위해 기다리는 thread가 있는데 이 둘이 서로 번갈아 가면서 자원을 사용할 때 자원을 사용하는 시간보다 공간을 바꾸는 시간이 더 길면 발생한다. 문맥 교환도 결국 PCB 교체 과정이다. 과도한 멀티프로그래밍은 Context Switching Overhead를 발생시킨다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+세마포어
+</p>
+
+<hr />
+
+<p>한 공간에 여러 thread가 들어가는 것을 말한다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+데드락
+</p>
+
+<hr />
+
+<p>자원에 thread가 들어가서 안 나오는 상황, thread가 원하는 공간에 들어가고 싶어 하는 상황 등이 있다.</p>
+
+<p><br /></p>
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+기아 상태 
+</p>
+
+<hr />
+
+<p>특정 thread가 우선순위가 낮아 계속 기다리는 현상을 말한다.</p>
+
+<p><br /></p>
+
+<p>Thread.cpp</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;functional&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;thread&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;windows.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;mutex&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+
+<span class="kt">void</span> <span class="nf">Loop</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">func</span> <span class="o">=</span> <span class="p">[](</span><span class="kt">int</span> <span class="n">number</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+			<span class="n">printf</span><span class="p">(</span><span class="s">"%d : %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">number</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+
+		<span class="n">printf</span><span class="p">(</span><span class="s">"for %d번 종료</span><span class="se">\n\n</span><span class="s">"</span><span class="p">,</span> <span class="n">number</span><span class="p">);</span>
+	<span class="p">};</span>
+	<span class="n">func</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+	<span class="n">func</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">MultiThread</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">func</span> <span class="o">=</span> <span class="p">[](</span><span class="kt">int</span> <span class="n">number</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+			<span class="n">printf</span><span class="p">(</span><span class="s">"%d : %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">number</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+
+		<span class="n">printf</span><span class="p">(</span><span class="s">"for %d번 종료</span><span class="se">\n\n</span><span class="s">"</span><span class="p">,</span> <span class="n">number</span><span class="p">);</span>
+	<span class="p">};</span>
+
+	<span class="kr">thread</span> <span class="nf">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"t1 실행</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+
+	<span class="kr">thread</span> <span class="nf">t2</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"t2 실행</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+
+	<span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span> 
+	<span class="n">printf</span><span class="p">(</span><span class="s">"t2 join</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+
+	<span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"t1 join</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span> <span class="c1">//t2이 먼저 join 된다</span>
+<span class="p">}</span> <span class="c1">//t1과 t2가 동시 실행 누가 먼저 종료 될지 모름</span>
+
+<span class="kt">void</span> <span class="nf">MultiThread2</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">func</span> <span class="o">=</span> <span class="p">[](</span><span class="kt">int</span> <span class="n">count</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">Sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+			<span class="n">this_thread</span><span class="o">::</span><span class="n">sleep_for</span><span class="p">(</span><span class="n">chrono</span><span class="o">::</span><span class="n">microseconds</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span>
+		<span class="p">}</span>
+	<span class="p">};</span>
+	<span class="n">func</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+	<span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">func2</span> <span class="o">=</span> <span class="p">[](</span><span class="kt">int</span> <span class="n">count</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+			<span class="n">printf</span><span class="p">(</span><span class="s">"2 : %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+	<span class="p">};</span>
+	<span class="n">func</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">MultiThread3</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">func</span> <span class="o">=</span> <span class="p">[](</span><span class="kt">int</span> <span class="n">count</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">Sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span> <span class="c1">//커널 스택</span>
+
+			<span class="n">this_thread</span><span class="o">::</span><span class="n">sleep_for</span><span class="p">(</span><span class="n">chrono</span><span class="o">::</span><span class="n">microseconds</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span>
+		<span class="p">}</span>
+	<span class="p">};</span>
+	<span class="kr">thread</span> <span class="nf">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+
+	<span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">func2</span> <span class="o">=</span> <span class="p">[](</span><span class="kt">int</span> <span class="n">count</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">Sleep</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span>
+
+			<span class="n">printf</span><span class="p">(</span><span class="s">"2 : %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">};</span>
+	<span class="kr">thread</span> <span class="nf">t2</span><span class="p">(</span><span class="n">func2</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>
+
+	<span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+	<span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+<span class="p">}</span><span class="c1">//thread 는 단위가 함수, 실행 주체이기 때문이다.</span>
+
+<span class="kt">void</span> <span class="nf">MultiThread4</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">func</span> <span class="o">=</span> <span class="p">[](</span><span class="kt">int</span> <span class="n">count</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">this_thread</span><span class="o">::</span><span class="n">sleep_for</span><span class="p">(</span><span class="n">chrono</span><span class="o">::</span><span class="n">milliseconds</span><span class="p">(</span><span class="mi">1000</span><span class="p">));</span> <span class="c1">//chrono 시간을 정밀하게 제어</span>
+
+			<span class="n">printf</span><span class="p">(</span><span class="s">"1 : %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">};</span>
+	<span class="kr">thread</span> <span class="nf">t1</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+
+	<span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="kr">thread</span> <span class="nf">t2</span><span class="p">([</span><span class="o">&amp;</span><span class="p">](</span><span class="kt">int</span> <span class="n">stop</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">a</span><span class="o">++</span><span class="p">;</span>
+			<span class="n">printf</span><span class="p">(</span><span class="s">"a = %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">a</span><span class="p">);</span>
+
+			<span class="n">this_thread</span><span class="o">::</span><span class="n">sleep_for</span><span class="p">(</span><span class="n">chrono</span><span class="o">::</span><span class="n">milliseconds</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span>
+
+			<span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">stop</span><span class="p">)</span>
+				<span class="k">break</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">},</span> <span class="mi">30</span><span class="p">);</span>
+
+	<span class="n">t2</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+	<span class="n">t1</span><span class="p">.</span><span class="n">join</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">RaceCondition</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">mutex</span> <span class="n">m</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+	<span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">()</span><span class="o">&gt;</span> <span class="n">func</span> <span class="o">=</span> <span class="p">[</span><span class="o">&amp;</span><span class="p">]()</span>
+	<span class="p">{</span>
+		<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">1000000</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">m</span><span class="p">.</span><span class="n">lock</span><span class="p">();</span>
+			<span class="n">count</span><span class="o">++</span><span class="p">;</span>
+			<span class="n">m</span><span class="p">.</span><span class="n">unlock</span><span class="p">();</span>
+		<span class="p">}</span>
+	<span class="p">};</span>
+
+	<span class="n">vector</span><span class="o">&lt;</span><span class="kr">thread</span><span class="o">&gt;</span> <span class="n">threads</span><span class="p">;</span>
+
+	<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+		<span class="n">threads</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="kr">thread</span><span class="p">(</span><span class="n">func</span><span class="p">));</span>
+
+	<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">)</span>
+		<span class="n">threads</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">join</span><span class="p">();</span>
+
+	<span class="n">printf</span><span class="p">(</span><span class="s">"count : %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+  
+</article>
+
+
+
+  <hr class="dingbat related mb6" />
+
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="/assets/img/logo.jpg"
+    srcset="/assets/img/logo.jpg 1x,/assets/img/logo.jpg 2x"
+    
+  
+  alt="Roseanne"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>게임 프로그래밍 공부중 . . .</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/Roseanne5218" title="Roseanne5218" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">Roseanne5218</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.instagram.com/roseanne_5218/Roseanne_5218" title="roseanne_5218" class="no-mark-external">
+      <span class="icon-instagram"></span>
+      <span class="sr-only">roseanne_5218</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/codingtest/2025-06-02-codingtest_60/" class="flip-title"><span>덧칠하기</span></a>  <time class="faded fine" datetime="2025-06-02T00:30:00+00:00">02 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/2025-06-02-codingtest_59/" class="flip-title"><span>과일 장수</span></a>  <time class="faded fine" datetime="2025-06-02T00:20:00+00:00">02 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/2025-06-02-codingtest_58/" class="flip-title"><span>모의고사</span></a>  <time class="faded fine" datetime="2025-06-02T00:10:00+00:00">02 Jun 2025</time></li>            </ul></aside>
+
+  
+
+  
+  
+
+  
+    
+
+  
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2024. All rights reserved.
+</small></p>
+  
+  
+    <nav class="legal"><small>
+    
+      
+      <a class="heading flip-title" href="/LICENSE/">LICENSE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/NOTICE/">NOTICE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/CHANGELOG/">CHANGELOG</a>
+      
+    
+    </small></nav>
+  
+    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.2.1</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(25,55,71);background-image:url(/assets/img/sidebar.jpg)"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+      <a class="no-hover" href="/" tabindex="-1">
+        <img src="/assets/img/logo.jpg" class="avatar" alt="Roseanne" width="120" height="120" loading="lazy" />
+      </a>
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Roseanne</h2></a>
+    
+    
+      <p class="">
+        Roseanne Blog
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      
+      <li>
+        <div class="menu-wrapper">
+          
+            <button class="spread-btn" onclick="javascript:spread(10)">
+              <span id="spread-icon-10" class="material-icons">arrow_right</span>
+            </button>
+          
+          <a
+            id="_drawer--opened"
+            href="/gameengine/"
+            class="sidebar-nav-item "
+            
+            >
+            GAME ENGINE
+          </a>
+        </div>
+        
+          <div class="menu-wrapper">
+            <input type="checkbox" id="folder-checkbox-10">
+            <ul>
+            
+              <li>
+                <a
+                  class="sidebar-nav-item "
+                  href="/unreal/"
+                  >
+                  UNREAL
+                </a>
+              </li>
+            
+              <li>
+                <a
+                  class="sidebar-nav-item "
+                  href="/unity/"
+                  >
+                  UNITY
+                </a>
+              </li>
+            
+              <li>
+                <a
+                  class="sidebar-nav-item "
+                  href="/directx/"
+                  >
+                  DIRECT X
+                </a>
+              </li>
+            
+            </ul>
+          </div>
+        
+      </li>
+    
+      
+      
+      <li>
+        <div class="menu-wrapper">
+          
+            <button class="spread-btn" onclick="javascript:spread(11)">
+              <span id="spread-icon-11" class="material-icons">arrow_right</span>
+            </button>
+          
+          <a
+            
+            href="/language/"
+            class="sidebar-nav-item "
+            
+            >
+            LANGUAGE
+          </a>
+        </div>
+        
+          <div class="menu-wrapper">
+            <input type="checkbox" id="folder-checkbox-11">
+            <ul>
+            
+              <li>
+                <a
+                  class="sidebar-nav-item "
+                  href="/visualc/"
+                  >
+                  VISUAL C++
+                </a>
+              </li>
+            
+              <li>
+                <a
+                  class="sidebar-nav-item "
+                  href="/clanguage1/"
+                  >
+                  C++
+                </a>
+              </li>
+            
+              <li>
+                <a
+                  class="sidebar-nav-item "
+                  href="/clanguage2/"
+                  >
+                  C#
+                </a>
+              </li>
+            
+            </ul>
+          </div>
+        
+      </li>
+    
+      
+      
+      <li>
+        <div class="menu-wrapper">
+          
+          <a
+            
+            href="/keywords/"
+            class="sidebar-nav-item "
+            
+            >
+            KEY WORDS
+          </a>
+        </div>
+        
+      </li>
+    
+      
+      
+      <li>
+        <div class="menu-wrapper">
+          
+            <button class="spread-btn" onclick="javascript:spread(13)">
+              <span id="spread-icon-13" class="material-icons">arrow_right</span>
+            </button>
+          
+          <a
+            
+            href="/portfolio/"
+            class="sidebar-nav-item "
+            
+            >
+            PORTFOLIO
+          </a>
+        </div>
+        
+          <div class="menu-wrapper">
+            <input type="checkbox" id="folder-checkbox-13">
+            <ul>
+            
+              <li>
+                <a
+                  class="sidebar-nav-item "
+                  href="/unrealportfolio/"
+                  >
+                  UNREAL
+                </a>
+              </li>
+            
+              <li>
+                <a
+                  class="sidebar-nav-item "
+                  href="/directxportfolio/"
+                  >
+                  DIRECT X
+                </a>
+              </li>
+            
+            </ul>
+          </div>
+        
+      </li>
+    
+      
+      
+      <li>
+        <div class="menu-wrapper">
+          
+          <a
+            
+            href="/os/"
+            class="sidebar-nav-item "
+            
+            >
+            OS
+          </a>
+        </div>
+        
+      </li>
+    
+      
+      
+      <li>
+        <div class="menu-wrapper">
+          
+          <a
+            
+            href="/codingtest/"
+            class="sidebar-nav-item "
+            
+            >
+            CODING TEST
+          </a>
+        </div>
+        
+      </li>
+    
+      
+      
+      <li>
+        <div class="menu-wrapper">
+          
+          <a
+            
+            href="/about/"
+            class="sidebar-nav-item "
+            
+            >
+            ABOUT
+          </a>
+        </div>
+        
+      </li>
+    
+  
+</ul>
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/Roseanne5218" title="Roseanne5218" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">Roseanne5218</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.instagram.com/roseanne_5218/Roseanne_5218" title="roseanne_5218" class="no-mark-external">
+      <span class="icon-instagram"></span>
+      <span class="sr-only">roseanne_5218</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>(()=>{var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())})();
+</script>
+  <script src="/assets/js/hydejack-9.2.1.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.2.1.js" nomodule defer></script>
+  
+
+  
+
+<!--<![endif]-->
+  <!--
+Code for integrating CloudFlare's email protection with Hydejack's single page app loading.
+-->
+<script>
+  document.getElementById('_pushState').addEventListener('hy-push-state-after', function (e) {
+    function e(e){
+      (console.error?console.error:console.log).call(console,e)
+    }
+
+    function t(e){
+      return l.innerHTML='<a href="'+e.replace(/"/g,"&quot;")+'"></a>',l.childNodes[0].getAttribute("href")
+    }
+
+    function r(e,t){
+      var r=e.substr(t,2);return parseInt(r,16)
+    }
+
+    function n(e,n){
+      for(var o="",c=r(e,n),a=n+2;a<e.length;a+=2){
+        var l=r(e,a)^c;
+        o+=String.fromCharCode(l)
+      }
+      return t(o)
+    }
+
+    var o="/cdn-cgi/l/email-protection#",
+        c=".__cf_email__",
+        a="data-cfemail",
+        l=document.createElement("div");
+
+    !function(){
+      for(var t=document.getElementsByTagName("a"),r=0;r<t.length;r++)
+        try{
+          var c=t[r],a=c.href.indexOf(o);
+          a>-1&&(c.href="mailto:"+n(c.href,a+o.length))
+        }catch(t){
+          e(t)
+        }
+    }(),
+    function(){
+      for(var t=document.querySelectorAll(c),r=0;r<t.length;r++)
+        try{
+          var o=t[r],l=n(o.getAttribute(a),0),i=document.createTextNode(l);
+          o.parentNode.replaceChild(i,o)
+        }catch(t){
+          e(t)
+        }
+    }()
+  });
+</script>
+
+
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+  
+    <template id="_dark-mode-template">
+  <button id="_dark-mode" class="nav-btn no-hover" >
+    <span class="sr-only">Dark Mode</span>
+    <span class="icon-brightness-contrast"></span>
+  </button>
+</template>
+
+  
+</div>
+
+
+</body>
+</html>
