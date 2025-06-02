@@ -1,5 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-06-02T05:09:23+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">덧칠하기</title><link href="/codingtest/2025-06-02-codingtest_60/" rel="alternate" type="text/html" title="덧칠하기" /><published>2025-06-02T00:30:00+00:00</published><updated>2025-06-02T05:08:36+00:00</updated><id>/codingtest/codingtest_60</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_60/"><![CDATA[<hr />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-06-02T14:42:28+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">소수 찾기</title><link href="/codingtest/2025-06-02-codingtest_61/" rel="alternate" type="text/html" title="소수 찾기" /><published>2025-06-02T00:40:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_61</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_61/"><![CDATA[<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+문제 설명
+</p>
+
+<p>1부터 입력받은 숫자 n 사이에 있는 소수의 개수를 반환하는 함수, solution을 만들어 보세요.</p>
+
+<p>소수는 1과 자기 자신으로만 나누어지는 수를 의미합니다.
+(1은 소수가 아닙니다.)</p>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+제한 사항
+</p>
+
+<ul>
+  <li>n은 2이상 1000000이하의 자연수입니다.</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+입출력 예
+</p>
+
+<p><img src="../../assets/img/codingtest/12921.png" width="120" height="93" /></p>
+
+<p>입출력 예 #1</p>
+<ul>
+  <li>1부터 10 사이의 소수는 [2,3,5,7] 4개가 존재하므로 4를 반환</li>
+</ul>
+
+<p>입출력 예 #2</p>
+<ul>
+  <li>1부터 5 사이의 소수는 [2,3,5] 3개가 존재하므로 3를 반환</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+작성 내용
+</p>
+
+<pre><code class="language-C++">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+int solution(int n) {
+    int answer = 0;
+    
+    vector&lt;bool&gt; Count(n+1, true);
+    Count[0] = false;
+    Count[1] = false;
+    
+    for(int i=2; i*i&lt;=n; i++)
+    {
+        if(Count[i] == true)
+        {
+            for(int j=i*i; j&lt;=n; j+=i)
+            {
+                Count[j] = false;
+            }
+        }
+    }
+    
+    for(int i=0; i&lt;=n; i++)
+    {
+        if(Count[i] == true)
+            answer++;
+    }
+    
+    return answer;
+}
+</code></pre>
+
+<hr />
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+정답 여부 X
+</p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+소요 시간 : 15분  
+</p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+문제 소감
+</p>
+
+<ul>
+  <li>해당 문제를 풀면서 소수를 찾는 거도 방법이지만, 효율성을 높이기 위해서는 소수가 아닌 것을 제외하는 방법이 빠르다는 것을 알았다.</li>
+  <li>배제를 하기 위해서 어떤 숫자가 해당 조건에 성립되지 않는지 빨리 파악할 필요가 있다고 생각했다.</li>
+  <li>해당 코드는 에레 스토 테네스의 체를 이용하여 작성하였다.</li>
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 12921]]></summary></entry><entry><title type="html">덧칠하기</title><link href="/codingtest/2025-06-02-codingtest_60/" rel="alternate" type="text/html" title="덧칠하기" /><published>2025-06-02T00:30:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_60</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_60/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -131,7 +227,7 @@ int solution(int n, int m, vector&lt;int&gt; section) {
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 22분  
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 161989]]></summary></entry><entry><title type="html">과일 장수</title><link href="/codingtest/2025-06-02-codingtest_59/" rel="alternate" type="text/html" title="과일 장수" /><published>2025-06-02T00:20:00+00:00</published><updated>2025-06-02T05:08:36+00:00</updated><id>/codingtest/codingtest_59</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_59/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 161989]]></summary></entry><entry><title type="html">과일 장수</title><link href="/codingtest/2025-06-02-codingtest_59/" rel="alternate" type="text/html" title="과일 장수" /><published>2025-06-02T00:20:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_59</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_59/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -241,7 +337,7 @@ int solution(int k, int m, vector&lt;int&gt; score) {
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 21분  
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 135808]]></summary></entry><entry><title type="html">모의고사</title><link href="/codingtest/2025-06-02-codingtest_58/" rel="alternate" type="text/html" title="모의고사" /><published>2025-06-02T00:10:00+00:00</published><updated>2025-06-02T05:08:36+00:00</updated><id>/codingtest/codingtest_58</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_58/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 135808]]></summary></entry><entry><title type="html">모의고사</title><link href="/codingtest/2025-06-02-codingtest_58/" rel="alternate" type="text/html" title="모의고사" /><published>2025-06-02T00:10:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_58</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_58/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -341,7 +437,7 @@ vector&lt;int&gt; solution(vector&lt;int&gt; answers) {
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 9분  
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 42840]]></summary></entry><entry><title type="html">2016년</title><link href="/codingtest/2025-06-02-codingtest_57/" rel="alternate" type="text/html" title="2016년" /><published>2025-06-02T00:00:00+00:00</published><updated>2025-06-02T05:08:36+00:00</updated><id>/codingtest/codingtest_57</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_57/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 42840]]></summary></entry><entry><title type="html">2016년</title><link href="/codingtest/2025-06-02-codingtest_57/" rel="alternate" type="text/html" title="2016년" /><published>2025-06-02T00:00:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_57</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_57/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -428,7 +524,7 @@ string solution(int a, int b) {
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 15분 30초 
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 12901]]></summary></entry><entry><title type="html">폰켓몬</title><link href="/codingtest/2025-05-30-codingtest_56/" rel="alternate" type="text/html" title="폰켓몬" /><published>2025-05-30T01:10:00+00:00</published><updated>2025-06-02T05:08:36+00:00</updated><id>/codingtest/codingtest_56</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_56/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 12901]]></summary></entry><entry><title type="html">폰켓몬</title><link href="/codingtest/2025-05-30-codingtest_56/" rel="alternate" type="text/html" title="폰켓몬" /><published>2025-05-30T01:10:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_56</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_56/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -534,7 +630,7 @@ int solution(vector&lt;int&gt; nums)
 <ul>
   <li>배열에서 중복을 제거하기 위해서는 정렬을 하고 삭제해야 한다.</li>
   <li>중복 삭제는 배열.erase(unique(배열.begin(), 배열.end()), 배열.end()); 이다.</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 1845]]></summary></entry><entry><title type="html">기사단원의 무기</title><link href="/codingtest/2025-05-30-codingtest_55/" rel="alternate" type="text/html" title="기사단원의 무기" /><published>2025-05-30T01:00:00+00:00</published><updated>2025-06-02T05:08:36+00:00</updated><id>/codingtest/codingtest_55</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_55/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 1845]]></summary></entry><entry><title type="html">기사단원의 무기</title><link href="/codingtest/2025-05-30-codingtest_55/" rel="alternate" type="text/html" title="기사단원의 무기" /><published>2025-05-30T01:00:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_55</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_55/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -630,7 +726,7 @@ int solution(int number, int limit, int power) {
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 14분 30초 
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 136798]]></summary></entry><entry><title type="html">추억 점수</title><link href="/codingtest/2025-05-30-codingtest_54/" rel="alternate" type="text/html" title="추억 점수" /><published>2025-05-30T00:50:00+00:00</published><updated>2025-06-02T05:08:36+00:00</updated><id>/codingtest/codingtest_54</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_54/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 136798]]></summary></entry><entry><title type="html">추억 점수</title><link href="/codingtest/2025-05-30-codingtest_54/" rel="alternate" type="text/html" title="추억 점수" /><published>2025-05-30T00:50:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_54</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_54/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -728,7 +824,7 @@ vector&lt;int&gt; solution(vector&lt;string&gt; name, vector&lt;int&gt; yearning
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 10분 
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 176963]]></summary></entry><entry><title type="html">[1차] 비밀지도</title><link href="/codingtest/2025-05-30-codingtest_53/" rel="alternate" type="text/html" title="[1차] 비밀지도" /><published>2025-05-30T00:40:00+00:00</published><updated>2025-06-02T05:08:36+00:00</updated><id>/codingtest/codingtest_53</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_53/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 176963]]></summary></entry><entry><title type="html">[1차] 비밀지도</title><link href="/codingtest/2025-05-30-codingtest_53/" rel="alternate" type="text/html" title="[1차] 비밀지도" /><published>2025-05-30T00:40:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_53</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_53/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -838,7 +934,7 @@ vector&lt;string&gt; solution(int n, vector&lt;int&gt; arr1, vector&lt;int&gt; a
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 22분 30초 
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 17681]]></summary></entry><entry><title type="html">카드 뭉치</title><link href="/codingtest/2025-05-30-codingtest_52/" rel="alternate" type="text/html" title="카드 뭉치" /><published>2025-05-30T00:30:00+00:00</published><updated>2025-06-02T05:08:36+00:00</updated><id>/codingtest/codingtest_52</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_52/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 17681]]></summary></entry><entry><title type="html">카드 뭉치</title><link href="/codingtest/2025-05-30-codingtest_52/" rel="alternate" type="text/html" title="카드 뭉치" /><published>2025-05-30T00:30:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_52</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_52/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -940,105 +1036,4 @@ string solution(vector&lt;string&gt; cards1, vector&lt;string&gt; cards2, vector
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 5분 
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 159994]]></summary></entry><entry><title type="html">명예의 전당 (1)</title><link href="/codingtest/2025-05-30-codingtest_51/" rel="alternate" type="text/html" title="명예의 전당 (1)" /><published>2025-05-30T00:20:00+00:00</published><updated>2025-06-02T05:08:36+00:00</updated><id>/codingtest/codingtest_51</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_51/"><![CDATA[<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-문제 설명
-</p>
-
-<p>“명예의 전당”이라는 TV 프로그램에서는 매일 1명의 가수가 노래를 부르고, 시청자들의 문자 투표수로 가수에게 점수를 부여합니다. 매일 출연한 가수의 점수가 지금까지 출연 가수들의 점수 중 상위 k번째 이내이면 해당 가수의 점수를 명예의 전당이라는 목록에 올려 기념합니다. 즉 프로그램 시작 이후 초기에 k일까지는 모든 출연 가수의 점수가 명예의 전당에 오르게 됩니다. k일 다음부터는 출연 가수의 점수가 기존의 명예의 전당 목록의 k번째 순위의 가수 점수보다 더 높으면, 출연 가수의 점수가 명예의 전당에 오르게 되고 기존의 k번째 순위의 점수는 명예의 전당에서 내려오게 됩니다.</p>
-
-<p>이 프로그램에서는 매일 “명예의 전당”의 최하위 점수를 발표합니다. 예를 들어, k = 3이고, 7일 동안 진행된 가수의 점수가 [10, 100, 20, 150, 1, 100, 200]이라면, 명예의 전당에서 발표된 점수는 아래의 그림과 같이 [10, 10, 10, 20, 20, 100, 100]입니다.</p>
-
-<p><img src="../../assets/img/codingtest/138477_1.png" width="500" height="160" /></p>
-
-<p>명예의 전당 목록의 점수의 개수 k, 1일부터 마지막 날까지 출연한 가수들의 점수인 score가 주어졌을 때, 매일 발표된 명예의 전당의 최하위 점수를 return하는 solution 함수를 완성해주세요.</p>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-제한 사항
-</p>
-
-<ul>
-  <li>3 ≤ k ≤ 100</li>
-  <li>7 ≤ score의 길이 ≤ 1,000
-    <ul>
-      <li>0 ≤ score[i] ≤ 2,000</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-입출력 예
-</p>
-
-<p><img src="../../assets/img/codingtest/138477_2.png" width="500" height="155" /></p>
-
-<p>입출력 예 #1</p>
-<ul>
-  <li>문제의 예시와 같습니다.</li>
-</ul>
-
-<p>입출력 예 #2</p>
-<ul>
-  <li>아래와 같이, [0, 0, 0, 0, 20, 40, 70, 70, 150, 300]을 return합니다.</li>
-</ul>
-
-<p><img src="../../assets/img/codingtest/138477_3.png" width="500" height="130" /></p>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-작성 내용
-</p>
-
-<pre><code class="language-C++">#include &lt;iostream&gt;
-#include &lt;vector&gt;
-#include &lt;algorithm&gt;
-
-using namespace std;
-
-vector&lt;int&gt; solution(int k, vector&lt;int&gt; score) {
-    vector&lt;int&gt; answer;
-    vector&lt;int&gt; temp(k,-1);
-    
-    for(int i=0; i&lt;score.size(); i++)
-    {
-        for(int j=0; j&lt;k; j++)
-        {
-            if(temp[j] &lt; score[i])
-            {
-                temp[j] = score[i];
-               
-                break;
-            }
-        }
-        sort(temp.begin(), temp.end());
-        
-        for(int j=0; j&lt;k; j++)
-        {
-            if(temp[j] != -1)
-            {
-                answer.push_back(temp[j]);
-                
-                break;
-            }
-        }
-    }
-    
-    return answer;
-}
-</code></pre>
-
-<hr />
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-정답 여부 O
-</p>
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-소요 시간 : 9분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 138477]]></summary></entry></feed>
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 159994]]></summary></entry></feed>

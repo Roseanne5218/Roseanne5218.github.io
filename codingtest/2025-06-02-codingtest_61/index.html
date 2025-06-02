@@ -30,20 +30,20 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   
     
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>리팩토링(Refactoring) | Roseanne</title>
+<title>소수 찾기 | Roseanne</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="리팩토링(Refactoring)" />
+<meta property="og:title" content="소수 찾기" />
 <meta name="author" content="Roseanne5218" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="Key Words - 3" />
-<meta property="og:description" content="Key Words - 3" />
+<meta name="description" content="Programmers - 12921" />
+<meta property="og:description" content="Programmers - 12921" />
 <meta property="og:site_name" content="Roseanne" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-11-28T18:00:00+00:00" />
+<meta property="article:published_time" content="2025-06-02T00:40:00+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="리팩토링(Refactoring)" />
+<meta property="twitter:title" content="소수 찾기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-02T14:41:37+00:00","datePublished":"2024-11-28T18:00:00+00:00","description":"Key Words - 3","headline":"리팩토링(Refactoring)","mainEntityOfPage":{"@type":"WebPage","@id":"/keywords/2024-11-28-keywords_3/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/keywords/2024-11-28-keywords_3/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-02T14:41:37+00:00","datePublished":"2025-06-02T00:40:00+00:00","description":"Programmers - 12921","headline":"소수 찾기","mainEntityOfPage":{"@type":"WebPage","@id":"/codingtest/2025-06-02-codingtest_61/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/codingtest/2025-06-02-codingtest_61/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -75,7 +75,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta name="generator" content="Hydejack v9.2.1" />
 
 
-<link rel="alternate" href="/keywords/2024-11-28-keywords_3/" hreflang="ko">
+<link rel="alternate" href="/codingtest/2025-06-02-codingtest_61/" hreflang="ko">
 
 <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Roseanne" />
 
@@ -241,14 +241,14 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
           <span>/</span>
           
           
-          <a href="/keywords/">keywords</a>
+          <a href="/codingtest/">codingtest</a>
         
       </li>
     
       <li>
         
           <span>/</span>
-          <span>2024-11-28-keywords_3</span>
+          <span>2025-06-02-codingtest_61</span>
         
       </li>
     
@@ -265,31 +265,23 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 
 
-<article id="post-keywords-keywords_3" class="page post mb6" role="article">
+<article id="post-codingtest-codingtest_61" class="page post mb6" role="article">
   <header>
     <h1 class="post-title flip-project-title">
       
-        리팩토링(Refactoring)
+        소수 찾기
       
     </h1>
 
     <div class="post-date">
       
       <span class="ellipsis mr1">
-        <time datetime="2024-11-28T18:00:00+00:00">28 Nov 2024</time> in <a href="/keywords/" class="flip-title">KEY WORDS</a> 
+        <time datetime="2025-06-02T00:40:00+00:00">02 Jun 2025</time> in <a href="/codingtest/" class="flip-title">CODING TEST</a> 
       </span>
       
         
           
           
-          
-            
-            
-            <span class="ellipsis" data-tippy-content="Last modified at: 02 Jun 2025">
-              <span class="sr-only">Last modified at:</span>
-              <span class="icon-history"></span>
-              <time datetime="2025-06-02T14:41:37+00:00">2025-06-02</time>
-            </span>
           
         
       
@@ -304,7 +296,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
   
     <p class="note-sm" >
-      Key Words - 3
+      Programmers - 12921
 
     </p>
   
@@ -313,21 +305,103 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
   </header>
 
   
-    <p style="color:#8f7cee; font-size:25px; font-weight:bold">
-리팩토링(Refactoring)
+    <hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+문제 설명
 </p>
+
+<p>1부터 입력받은 숫자 n 사이에 있는 소수의 개수를 반환하는 함수, solution을 만들어 보세요.</p>
+
+<p>소수는 1과 자기 자신으로만 나누어지는 수를 의미합니다.
+(1은 소수가 아닙니다.)</p>
 
 <hr />
 
-<p>리팩토링은 코드 스멜의 해결 방법으로 외부 동작을 바꾸지 않으면서 내부 구조를 개선하는 방법이다.</p>
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+제한 사항
+</p>
 
-<p>결과의 변경 없이 코드의 구조를 재조정하는 것으로 가독성을 높이고, 유지보수를 쉽게 하기 위한 목적이다.</p>
+<ul>
+  <li>n은 2이상 1000000이하의 자연수입니다.</li>
+</ul>
 
-<p>코드의 외부 행위는 바꾸지 않고 내부 구조를 개선시켜 소프트웨어를 보다 이해하기 쉽고, 수정하기 쉽도록 만드는 것이다.</p>
+<hr />
 
-<p>리팩토링의 목적은 소프트웨어의 디자인, 구조 또는 구현(비기능)을 개선하는 것으로, 기능을 보존하면서 개선을 시도한다. 리팩토링의 잠재적 이점으로는 코드 가속성 향상, 복잡성 감소 등이 있고, 이러한 개선은 소스코드의 유지보수성을 향상시키고, 더 보기 쉬운 내부 아키텍처 또는 객체 모델을 만들어 확장성을 개선하는 데 도움이 된다. 또 다른 잠재적 목표는 성능 개선이다.</p>
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+입출력 예
+</p>
 
-<p>리팩토링을 잘 수행하면 소프트웨어 개발자가 시스템의 숨겨진 버그나 취약점을 발견하고 수정하는 데 도움이 된다. 이는 로직을 단순화하고 불필요한 복잡성을 제거한다.</p>
+<p><img src="../../assets/img/codingtest/12921.png" width="120" height="93" /></p>
+
+<p>입출력 예 #1</p>
+<ul>
+  <li>1부터 10 사이의 소수는 [2,3,5,7] 4개가 존재하므로 4를 반환</li>
+</ul>
+
+<p>입출력 예 #2</p>
+<ul>
+  <li>1부터 5 사이의 소수는 [2,3,5] 3개가 존재하므로 3를 반환</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+작성 내용
+</p>
+
+<pre><code class="language-C++">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+int solution(int n) {
+    int answer = 0;
+    
+    vector&lt;bool&gt; Count(n+1, true);
+    Count[0] = false;
+    Count[1] = false;
+    
+    for(int i=2; i*i&lt;=n; i++)
+    {
+        if(Count[i] == true)
+        {
+            for(int j=i*i; j&lt;=n; j+=i)
+            {
+                Count[j] = false;
+            }
+        }
+    }
+    
+    for(int i=0; i&lt;=n; i++)
+    {
+        if(Count[i] == true)
+            answer++;
+    }
+    
+    return answer;
+}
+</code></pre>
+
+<hr />
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+정답 여부 X
+</p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+소요 시간 : 15분  
+</p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+문제 소감
+</p>
+
+<ul>
+  <li>해당 문제를 풀면서 소수를 찾는 거도 방법이지만, 효율성을 높이기 위해서는 소수가 아닌 것을 제외하는 방법이 빠르다는 것을 알았다.</li>
+  <li>배제를 하기 위해서 어떤 숫자가 해당 조건에 성립되지 않는지 빨리 파악할 필요가 있다고 생각했다.</li>
+  <li>해당 코드는 에레 스토 테네스의 체를 이용하여 작성하였다.</li>
+</ul>
 
   
 </article>
@@ -452,7 +526,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
     
 
 
-  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/codingtest/2025-06-02-codingtest_61/" class="flip-title"><span>소수 찾기</span></a>  <time class="faded fine" datetime="2025-06-02T00:40:00+00:00">02 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/2025-06-02-codingtest_60/" class="flip-title"><span>덧칠하기</span></a>  <time class="faded fine" datetime="2025-06-02T00:30:00+00:00">02 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/2025-06-02-codingtest_59/" class="flip-title"><span>과일 장수</span></a>  <time class="faded fine" datetime="2025-06-02T00:20:00+00:00">02 Jun 2025</time></li>            </ul></aside>
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/codingtest/2025-06-02-codingtest_60/" class="flip-title"><span>덧칠하기</span></a>  <time class="faded fine" datetime="2025-06-02T00:30:00+00:00">02 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/2025-06-02-codingtest_59/" class="flip-title"><span>과일 장수</span></a>  <time class="faded fine" datetime="2025-06-02T00:20:00+00:00">02 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/2025-06-02-codingtest_58/" class="flip-title"><span>모의고사</span></a>  <time class="faded fine" datetime="2025-06-02T00:10:00+00:00">02 Jun 2025</time></li>            </ul></aside>
 
   
 
