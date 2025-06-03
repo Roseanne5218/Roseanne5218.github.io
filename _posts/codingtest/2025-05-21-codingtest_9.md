@@ -4,6 +4,8 @@ title:  "CODING TEST"
 date:   2025-05-21 09:20:00 +0900
 categories:
   - codingtest
+  - programmers
+  - Lv.1
 description: >
   Programmers - 12937
 ---
@@ -32,7 +34,7 @@ description: >
 입출력 예
 </p>
 
-<img src = "../../assets/img/codingtest/12937.png" width = "160" height = "110">
+<img src = "/assets/img/codingtest/12937.png" width = "160" height = "110">
 
 ---
 

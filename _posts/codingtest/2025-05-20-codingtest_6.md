@@ -4,6 +4,7 @@ title:  "CODING TEST"
 date:   2025-05-20 09:00:00 +0900
 categories:
   - codingtest
+  - programmers
   - Lv.1
 description: >
   Programmers - 12928
@@ -32,7 +33,7 @@ description: >
 입출력 예
 </p>
 
-<img src = "../../assets/img/codingtest/12928.png" width = "150" height = "110">
+<img src = "/assets/img/codingtest/12928.png" width = "150" height = "110">
 
 입출력 예 #1
 - 12의 약수는 1, 2, 3, 4, 6, 12입니다. 이를 모두 더하면 28입니다.

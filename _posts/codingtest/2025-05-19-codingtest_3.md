@@ -4,6 +4,7 @@ title:  "CODING TEST"
 date:   2025-05-19 09:00:00 +0900
 categories:
   - codingtest
+  - backjoon
 description: >
   BackJoon - 1546
 ---
