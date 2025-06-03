@@ -1,23 +1,20 @@
 .highlight {
-  background: #fdf6f0;  /* 아주 연한 베이지톤 */
-  color: #3c3c3c;
-  padding: 1em;
-  border-radius: 8px;
-  font-size: 0.95em;
-  overflow-x: auto;
-  font-family: 'Fira Code', 'Consolas', monospace;
-  line-height: 1.6;
-  border: 1px solid #e4dcd2;
+  background: #fdf6f0 !important;
+  color: #3c3c3c !important;
+  padding: 1em !important;
+  border-radius: 8px !important;
+  font-size: 0.95em !important;
+  overflow-x: auto !important;
+  font-family: 'Fira Code', 'Consolas', monospace !important;
+  line-height: 1.6 !important;
+  border: 1px solid #e4dcd2 !important;
 }
 
-/* 토큰 스타일 */
-.highlight .k     { color: #b39ddb; } /* keyword - 연보라 */
-.highlight .s     { color: #80cbc4; } /* string - 파스텔 청록 */
-.highlight .n     { color: #546e7a; } /* name/identifier - 연그레이블루 */
-.highlight .c     { color: #a1887f; font-style: italic; } /* comment - 연갈색 */
-.highlight .o     { color: #f48fb1; } /* operator - 연분홍 */
-.highlight .mi    { color: #ffab91; } /* integer - 파스텔 오렌지 */
-.highlight .p     { color: #90caf9; } /* punctuation - 연하늘색 */
-.highlight .nb    { color: #ce93d8; } /* built-in name - 연보라 */
-
-.highlight .err   { background-color: #ffcdd2; color: #c62828; } /* error */
+.highlight .k     { color: #b39ddb !important; }
+.highlight .s     { color: #80cbc4 !important; }
+.highlight .n     { color: #546e7a !important; }
+.highlight .c     { color: #a1887f !important; font-style: italic !important; }
+.highlight .o     { color: #f48fb1 !important; }
+.highlight .mi    { color: #ffab91 !important; }
+.highlight .p     { color: #90caf9 !important; }
+.highlight .nb    { color: #ce93d8 !important; }
