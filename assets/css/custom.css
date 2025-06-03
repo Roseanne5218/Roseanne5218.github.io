@@ -36,14 +36,18 @@
 
 
 .highlight pre {
-  overflow-x: auto !important;   /* ← 여기에만 스크롤 허용 */
+  overflow-x: auto !important;
   margin: 0 !important;
   padding: 0 !important;
-  background: none !important;
+  background: transparent !important;
 }
 
 .highlight pre code {
   overflow-x: visible !important;
   display: inline !important;
+  white-space: pre-wrap !important;
+}
+
+.highlight pre code {
   white-space: pre !important;
 }
