@@ -1,5 +1,341 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-06-02T14:42:28+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">소수 찾기</title><link href="/codingtest/2025-06-02-codingtest_61/" rel="alternate" type="text/html" title="소수 찾기" /><published>2025-06-02T00:40:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_61</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_61/"><![CDATA[<hr />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-06-03T03:52:41+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">[PCCE 기출문제] 9번 / 지폐 접기</title><link href="/codingtest/2025-06-03-codingtest_64/" rel="alternate" type="text/html" title="[PCCE 기출문제] 9번 / 지폐 접기" /><published>2025-06-03T00:20:00+00:00</published><updated>2025-06-03T03:51:56+00:00</updated><id>/codingtest/codingtest_64</id><content type="html" xml:base="/codingtest/2025-06-03-codingtest_64/"><![CDATA[<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+문제 설명
+</p>
+
+<p>민수는 다양한 지폐를 수집하는 취미를 가지고 있습니다. 지폐마다 크기가 달라 지갑에 넣으려면 여러 번 접어서 넣어야 합니다. 예를 들어 지갑의 크기가 30 * 15이고 지폐의 크기가 26 * 17이라면 한번 반으로 접어 13 * 17 크기로 만든 뒤 90도 돌려서 지갑에 넣을 수 있습니다. 지폐를 접을 때는 다음과 같은 규칙을 지킵니다.</p>
+
+<ul>
+  <li>지폐를 접을 때는 항상 길이가 긴 쪽을 반으로 접습니다.</li>
+  <li>접기 전 길이가 홀수였다면 접은 후 소수점 이하는 버립니다.</li>
+  <li>접힌 지폐를 그대로 또는 90도 돌려서 지갑에 넣을 수 있다면 그만 접습니다.</li>
+</ul>
+
+<p>지갑의 가로, 세로 크기를 담은 정수 리스트 wallet과 지폐의 가로, 세로 크기를 담은 정수 리스트 bill가 주어질 때, 지갑에 넣기 위해서 지폐를 최소 몇 번 접어야 하는지 return하도록 solution함수를 완성해 주세요.</p>
+
+<p>지폐를 지갑에 넣기 위해 접어야 하는 최소 횟수를 구하는 과정은 다음과 같습니다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 지폐를 접은 횟수를 저장할 정수 변수 answer를 만들고 0을 저장합니다.
+2. 반복문을 이용해 bill의 작은 값이 wallet의 작은 값 보다 크거나 bill의 큰 값이 wallet의 큰 값 보다 큰 동안 아래 과정을 반복합니다.
+    2-1. bill[0]이 bill[1]보다 크다면
+        bill[0]을 2로 나누고 나머지는 버립니다.
+    2-2. 그렇지 않다면
+        bill[1]을 2로 나누고 나머지는 버립니다.
+    2-3. answer을 1 증가시킵니다.
+3. answer을 return합니다.
+</code></pre></div></div>
+
+<ul>
+  <li>위의 의사코드와 작동방식이 다른 코드를 작성해도 상관없습니다.</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+제한 사항
+</p>
+
+<ul>
+  <li>wallet의 길이 = bill의 길이 = 2</li>
+  <li>10 ≤ wallet[0], wallet[1] ≤ 100</li>
+  <li>10 ≤ bill[0], bill[1] ≤ 2,000</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+입출력 예
+</p>
+
+<p><img src="../../assets/img/codingtest/340199.png" width="270" height="113" /></p>
+
+<p>입출력 예 #1</p>
+<ul>
+  <li>지문과 동일합니다.</li>
+</ul>
+
+<p>입출력 예 #2</p>
+<ul>
+  <li>지폐를 접으면 다음과 같이 크기가 줄어듭니다. 따라서 4번 접으면 지갑에 넣을 수 있습니다.</li>
+  <li>[100, 241] -&gt; [100, 120] -&gt; [100, 60] -&gt; [50, 60] -&gt; [50, 30]</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+작성 내용
+</p>
+
+<pre><code class="language-C++">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+int solution(vector&lt;int&gt; wallet, vector&lt;int&gt; bill) {
+    int answer = 0;
+    
+    sort(wallet.begin(), wallet.end());
+    sort(bill.begin(), bill.end()); 
+    
+    while(true)
+    {    
+        if(wallet[0] &gt;= bill[0] &amp;&amp; wallet[1] &gt;= bill[1])
+            break;
+        
+        else
+        {
+            bill[1] /= 2;
+            
+            answer++;
+        }
+        
+        if(bill[0] &gt; bill[1])
+        {
+            int temp = bill[0];
+            bill[0] = bill[1];
+            bill[1] = temp;
+        }
+    }
+    
+    return answer;
+}
+</code></pre>
+
+<hr />
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+정답 여부 O
+</p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+소요 시간 : 28분 30초  
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 340199]]></summary></entry><entry><title type="html">옹알이 (2)</title><link href="/codingtest/2025-06-03-codingtest_63/" rel="alternate" type="text/html" title="옹알이 (2)" /><published>2025-06-03T00:10:00+00:00</published><updated>2025-06-03T03:51:56+00:00</updated><id>/codingtest/codingtest_63</id><content type="html" xml:base="/codingtest/2025-06-03-codingtest_63/"><![CDATA[<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+문제 설명
+</p>
+
+<p>머쓱이는 태어난 지 11개월 된 조카를 돌보고 있습니다. 조카는 아직 “aya”, “ye”, “woo”, “ma” 네 가지 발음과 네 가지 발음을 조합해서 만들 수 있는 발음밖에 하지 못하고 연속해서 같은 발음을 하는 것을 어려워합니다. 문자열 배열 babbling이 매개변수로 주어질 때, 머쓱이의 조카가 발음할 수 있는 단어의 개수를 return하도록 solution 함수를 완성해주세요.</p>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+제한 사항
+</p>
+
+<ul>
+  <li>1 ≤ babbling의 길이 ≤ 100</li>
+  <li>1 ≤ babbling[i]의 길이 ≤ 30</li>
+  <li>문자열은 알파벳 소문자로만 이루어져 있습니다.</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+입출력 예
+</p>
+
+<p><img src="../../assets/img/codingtest/133499.png" width="400" height="100" /></p>
+
+<p>입출력 예 #1</p>
+<ul>
+  <li>[“aya”, “yee”, “u”, “maa”]에서 발음할 수 있는 것은 “aya”뿐입니다. 따라서 1을 return합니다.</li>
+</ul>
+
+<p>입출력 예 #2</p>
+<ul>
+  <li>[“ayaye”, “uuu”, “yeye”, “yemawoo”, “ayaayaa”]에서 발음할 수 있는 것은 “aya” + “ye” = “ayaye”, “ye” + “ma” + “woo” = “yemawoo”로 2개입니다. “yeye”는 같은 발음이 연속되므로 발음할 수 없습니다. 따라서 2를 return합니다.</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+유의사항
+</p>
+
+<ul>
+  <li>네 가지를 붙여 만들 수 있는 발음 이외에는 어떤 발음도 할 수 없는 것으로 규정합니다. 예를 들어 “woowo”는 “woo”는 발음할 수 있지만 “wo”를 발음할 수 없기 때문에 할 수 없는 발음입니다.</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+작성 내용
+</p>
+
+<pre><code class="language-C++">#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+int solution(vector&lt;string&gt; babbling) {
+    int answer = 0;
+    
+    vector&lt;string&gt; Words = {"aya", "ye", "woo", "ma"};
+    
+    for(int i=0; i&lt;babbling.size(); i++)
+    {
+        string s = "";
+        bool check = true;
+        int prev = -1;
+        
+        for(int l=0; l&lt;babbling[i].size(); l++)
+        {
+            s += babbling[i][l];
+        
+            for(int j=0; j&lt;4; j++)
+            {
+                if(s == Words[j] &amp;&amp; prev == j)
+                {
+                    check = false;
+                    break;
+                }
+                else if(s == Words[j])
+                {
+                    s = "";
+                    prev = j;
+                }
+            }
+            
+            if(s.length() &gt; 3)
+            {
+                check = false;
+                break;
+            }
+        }
+        
+        bool check2 = false; 
+        
+        for(int l=0; l&lt;Words.size(); l++)
+        {
+            if(s == Words[l] &amp;&amp; prev != l)
+            {
+                check2 = true;
+            }
+        }
+
+        if(s == "")
+            check2 = true;
+        
+        if(check2 == false)
+            check = false;
+        
+        if(check == true)
+            answer++;
+    }
+    
+    return answer;
+}
+</code></pre>
+
+<hr />
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+정답 여부 O
+</p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+소요 시간 : 30분 30초  
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 133499]]></summary></entry><entry><title type="html">소수 찾기</title><link href="/codingtest/2025-06-03-codingtest_62/" rel="alternate" type="text/html" title="소수 찾기" /><published>2025-06-03T00:00:00+00:00</published><updated>2025-06-03T03:51:56+00:00</updated><id>/codingtest/codingtest_62</id><content type="html" xml:base="/codingtest/2025-06-03-codingtest_62/"><![CDATA[<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+문제 설명
+</p>
+
+<p>주어진 숫자 중 3개의 수를 더했을 때 소수가 되는 경우의 개수를 구하려고 합니다. 숫자들이 들어있는 배열 nums가 매개변수로 주어질 때, nums에 있는 숫자들 중 서로 다른 3개를 골라 더했을 때 소수가 되는 경우의 개수를 return 하도록 solution 함수를 완성해주세요.</p>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+제한 사항
+</p>
+
+<ul>
+  <li>nums에 들어있는 숫자의 개수는 3개 이상 50개 이하입니다.</li>
+  <li>nums의 각 원소는 1 이상 1,000 이하의 자연수이며, 중복된 숫자가 들어있지 않습니다.</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+입출력 예
+</p>
+
+<p><img src="../../assets/img/codingtest/12977.png" width="150" height="97" /></p>
+
+<p>입출력 예 #1</p>
+<ul>
+  <li>[1,2,4]를 이용해서 7을 만들 수 있습니다.</li>
+</ul>
+
+<p>입출력 예 #2</p>
+<ul>
+  <li>[1,2,4]를 이용해서 7을 만들 수 있습니다.</li>
+  <li>[1,4,6]을 이용해서 11을 만들 수 있습니다.</li>
+  <li>[2,4,7]을 이용해서 13을 만들 수 있습니다.</li>
+  <li>[4,6,7]을 이용해서 17을 만들 수 있습니다.</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+작성 내용
+</p>
+
+<pre><code class="language-C++">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+int solution(vector&lt;int&gt; nums) {
+    int answer = 0;
+
+    vector&lt;int&gt; number;
+    
+    for(int i=0; i&lt;nums.size()-2; i++)
+    {
+        for(int j=i+1; j&lt;nums.size()-1; j++)
+        {
+            for(int l=j+1; l&lt;nums.size(); l++)
+            {
+                int sum = nums[i] + nums[j] + nums[l];
+                number.push_back(sum);
+            }
+        }
+    }
+    
+    for(int i=0; i&lt;number.size(); i++)
+    {
+        bool check = false;
+        for(int l=2; l*l&lt;=number[i]; l++)
+        {
+            if(number[i] % l == 0)
+            {
+                check = true;   
+                break;
+            }
+        }
+        if(check == false)
+            answer++;
+    }
+
+    return answer;
+}
+</code></pre>
+
+<hr />
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+정답 여부 O
+</p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+소요 시간 : 21분  
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 12977]]></summary></entry><entry><title type="html">소수 찾기</title><link href="/codingtest/2025-06-02-codingtest_61/" rel="alternate" type="text/html" title="소수 찾기" /><published>2025-06-02T00:40:00+00:00</published><updated>2025-06-03T03:51:56+00:00</updated><id>/codingtest/codingtest_61</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_61/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -95,7 +431,7 @@ int solution(int n) {
   <li>해당 문제를 풀면서 소수를 찾는 거도 방법이지만, 효율성을 높이기 위해서는 소수가 아닌 것을 제외하는 방법이 빠르다는 것을 알았다.</li>
   <li>배제를 하기 위해서 어떤 숫자가 해당 조건에 성립되지 않는지 빨리 파악할 필요가 있다고 생각했다.</li>
   <li>해당 코드는 에레 스토 테네스의 체를 이용하여 작성하였다.</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 12921]]></summary></entry><entry><title type="html">덧칠하기</title><link href="/codingtest/2025-06-02-codingtest_60/" rel="alternate" type="text/html" title="덧칠하기" /><published>2025-06-02T00:30:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_60</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_60/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 12921]]></summary></entry><entry><title type="html">덧칠하기</title><link href="/codingtest/2025-06-02-codingtest_60/" rel="alternate" type="text/html" title="덧칠하기" /><published>2025-06-02T00:30:00+00:00</published><updated>2025-06-03T03:51:56+00:00</updated><id>/codingtest/codingtest_60</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_60/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -227,7 +563,7 @@ int solution(int n, int m, vector&lt;int&gt; section) {
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 22분  
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 161989]]></summary></entry><entry><title type="html">과일 장수</title><link href="/codingtest/2025-06-02-codingtest_59/" rel="alternate" type="text/html" title="과일 장수" /><published>2025-06-02T00:20:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_59</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_59/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 161989]]></summary></entry><entry><title type="html">과일 장수</title><link href="/codingtest/2025-06-02-codingtest_59/" rel="alternate" type="text/html" title="과일 장수" /><published>2025-06-02T00:20:00+00:00</published><updated>2025-06-03T03:51:56+00:00</updated><id>/codingtest/codingtest_59</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_59/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -337,7 +673,7 @@ int solution(int k, int m, vector&lt;int&gt; score) {
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 21분  
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 135808]]></summary></entry><entry><title type="html">모의고사</title><link href="/codingtest/2025-06-02-codingtest_58/" rel="alternate" type="text/html" title="모의고사" /><published>2025-06-02T00:10:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_58</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_58/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 135808]]></summary></entry><entry><title type="html">모의고사</title><link href="/codingtest/2025-06-02-codingtest_58/" rel="alternate" type="text/html" title="모의고사" /><published>2025-06-02T00:10:00+00:00</published><updated>2025-06-03T03:51:56+00:00</updated><id>/codingtest/codingtest_58</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_58/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -437,7 +773,7 @@ vector&lt;int&gt; solution(vector&lt;int&gt; answers) {
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 9분  
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 42840]]></summary></entry><entry><title type="html">2016년</title><link href="/codingtest/2025-06-02-codingtest_57/" rel="alternate" type="text/html" title="2016년" /><published>2025-06-02T00:00:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_57</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_57/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 42840]]></summary></entry><entry><title type="html">2016년</title><link href="/codingtest/2025-06-02-codingtest_57/" rel="alternate" type="text/html" title="2016년" /><published>2025-06-02T00:00:00+00:00</published><updated>2025-06-03T03:51:56+00:00</updated><id>/codingtest/codingtest_57</id><content type="html" xml:base="/codingtest/2025-06-02-codingtest_57/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -524,7 +860,7 @@ string solution(int a, int b) {
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 15분 30초 
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 12901]]></summary></entry><entry><title type="html">폰켓몬</title><link href="/codingtest/2025-05-30-codingtest_56/" rel="alternate" type="text/html" title="폰켓몬" /><published>2025-05-30T01:10:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_56</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_56/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 12901]]></summary></entry><entry><title type="html">폰켓몬</title><link href="/codingtest/2025-05-30-codingtest_56/" rel="alternate" type="text/html" title="폰켓몬" /><published>2025-05-30T01:10:00+00:00</published><updated>2025-06-03T03:51:56+00:00</updated><id>/codingtest/codingtest_56</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_56/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -630,7 +966,7 @@ int solution(vector&lt;int&gt; nums)
 <ul>
   <li>배열에서 중복을 제거하기 위해서는 정렬을 하고 삭제해야 한다.</li>
   <li>중복 삭제는 배열.erase(unique(배열.begin(), 배열.end()), 배열.end()); 이다.</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 1845]]></summary></entry><entry><title type="html">기사단원의 무기</title><link href="/codingtest/2025-05-30-codingtest_55/" rel="alternate" type="text/html" title="기사단원의 무기" /><published>2025-05-30T01:00:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_55</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_55/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 1845]]></summary></entry><entry><title type="html">기사단원의 무기</title><link href="/codingtest/2025-05-30-codingtest_55/" rel="alternate" type="text/html" title="기사단원의 무기" /><published>2025-05-30T01:00:00+00:00</published><updated>2025-06-03T03:51:56+00:00</updated><id>/codingtest/codingtest_55</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_55/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -726,314 +1062,4 @@ int solution(int number, int limit, int power) {
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 14분 30초 
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 136798]]></summary></entry><entry><title type="html">추억 점수</title><link href="/codingtest/2025-05-30-codingtest_54/" rel="alternate" type="text/html" title="추억 점수" /><published>2025-05-30T00:50:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_54</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_54/"><![CDATA[<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-문제 설명
-</p>
-
-<p>사진들을 보며 추억에 젖어 있던 루는 사진별로 추억 점수를 매길려고 합니다. 사진 속에 나오는 인물의 그리움 점수를 모두 합산한 값이 해당 사진의 추억 점수가 됩니다. 예를 들어 사진 속 인물의 이름이 [“may”, “kein”, “kain”]이고 각 인물의 그리움 점수가 [5점, 10점, 1점]일 때 해당 사진의 추억 점수는 16(5 + 10 + 1)점이 됩니다. 다른 사진 속 인물의 이름이 [“kali”, “mari”, “don”, “tony”]이고 [“kali”, “mari”, “don”]의 그리움 점수가 각각 [11점, 1점, 55점]]이고, “tony”는 그리움 점수가 없을 때, 이 사진의 추억 점수는 3명의 그리움 점수를 합한 67(11 + 1 + 55)점입니다.</p>
-
-<p>그리워하는 사람의 이름을 담은 문자열 배열 name, 각 사람별 그리움 점수를 담은 정수 배열 yearning, 각 사진에 찍힌 인물의 이름을 담은 이차원 문자열 배열 photo가 매개변수로 주어질 때, 사진들의 추억 점수를 photo에 주어진 순서대로 배열에 담아 return하는 solution 함수를 완성해주세요.</p>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-제한 사항
-</p>
-
-<ul>
-  <li>3 ≤ name의 길이 = yearning의 길이≤ 100
-    <ul>
-      <li>3 ≤ name의 원소의 길이 ≤ 7</li>
-      <li>name의 원소들은 알파벳 소문자로만 이루어져 있습니다.</li>
-      <li>name에는 중복된 값이 들어가지 않습니다.</li>
-      <li>1 ≤ yearning[i] ≤ 100</li>
-      <li>yearning[i]는 i번째 사람의 그리움 점수입니다.</li>
-    </ul>
-  </li>
-  <li>3 ≤ photo의 길이 ≤ 100
-    <ul>
-      <li>1 ≤ photo[i]의 길이 ≤ 100</li>
-      <li>3 ≤ photo[i]의 원소(문자열)의 길이 ≤ 7</li>
-      <li>photo[i]의 원소들은 알파벳 소문자로만 이루어져 있습니다.</li>
-      <li>photo[i]의 원소들은 중복된 값이 들어가지 않습니다.</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-입출력 예
-</p>
-
-<p><img src="../../assets/img/codingtest/176963.png" width="700" height="215" /></p>
-
-<p>입출력 예 #1</p>
-<ul>
-  <li>첫 번째 사진 속 “may”, “kein”, “kain”, “radi”의 그리움 점수를 합치면 19(5 + 10 + 1 + 3)점 입니다. 두 번째 사진 속 그리워하는 사람들인 “may”와 “kein”의 그리움 점수를 합치면 15(5 + 10)점입니다. 세 번째 사진의 경우 “kain”과 “may”만 그리워하므로 둘의 그리움 점수를 합한 6(1 + 5)점이 사진의 추억 점수입니다. 따라서 [19, 15, 6]을 반환합니다.</li>
-</ul>
-
-<p>입출력 예 #2</p>
-<ul>
-  <li>첫 번째 사진 속 그리워하는 사람들인 “kali”, “mari”, “don”의 그리움 점수를 합치면 67(11 + 1 + 55)점입니다. 두 번째 사진 속엔 그리워하는 인물이 없으므로 0점입니다. 세 번째 사진 속 그리워하는 사람은 “don”만 있으므로 55점입니다. 따라서 [67, 0, 55]를 반환합니다.</li>
-</ul>
-
-<p>입출력 예 #3</p>
-<ul>
-  <li>설명 생략</li>
-</ul>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-작성 내용
-</p>
-
-<pre><code class="language-C++">#include &lt;iostream&gt;
-#include &lt;string&gt;
-#include &lt;vector&gt;
-
-using namespace std;
-
-vector&lt;int&gt; solution(vector&lt;string&gt; name, vector&lt;int&gt; yearning, vector&lt;vector&lt;string&gt;&gt; photo) {
-    vector&lt;int&gt; answer(photo.size(), 0);
-    
-    for(int i=0; i&lt;photo.size(); i++)
-    {
-        for(int j=0; j&lt;photo[i].size(); j++)
-        {
-            for(int k=0; k&lt;name.size(); k++)
-            {
-                if(name[k] == photo[i][j])
-                    answer[i] += yearning[k];
-            }
-        }
-    }
-    
-    return answer;
-}
-</code></pre>
-
-<hr />
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-정답 여부 O
-</p>
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-소요 시간 : 10분 
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 176963]]></summary></entry><entry><title type="html">[1차] 비밀지도</title><link href="/codingtest/2025-05-30-codingtest_53/" rel="alternate" type="text/html" title="[1차] 비밀지도" /><published>2025-05-30T00:40:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_53</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_53/"><![CDATA[<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-문제 설명
-</p>
-
-<p>네오는 평소 프로도가 비상금을 숨겨놓는 장소를 알려줄 비밀지도를 손에 넣었다. 그런데 이 비밀지도는 숫자로 암호화되어 있어 위치를 확인하기 위해서는 암호를 해독해야 한다. 다행히 지도 암호를 해독할 방법을 적어놓은 메모도 함께 발견했다.</p>
-
-<ol>
-  <li>지도는 한 변의 길이가 n인 정사각형 배열 형태로, 각 칸은 “공백”(“ “) 또는 “벽”(“#”) 두 종류로 이루어져 있다.</li>
-  <li>전체 지도는 두 장의 지도를 겹쳐서 얻을 수 있다. 각각 “지도 1”과 “지도 2”라고 하자. 지도 1 또는 지도 2 중 어느 하나라도 벽인 부분은 전체 지도에서도 벽이다. 지도 1과 지도 2에서 모두 공백인 부분은 전체 지도에서도 공백이다.</li>
-  <li>“지도 1”과 “지도 2”는 각각 정수 배열로 암호화되어 있다.</li>
-  <li>암호화된 배열은 지도의 각 가로줄에서 벽 부분을 1, 공백 부분을 0으로 부호화했을 때 얻어지는 이진수에 해당하는 값의 배열이다.</li>
-</ol>
-
-<p><img src="../../assets/img/codingtest/17681.png" width="500" height="750" /></p>
-
-<p>네오가 프로도의 비상금을 손에 넣을 수 있도록, 비밀지도의 암호를 해독하는 작업을 도와줄 프로그램을 작성하라.</p>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-제한 사항
-</p>
-
-<ul>
-  <li>입력으로 지도의 한 변 크기 n 과 2개의 정수 배열 arr1, arr2가 들어온다.</li>
-</ul>
-
-<p>1 ≦ n ≦ 16
-arr1, arr2는 길이 n인 정수 배열로 주어진다.
-정수 배열의 각 원소 x를 이진수로 변환했을 때의 길이는 n 이하이다. 즉, 0 ≦ x ≦ 2n - 1을 만족한다.</p>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-출력 형식
-</p>
-
-<ul>
-  <li>원래의 비밀지도를 해독하여 ‘#’, 공백으로 구성된 문자열 배열로 출력하라.</li>
-</ul>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-입출력 예
-</p>
-
-<p><img src="../../assets/img/codingtest/17681_2.png" width="600" height="100" /></p>
-
-<p><img src="../../assets/img/codingtest/17681_3.png" width="600" height="100" /></p>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-작성 내용
-</p>
-
-<pre><code class="language-C++">#include &lt;iostream&gt;
-#include &lt;string&gt;
-#include &lt;vector&gt;
-#include &lt;algorithm&gt;
-
-using namespace std;
-
-vector&lt;int&gt; Calculate(int n, int number)
-{
-    vector&lt;int&gt; answer;
-    
-    for(int i=0; i&lt;n; i++)
-    {
-        answer.push_back(number % 2);
-        number /= 2;
-    }
-    
-    reverse(answer.begin(), answer.end());
-    
-    return answer;
-}
-
-vector&lt;string&gt; solution(int n, vector&lt;int&gt; arr1, vector&lt;int&gt; arr2) {
-    vector&lt;string&gt; answer(n, "");
-    
-    for(int i=0; i&lt;arr1.size(); i++)
-    {
-        vector&lt;int&gt; a1 = Calculate(n, arr1[i]);
-        vector&lt;int&gt; a2 = Calculate(n, arr2[i]);
-        
-        for(int j=0; j&lt;a1.size(); j++)
-        {
-            if(a1[j] == 0 &amp;&amp; a2[j] == 0)
-                answer[i] += " ";
-            else
-                answer[i] += "#";
-        }
-    }
-    
-    return answer;
-}
-</code></pre>
-
-<hr />
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-정답 여부 O
-</p>
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-소요 시간 : 22분 30초 
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 17681]]></summary></entry><entry><title type="html">카드 뭉치</title><link href="/codingtest/2025-05-30-codingtest_52/" rel="alternate" type="text/html" title="카드 뭉치" /><published>2025-05-30T00:30:00+00:00</published><updated>2025-06-02T14:41:37+00:00</updated><id>/codingtest/codingtest_52</id><content type="html" xml:base="/codingtest/2025-05-30-codingtest_52/"><![CDATA[<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-문제 설명
-</p>
-
-<p>코니는 영어 단어가 적힌 카드 뭉치 두 개를 선물로 받았습니다. 코니는 다음과 같은 규칙으로 카드에 적힌 단어들을 사용해 원하는 순서의 단어 배열을 만들 수 있는지 알고 싶습니다.</p>
-
-<ul>
-  <li>원하는 카드 뭉치에서 카드를 순서대로 한 장씩 사용합니다.</li>
-  <li>한 번 사용한 카드는 다시 사용할 수 없습니다.</li>
-  <li>카드를 사용하지 않고 다음 카드로 넘어갈 수 없습니다.</li>
-  <li>기존에 주어진 카드 뭉치의 단어 순서는 바꿀 수 없습니다.</li>
-</ul>
-
-<p>예를 들어 첫 번째 카드 뭉치에 순서대로 [“i”, “drink”, “water”], 두 번째 카드 뭉치에 순서대로 [“want”, “to”]가 적혀있을 때 [“i”, “want”, “to”, “drink”, “water”] 순서의 단어 배열을 만들려고 한다면 첫 번째 카드 뭉치에서 “i”를 사용한 후 두 번째 카드 뭉치에서 “want”와 “to”를 사용하고 첫 번째 카드뭉치에 “drink”와 “water”를 차례대로 사용하면 원하는 순서의 단어 배열을 만들 수 있습니다.</p>
-
-<p>문자열로 이루어진 배열 cards1, cards2와 원하는 단어 배열 goal이 매개변수로 주어질 때, cards1과 cards2에 적힌 단어들로 goal를 만들 있다면 “Yes”를, 만들 수 없다면 “No”를 return하는 solution 함수를 완성해주세요.</p>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-제한 사항
-</p>
-
-<ul>
-  <li>1 ≤ cards1의 길이, cards2의 길이 ≤ 10
-    <ul>
-      <li>1 ≤ cards1[i]의 길이, cards2[i]의 길이 ≤ 10</li>
-      <li>cards1과 cards2에는 서로 다른 단어만 존재합니다.</li>
-    </ul>
-  </li>
-  <li>2 ≤ goal의 길이 ≤ cards1의 길이 + cards2의 길이
-    <ul>
-      <li>1 ≤ goal[i]의 길이 ≤ 10</li>
-      <li>goal의 원소는 cards1과 cards2의 원소들로만 이루어져 있습니다.</li>
-    </ul>
-  </li>
-  <li>cards1, cards2, goal의 문자열들은 모두 알파벳 소문자로만 이루어져 있습니다.</li>
-</ul>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-입출력 예
-</p>
-
-<p><img src="../../assets/img/codingtest/159994.png" width="600" height="100" /></p>
-
-<p>입출력 예 #1</p>
-<ul>
-  <li>본문과 같습니다.</li>
-</ul>
-
-<p>입출력 예 #2</p>
-<ul>
-  <li>cards1에서 “i”를 사용하고 cards2에서 “want”와 “to”를 사용하여 “i want to”까지는 만들 수 있지만 “water”가 “drink”보다 먼저 사용되어야 하기 때문에 해당 문장을 완성시킬 수 없습니다. 따라서 “No”를 반환합니다.</li>
-</ul>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-작성 내용
-</p>
-
-<pre><code class="language-C++">#include &lt;iostream&gt;
-#include &lt;string&gt;
-#include &lt;vector&gt;
-
-using namespace std;
-
-string solution(vector&lt;string&gt; cards1, vector&lt;string&gt; cards2, vector&lt;string&gt; goal) {
-    string answer = "Yes";
-    
-    int c1 = 0, c2 = 0;
-    
-    for(int i=0; i&lt;goal.size(); i++)
-    {
-        if(goal[i] == cards1[c1])
-            c1++;
-        else if(goal[i] == cards2[c2])
-            c2++;
-        else
-        {
-            answer = "No";
-            
-            break;
-        }
-    }
-    
-    return answer;
-}
-</code></pre>
-
-<hr />
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-정답 여부 O
-</p>
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-소요 시간 : 5분 
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 159994]]></summary></entry></feed>
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><summary type="html"><![CDATA[Programmers - 136798]]></summary></entry></feed>
