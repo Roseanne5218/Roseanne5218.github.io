@@ -53,7 +53,7 @@ N×N개의 수가 N×N 크기의 표에 채워져 있다. (x1, y1)부터 (x2, y2
 작성 내용
 </p>
 
-```C++
+```cpp
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -111,7 +111,7 @@ int main()
 정답 내용
 </p>
 
-```C++
+```cpp
 #include <iostream>
 #include <vector>
 using namespace std;

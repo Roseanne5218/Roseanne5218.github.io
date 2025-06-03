@@ -47,7 +47,7 @@ description: >
 작성 내용
 </p>
 
-```C++
+```cpp
 #include <iostream>
 
 using namespace std;

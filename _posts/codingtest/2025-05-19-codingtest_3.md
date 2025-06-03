@@ -44,7 +44,7 @@ description: >
 작성 내용
 </p>
 
-```C++
+```cpp
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -93,7 +93,7 @@ int main()
 정답 내용
 </p>
 
-```C++
+```cpp
 #include <iostream>
 using namespace std;
 

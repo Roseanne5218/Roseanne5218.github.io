@@ -40,7 +40,7 @@ N개의 숫자가 공백 없이 쓰여있다. 이 숫자를 모두 합해서 출
 작성 내용
 </p>
 
-```C++
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -75,7 +75,7 @@ int main()
 정답 내용
 </p>
 
-```C++
+```cpp
 #include <iostream>
 using namespace std;
 
