@@ -1,6 +1,6 @@
 ---
 layout: list
-title: C++
+title: Lv1
 slug: Lv1
 description: >
   Lv1
