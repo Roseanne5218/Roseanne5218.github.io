@@ -37,17 +37,20 @@
 
 .highlight pre {
   overflow-x: auto !important;
-  margin: 0 !important;
   padding: 0 !important;
+  margin: 0 !important;
   background: transparent !important;
-}
-
-.highlight pre code {
-  overflow-x: visible !important;
-  display: inline !important;
-  white-space: pre-wrap !important;
-}
-
-.highlight pre code {
+  border: none !important;
   white-space: pre !important;
+  display: block !important;
+}
+
+.highlight pre code {
+  display: block !important;
+  overflow-x: visible !important;
+  white-space: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: none !important;
+  border: none !important;
 }
