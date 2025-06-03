@@ -85,8 +85,6 @@ menu:
       url:             /backjoon/
     - title:           PROGRAMMERS
     - url:             /programmers/
-    - title:           Lv.1
-    - url:             /Lv.1/
   - title:             ABOUT
     url:               /about/
 
