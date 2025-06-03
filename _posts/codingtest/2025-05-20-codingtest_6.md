@@ -4,7 +4,7 @@ title:  "CODING TEST"
 date:   2025-05-20 09:00:00 +0900
 categories:
   - codingtest
-  - Lv1
+  - Lv.1
 description: >
   Programmers - 12928
 ---

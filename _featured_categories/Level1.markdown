@@ -1,7 +1,7 @@
 ---
 layout: list
-title: Lv1
-slug: Lv1
+title: Lv.1
+slug: Lv.1
 description: >
-  Lv1
+  Lv.1
 ---
