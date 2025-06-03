@@ -43,7 +43,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="과일 장수" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-03T09:19:28+00:00","datePublished":"2025-06-02T00:20:00+00:00","description":"Programmers - 135808","headline":"과일 장수","mainEntityOfPage":{"@type":"WebPage","@id":"/codingtest/programmers/lv.1/2025-06-02-codingtest_59/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/codingtest/programmers/lv.1/2025-06-02-codingtest_59/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-03T09:22:14+00:00","datePublished":"2025-06-02T00:20:00+00:00","description":"Programmers - 135808","headline":"과일 장수","mainEntityOfPage":{"@type":"WebPage","@id":"/codingtest/programmers/lv.1/2025-06-02-codingtest_59/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/codingtest/programmers/lv.1/2025-06-02-codingtest_59/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -114,7 +114,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-06-03T09:20:13+00:00',
+    INDEX_KEY: 'index--2025-06-03T09:23:03+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -308,7 +308,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
             <span class="ellipsis" data-tippy-content="Last modified at: 03 Jun 2025">
               <span class="sr-only">Last modified at:</span>
               <span class="icon-history"></span>
-              <time datetime="2025-06-03T09:19:28+00:00">2025-06-03</time>
+              <time datetime="2025-06-03T09:22:14+00:00">2025-06-03</time>
             </span>
           
         
@@ -401,39 +401,39 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 작성 내용
 </p>
 
-<pre><code class="language-C++">#include &lt;iostream&gt;
-#include &lt;vector&gt;
-#include &lt;algorithm&gt;
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
-using namespace std;
-
-int solution(int k, int m, vector&lt;int&gt; score) {
-    int answer = 0;
+<span class="kt">int</span> <span class="nf">solution</span><span class="p">(</span><span class="kt">int</span> <span class="n">k</span><span class="p">,</span> <span class="kt">int</span> <span class="n">m</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">score</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     
-    sort(score.begin(), score.end());
+    <span class="n">sort</span><span class="p">(</span><span class="n">score</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">score</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
     
-    int s = score.size() / m;
-    vector&lt;vector&lt;int&gt;&gt; Num(s, vector&lt;int&gt;(m)); 
+    <span class="kt">int</span> <span class="n">s</span> <span class="o">=</span> <span class="n">score</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">/</span> <span class="n">m</span><span class="p">;</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">Num</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">m</span><span class="p">));</span> 
     
-    for(int i=0; i&lt;s; i++)
-    {
-         for(int l=0; l&lt;m; l++)
-         {
-             int temp = score[score.size() - 1];
-             score.pop_back();
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">s</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+         <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">l</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span> <span class="n">l</span><span class="o">++</span><span class="p">)</span>
+         <span class="p">{</span>
+             <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">score</span><span class="p">[</span><span class="n">score</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">];</span>
+             <span class="n">score</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
              
-             Num[i][m-l-1] = temp;
-         }
-    }
+             <span class="n">Num</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">m</span><span class="o">-</span><span class="n">l</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+         <span class="p">}</span>
+    <span class="p">}</span>
     
-    for(int i=0; i&lt;Num.size(); i++)
-    {
-        answer += Num[i][0] * m;
-    }
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">Num</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">answer</span> <span class="o">+=</span> <span class="n">Num</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">m</span><span class="p">;</span>
+    <span class="p">}</span>
     
-    return answer;
-}
-</code></pre>
+    <span class="k">return</span> <span class="n">answer</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <hr />
 

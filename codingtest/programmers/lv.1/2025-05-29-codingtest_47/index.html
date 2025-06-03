@@ -43,7 +43,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="숫자 문자열과 영단어" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-03T09:19:28+00:00","datePublished":"2025-05-29T00:10:00+00:00","description":"Programmers - 81301","headline":"숫자 문자열과 영단어","mainEntityOfPage":{"@type":"WebPage","@id":"/codingtest/programmers/lv.1/2025-05-29-codingtest_47/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/codingtest/programmers/lv.1/2025-05-29-codingtest_47/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-03T09:22:14+00:00","datePublished":"2025-05-29T00:10:00+00:00","description":"Programmers - 81301","headline":"숫자 문자열과 영단어","mainEntityOfPage":{"@type":"WebPage","@id":"/codingtest/programmers/lv.1/2025-05-29-codingtest_47/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/codingtest/programmers/lv.1/2025-05-29-codingtest_47/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -114,7 +114,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-06-03T09:20:13+00:00',
+    INDEX_KEY: 'index--2025-06-03T09:23:03+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -308,7 +308,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
             <span class="ellipsis" data-tippy-content="Last modified at: 03 Jun 2025">
               <span class="sr-only">Last modified at:</span>
               <span class="icon-history"></span>
-              <time datetime="2025-06-03T09:19:28+00:00">2025-06-03</time>
+              <time datetime="2025-06-03T09:22:14+00:00">2025-06-03</time>
             </span>
           
         
@@ -402,72 +402,72 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 작성 내용
 </p>
 
-<pre><code class="language-C++">#include &lt;iostream&gt;
-#include &lt;string&gt;
-#include &lt;vector&gt;
-#include &lt;cmath&gt;
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;cmath&gt;</span><span class="cp">
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
-using namespace std;
+<span class="kt">int</span> <span class="nf">Check</span><span class="p">(</span><span class="n">string</span> <span class="n">s</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">s</span> <span class="o">==</span> <span class="s">"zero"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">s</span> <span class="o">==</span> <span class="s">"one"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">s</span> <span class="o">==</span> <span class="s">"two"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">s</span> <span class="o">==</span> <span class="s">"three"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">s</span> <span class="o">==</span> <span class="s">"four"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">4</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">s</span> <span class="o">==</span> <span class="s">"five"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">5</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">s</span> <span class="o">==</span> <span class="s">"six"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">6</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">s</span> <span class="o">==</span> <span class="s">"seven"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">7</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">s</span> <span class="o">==</span> <span class="s">"eight"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">8</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">s</span> <span class="o">==</span> <span class="s">"nine"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">9</span><span class="p">;</span>
+    <span class="k">else</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
 
-int Check(string s)
-{
-    if(s == "zero")
-        return 0;
-    else if(s == "one")
-        return 1;
-    else if(s == "two")
-        return 2;
-    else if(s == "three")
-        return 3;
-    else if(s == "four")
-        return 4;
-    else if(s == "five")
-        return 5;
-    else if(s == "six")
-        return 6;
-    else if(s == "seven")
-        return 7;
-    else if(s == "eight")
-        return 8;
-    else if(s == "nine")
-        return 9;
-    else
-        return -1;
-}
-
-int solution(string s) {
-    int answer = 0;
+<span class="kt">int</span> <span class="nf">solution</span><span class="p">(</span><span class="n">string</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     
-    vector&lt;int&gt; num;
+    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">num</span><span class="p">;</span>
     
-    string a = "";
-    for(int i=0; i&lt;s.length(); i++)
-    {
-        if(s[i] &gt;= 97 &amp;&amp; s[i] &lt;= 122)
-        {
-            a += s[i];
+    <span class="n">string</span> <span class="n">a</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">s</span><span class="p">.</span><span class="n">length</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">97</span> <span class="o">&amp;&amp;</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">122</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">a</span> <span class="o">+=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
             
-            if(Check(a) != -1)
-            {
-                num.push_back(Check(a));
-                a = "";
-            }
-        }
-        else
-        {
-            num.push_back(s[i] - '0');
-        }
-    }
+            <span class="k">if</span><span class="p">(</span><span class="n">Check</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">num</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">Check</span><span class="p">(</span><span class="n">a</span><span class="p">));</span>
+                <span class="n">a</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">else</span>
+        <span class="p">{</span>
+            <span class="n">num</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="sc">'0'</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
     
-    for(int i=0; i&lt;num.size(); i++)
-    {
-        cout&lt;&lt;num[i];
-        answer += pow(10, (num.size() - i - 1)) * num[i];
-    }
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">num</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+        <span class="n">answer</span> <span class="o">+=</span> <span class="n">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="p">(</span><span class="n">num</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">-</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="o">*</span> <span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="p">}</span>
     
-    return answer;
-}
-</code></pre>
+    <span class="k">return</span> <span class="n">answer</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <hr />
 

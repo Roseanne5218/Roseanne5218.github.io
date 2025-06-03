@@ -43,7 +43,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="소수 만들기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-03T09:19:28+00:00","datePublished":"2025-06-03T00:00:00+00:00","description":"Programmers - 12977","headline":"소수 만들기","mainEntityOfPage":{"@type":"WebPage","@id":"/codingtest/programmers/lv.1/2025-06-03-codingtest_62/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/codingtest/programmers/lv.1/2025-06-03-codingtest_62/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-03T09:22:14+00:00","datePublished":"2025-06-03T00:00:00+00:00","description":"Programmers - 12977","headline":"소수 만들기","mainEntityOfPage":{"@type":"WebPage","@id":"/codingtest/programmers/lv.1/2025-06-03-codingtest_62/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/codingtest/programmers/lv.1/2025-06-03-codingtest_62/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -114,7 +114,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-06-03T09:20:13+00:00',
+    INDEX_KEY: 'index--2025-06-03T09:23:03+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -371,46 +371,46 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 작성 내용
 </p>
 
-<pre><code class="language-C++">#include &lt;iostream&gt;
-#include &lt;vector&gt;
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
-using namespace std;
+<span class="kt">int</span> <span class="nf">solution</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">nums</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
-int solution(vector&lt;int&gt; nums) {
-    int answer = 0;
-
-    vector&lt;int&gt; number;
+    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">number</span><span class="p">;</span>
     
-    for(int i=0; i&lt;nums.size()-2; i++)
-    {
-        for(int j=i+1; j&lt;nums.size()-1; j++)
-        {
-            for(int l=j+1; l&lt;nums.size(); l++)
-            {
-                int sum = nums[i] + nums[j] + nums[l];
-                number.push_back(sum);
-            }
-        }
-    }
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">-</span><span class="mi">2</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">l</span><span class="o">=</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span> <span class="n">l</span><span class="o">&lt;</span><span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">l</span><span class="o">++</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">nums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">nums</span><span class="p">[</span><span class="n">l</span><span class="p">];</span>
+                <span class="n">number</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">sum</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
     
-    for(int i=0; i&lt;number.size(); i++)
-    {
-        bool check = false;
-        for(int l=2; l*l&lt;=number[i]; l++)
-        {
-            if(number[i] % l == 0)
-            {
-                check = true;   
-                break;
-            }
-        }
-        if(check == false)
-            answer++;
-    }
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">number</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">bool</span> <span class="n">check</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">l</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span> <span class="n">l</span><span class="o">*</span><span class="n">l</span><span class="o">&lt;=</span><span class="n">number</span><span class="p">[</span><span class="n">i</span><span class="p">];</span> <span class="n">l</span><span class="o">++</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">number</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%</span> <span class="n">l</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">check</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>   
+                <span class="k">break</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">check</span> <span class="o">==</span> <span class="nb">false</span><span class="p">)</span>
+            <span class="n">answer</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    return answer;
-}
-</code></pre>
+    <span class="k">return</span> <span class="n">answer</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <hr />
 
