@@ -33,7 +33,7 @@ description: >
 입출력 예
 </p>
 
-<img src = "../../assets/img/codingtest/12931.png" width = "150" height = "110">
+<img src = "../../assets/img/codingtest/programmers/Lv.1/12931.png" width = "150" height = "110">
 
 입출력 예 #1
 - 문제의 예시와 같습니다.
