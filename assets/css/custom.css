@@ -1,20 +1,21 @@
 .highlight {
-  background: #fdf6f0 !important;
-  color: #3c3c3c !important;
+  background: #fcf9f5 !important;  /* 더 밝고 연한 베이지 */
+  color: #444444 !important;       /* 어두운 회색 텍스트 */
   padding: 1em !important;
   border-radius: 8px !important;
   font-size: 0.95em !important;
   overflow-x: auto !important;
   font-family: 'Fira Code', 'Consolas', monospace !important;
   line-height: 1.6 !important;
-  border: 1px solid #e4dcd2 !important;
+  border: 1px solid #eae2da !important;
 }
 
-.highlight .k     { color: #b39ddb !important; }
-.highlight .s     { color: #80cbc4 !important; }
-.highlight .n     { color: #546e7a !important; }
-.highlight .c     { color: #a1887f !important; font-style: italic !important; }
-.highlight .o     { color: #f48fb1 !important; }
-.highlight .mi    { color: #ffab91 !important; }
-.highlight .p     { color: #90caf9 !important; }
-.highlight .nb    { color: #ce93d8 !important; }
+/* 연한 파스텔 계열로 톤 다운된 색상들 */
+.highlight .k  { color: #d3c2f0 !important; }  /* keyword - 연보라 (톤 다운) */
+.highlight .s  { color: #b1e1db !important; }  /* string - 민트톤 연청록 */
+.highlight .n  { color: #90a4ae !important; }  /* name - 회청색 */
+.highlight .c  { color: #c1a98d !important; font-style: italic !important; } /* comment - 옅은 갈색 */
+.highlight .o  { color: #f3b3c7 !important; }  /* operator - 연분홍 */
+.highlight .mi { color: #ffd8b5 !important; }  /* integer - 살구빛 파스텔 */
+.highlight .p  { color: #c5dbf3 !important; }  /* punctuation - 연하늘색 */
+.highlight .nb { color: #dec2ec !important; }  /* built-in name - 라벤더 */
