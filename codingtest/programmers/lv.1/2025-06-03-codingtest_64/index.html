@@ -43,7 +43,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[PCCE 기출문제] 9번 / 지폐 접기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-03T08:58:23+00:00","datePublished":"2025-06-03T00:20:00+00:00","description":"Programmers - 340199","headline":"[PCCE 기출문제] 9번 / 지폐 접기","mainEntityOfPage":{"@type":"WebPage","@id":"/codingtest/programmers/lv.1/2025-06-03-codingtest_64/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/codingtest/programmers/lv.1/2025-06-03-codingtest_64/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-03T09:01:00+00:00","datePublished":"2025-06-03T00:20:00+00:00","description":"Programmers - 340199","headline":"[PCCE 기출문제] 9번 / 지폐 접기","mainEntityOfPage":{"@type":"WebPage","@id":"/codingtest/programmers/lv.1/2025-06-03-codingtest_64/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/codingtest/programmers/lv.1/2025-06-03-codingtest_64/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -114,7 +114,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-06-03T08:59:09+00:00',
+    INDEX_KEY: 'index--2025-06-03T09:01:46+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -343,14 +343,14 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 <p>지폐를 지갑에 넣기 위해 접어야 하는 최소 횟수를 구하는 과정은 다음과 같습니다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 지폐를 접은 횟수를 저장할 정수 변수 answer를 만들고 0을 저장합니다.
-2. 반복문을 이용해 bill의 작은 값이 wallet의 작은 값 보다 크거나 bill의 큰 값이 wallet의 큰 값 보다 큰 동안 아래 과정을 반복합니다.
-    2-1. bill[0]이 bill[1]보다 크다면
-        bill[0]을 2로 나누고 나머지는 버립니다.
-    2-2. 그렇지 않다면
-        bill[1]을 2로 나누고 나머지는 버립니다.
-    2-3. answer을 1 증가시킵니다.
-3. answer을 return합니다.
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mf">1.</span> <span class="err">지폐를</span> <span class="err">접은</span> <span class="err">횟수를</span> <span class="err">저장할</span> <span class="err">정수</span> <span class="err">변수</span> <span class="n">answer</span><span class="err">를</span> <span class="err">만들고</span> <span class="mi">0</span><span class="err">을</span> <span class="err">저장합니다</span><span class="p">.</span>
+<span class="mf">2.</span> <span class="err">반복문을</span> <span class="err">이용해</span> <span class="n">bill</span><span class="err">의</span> <span class="err">작은</span> <span class="err">값이</span> <span class="n">wallet</span><span class="err">의</span> <span class="err">작은</span> <span class="err">값</span> <span class="err">보다</span> <span class="err">크거나</span> <span class="n">bill</span><span class="err">의</span> <span class="err">큰</span> <span class="err">값이</span> <span class="n">wallet</span><span class="err">의</span> <span class="err">큰</span> <span class="err">값</span> <span class="err">보다</span> <span class="err">큰</span> <span class="err">동안</span> <span class="err">아래</span> <span class="err">과정을</span> <span class="err">반복합니다</span><span class="p">.</span>
+    <span class="mi">2</span><span class="o">-</span><span class="mf">1.</span> <span class="n">bill</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="err">이</span> <span class="n">bill</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="err">보다</span> <span class="err">크다면</span>
+        <span class="n">bill</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="err">을</span> <span class="mi">2</span><span class="err">로</span> <span class="err">나누고</span> <span class="err">나머지는</span> <span class="err">버립니다</span><span class="p">.</span>
+    <span class="mi">2</span><span class="o">-</span><span class="mf">2.</span> <span class="err">그렇지</span> <span class="err">않다면</span>
+        <span class="n">bill</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="err">을</span> <span class="mi">2</span><span class="err">로</span> <span class="err">나누고</span> <span class="err">나머지는</span> <span class="err">버립니다</span><span class="p">.</span>
+    <span class="mi">2</span><span class="o">-</span><span class="mf">3.</span> <span class="n">answer</span><span class="err">을</span> <span class="mi">1</span> <span class="err">증가시킵니다</span><span class="p">.</span>
+<span class="mf">3.</span> <span class="n">answer</span><span class="err">을</span> <span class="k">return</span><span class="err">합니다</span><span class="p">.</span>
 </code></pre></div></div>
 
 <ul>
