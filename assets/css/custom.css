@@ -1,21 +1,35 @@
+/* 전체 배경 및 공통 스타일 */
 .highlight {
-  background: #fcf9f5 !important;  /* 더 밝고 연한 베이지 */
-  color: #444444 !important;       /* 어두운 회색 텍스트 */
-  padding: 1em !important;
-  border-radius: 8px !important;
-  font-size: 0.95em !important;
-  overflow-x: auto !important;
-  font-family: 'Fira Code', 'Consolas', monospace !important;
-  line-height: 1.6 !important;
-  border: 1px solid #eae2da !important;
+  background: #fcf9f5 !important;  /* 연베이지 */
+  color: #444 !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 0.95em;
+  border-radius: 8px;
+  padding: 1em;
+  line-height: 1.6;
+  overflow-x: auto;
 }
 
-/* 연한 파스텔 계열로 톤 다운된 색상들 */
-.highlight .k  { color: #d3c2f0 !important; }  /* keyword - 연보라 (톤 다운) */
-.highlight .s  { color: #b1e1db !important; }  /* string - 민트톤 연청록 */
-.highlight .n  { color: #90a4ae !important; }  /* name - 회청색 */
-.highlight .c  { color: #c1a98d !important; font-style: italic !important; } /* comment - 옅은 갈색 */
-.highlight .o  { color: #f3b3c7 !important; }  /* operator - 연분홍 */
-.highlight .mi { color: #ffd8b5 !important; }  /* integer - 살구빛 파스텔 */
-.highlight .p  { color: #c5dbf3 !important; }  /* punctuation - 연하늘색 */
-.highlight .nb { color: #dec2ec !important; }  /* built-in name - 라벤더 */
+/* 헤더 관련 */
+.highlight .cp    { color: #a0a0a0 !important; font-style: italic; }   /* #include, #define 등 */
+.highlight .nn    { color: #cbb4e2 !important; }  /* std / vector 등 네임스페이스 */
+.highlight .nl    { color: #cbb4e2 !important; }  /* include, etc */
+
+/* 타입 및 선언 */
+.highlight .kt    { color: #c7afea !important; }  /* int, float 등 keyword-type */
+.highlight .n     { color: #6b7089 !important; }  /* 변수명, 이름 등 (약한 회색) */
+.highlight .nc    { color: #b9a6cf !important; }  /* 클래스 이름 등 */
+.highlight .nb    { color: #b9b9da !important; }  /* 내장 함수, 예: sort */
+
+/* 제어문, 키워드 */
+.highlight .k     { color: #b49ccf !important; }  /* for, while, return 등 keyword */
+.highlight .kd    { color: #b49ccf !important; }  /* class, struct, typedef 등 */
+
+/* 문자열, 숫자, 연산자 */
+.highlight .s     { color: #b1e1db !important; }  /* 문자열 */
+.highlight .mi    { color: #ffd8b5 !important; }  /* 정수 숫자 */
+.highlight .o     { color: #e8aacb !important; }  /* 연산자 */
+.highlight .p     { color: #c0d5ec !important; }  /* 괄호, 세미콜론 등 */
+
+/* 주석 */
+.highlight .c     { color: #c1a98d !important; font-style: italic !important; }
