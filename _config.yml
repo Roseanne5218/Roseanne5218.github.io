@@ -83,9 +83,8 @@ menu:
     submenu:
     - title:           PROGRAMMERS
     - url:             /programmers/
-    submenu:
-      - title:           Lv.1
-      - url:             /Lv.1/
+    - title:           Lv.1
+    - url:             /Lv.1/
   - title:             ABOUT
     url:               /about/
 
