@@ -81,8 +81,11 @@ menu:
   - title:             CODING TEST
     url:               /codingtest/
     submenu:
-    - title:           Lv.1
-    - url:             /Lv.1/
+    - title:           PROGRAMMERS
+    - url:             /programmers/
+    submenu:
+      - title:           Lv.1
+      - url:             /Lv.1/
   - title:             ABOUT
     url:               /about/
 
