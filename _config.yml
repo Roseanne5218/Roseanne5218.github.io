@@ -455,3 +455,9 @@ jekyll_compose:
       links:
         - title: Project Link
           url: https://Roseanne5218.github.io
+
+
+highlighter: rouge
+
+rouge:
+  theme: base16
