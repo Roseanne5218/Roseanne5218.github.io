@@ -33,3 +33,17 @@
 
 /* 주석 */
 .highlight .c     { color: #c1a98d !important; font-style: italic !important; }
+
+
+.highlight pre {
+  overflow-x: auto !important;   /* ← 여기에만 스크롤 허용 */
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+}
+
+.highlight pre code {
+  overflow-x: visible !important;
+  display: inline !important;
+  white-space: pre !important;
+}
