@@ -6,7 +6,7 @@ categories:
   - unrealportfolio
   - character
 description: >
-  예시글 입니다.
+  CAIController
 ---
 ## CAIController
 
@@ -35,9 +35,18 @@ description: >
 함수 목록
 </p>
 
+<p style = "color:#ed9ece; font-size:20px; font-weight:bold">
+생성자
+</p>
+
 - CAIController()
   - AI에 감지 거리, 시야각, 감지 대상을 설정하여 Perception을 이용하여 플레이어 또는 적을 감지할 수 있도록 해준다.
 - BeginPlay()
+
+<p style = "color:#ed9ece; font-size:20px; font-weight:bold">
+상태 설정 / 업데이트트
+</p>
+
 - OnPossess(APawn* InPawn)
   - AI가 가진 BehaviorTree을 실행하고 AIComponent에 BlackBoard를 연결한다.
 - OnPerceptionUpdate(const TArray<AActor*>& UpdatedActors)
