@@ -16,7 +16,7 @@ description: >
 코드 구조
 </p>
 
-<img src = "/assets/img/unrealportfolio/CAIController.png" width = "1000" height = "400">
+<img src = "/assets/img/unrealportfolio/CAIController.png" width = "1500" height = "400">
 
 ---
 
