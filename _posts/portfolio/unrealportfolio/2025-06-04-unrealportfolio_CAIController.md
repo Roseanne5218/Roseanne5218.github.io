@@ -3,7 +3,6 @@ layout: post
 title:  "UNREAL PORTFOLIO"
 date:   2025-06-04 09:00:00 + 0900
 categories:
-  - portfolio
   - unrealportfolio
   - character
 description: >
