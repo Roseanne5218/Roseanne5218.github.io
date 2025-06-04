@@ -46,3 +46,16 @@ description: >
 - ShareTarget(AActor* Target)
   - 같은 팀의 다른 AI에게 타깃을 공유한다.
   - 한 AI가 적을 발견 시, 같은 팀 다른 AI도 해당 적을 추적 가능하도록 한다.
+
+---
+
+<p style = "color:#8f7cee; font-size:25px; font-weight:bold">
+시아 설정 값
+</p>
+
+| 항목 | 값 | 설명 |
+|:-------:|:------:|:------:|
+| Sight Radius | 700 | AI가 감지할 수 있는 기본 시야 거리 |
+| Lose Sight Radius | 900 | 감지 후 추적이 유지되는 거리 |
+| 시야각 | 90도 | 시야 반경 설정 |
+| 감지 대상 | Enemy | 중립, 아군은 감지 안 함 |
