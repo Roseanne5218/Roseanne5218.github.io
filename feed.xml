@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-06-04T07:28:07+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">로또의 최고 순위와 최저 순위</title><link href="/codingtest/programmers/lv.1/2025-06-04-codingtest_67/" rel="alternate" type="text/html" title="로또의 최고 순위와 최저 순위" /><published>2025-06-04T00:20:00+00:00</published><updated>2025-06-04T07:27:23+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_67</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-04-codingtest_67/"><![CDATA[<hr />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-06-04T08:57:46+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">로또의 최고 순위와 최저 순위</title><link href="/codingtest/programmers/lv.1/2025-06-04-codingtest_67/" rel="alternate" type="text/html" title="로또의 최고 순위와 최저 순위" /><published>2025-06-04T00:20:00+00:00</published><updated>2025-06-04T08:57:00+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_67</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-04-codingtest_67/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -134,7 +134,197 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 14분 
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 77484]]></summary></entry><entry><title type="html">[1차] 다트 게임</title><link href="/codingtest/programmers/lv.1/2025-06-04-codingtest_66/" rel="alternate" type="text/html" title="[1차] 다트 게임" /><published>2025-06-04T00:10:00+00:00</published><updated>2025-06-04T07:27:23+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_66</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-04-codingtest_66/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 77484]]></summary></entry><entry><title type="html">CCharacter</title><link href="/unrealportfolio/character/2025-06-04-unrealportfolio_ccharacter/" rel="alternate" type="text/html" title="CCharacter" /><published>2025-06-04T00:20:00+00:00</published><updated>2025-06-04T08:57:00+00:00</updated><id>/unrealportfolio/character/unrealportfolio_ccharacter</id><content type="html" xml:base="/unrealportfolio/character/2025-06-04-unrealportfolio_ccharacter/"><![CDATA[<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+코드 구조
+</p>
+
+<p><img src="/assets/img/unrealportfolio/CCharacter.png" width="1000" height="400" /></p>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+구현 목적
+</p>
+
+<ul>
+  <li>캐릭터들이 상속받을 코드로 적과 플레이어가 같이 사용할 코드 구현</li>
+  <li>전투 상태 관리</li>
+  <li>패링, 스턴, 처형 가드 브레이크 등 복합 전투 로직 처리</li>
+  <li>UI 연동</li>
+  <li>공중 공격 및 시네마틱 전환을 포함한 보스 연출</li>
+  <li>팀 기반 전투 구분 및 아군과 적군 식별</li>
+  <li>물리 반동, 방향 회전, 애니메이션 재생 통합</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+함수 목록
+</p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+생성자 및 초기화
+</p>
+
+<ul>
+  <li>CCharacter()</li>
+  <li>BeginPlay()
+    <ul>
+      <li>캐릭터들의 체력 위젯을 설정한다.</li>
+    </ul>
+  </li>
+  <li>Tick(float DeltaTime)
+    <ul>
+      <li>해당 캐릭터가 공중에 있는지 판단한다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+전투 시스템
+</p>
+
+<ul>
+  <li>TakeDamage(float DamagePower, FDamageEvent const&amp; DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+    <ul>
+      <li>공격자, 공격 원인, 데미지 이벤트를 저장한다.</li>
+      <li>State를 Damage로 변경한다.</li>
+    </ul>
+  </li>
+  <li>OnStateTypeChange(EStateType InPrevType, EStateType InNewType)
+    <ul>
+      <li>분기를 이용하여 Damage()나 Dead()를 호출한다.</li>
+    </ul>
+  </li>
+  <li>Damage()
+    <ul>
+      <li>데미지를 적용하고 상태, 애니메이션, 이펙트, 진동 등을 처리한다.</li>
+      <li>패링 : 현재 캐릭터가 패링 상태일 경우 패링 몽타주를 재생하고 반격한다. 공격자는 공격이 실패하고 스턴이 걸린다.</li>
+      <li>가드 : 무기가 가드이고 가드의 체력이 있으면 서브 모션이 실행된다. 가드가 깨지면 가드 파괴 모션과 피해를 적용 후 가드 체력을 초기화한다.</li>
+      <li>처형 : 체력이 30 이하이면 처형 모션이 실행된다. 적이 공중에 있으면 공중 처형 모션, 땅에 있으면 일반 처형을 한다. 보스가 처형을 당하면 카메라 전환되고 카메라 쉐이크가 실행된다.</li>
+      <li>피격 : 일반 피격의 경우 데미지 모션이 재생된다. 적이 공중에 있으면 공중 데미지 모션을 재생하고 런치 처리한다. 피격 시 캐릭터 방향 반동 회전 및 밀림을 처리한다.</li>
+      <li>일반 사망 : 체력이 0 이하이거나 처형 모션이 없으면 일반 사망 처리 한다.</li>
+    </ul>
+  </li>
+  <li>End_Damage()
+    <ul>
+      <li>피격 상태가 종료되면 상태 복귀 처리한다.</li>
+      <li>무기가 가드이면 가드 상태로 아니면 Idle 상태로 복귀해 준다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+사망 처리
+</p>
+
+<ul>
+  <li>Dead()
+    <ul>
+      <li>사망 애니메이션 실행</li>
+    </ul>
+  </li>
+  <li>End_Dead()
+    <ul>
+      <li>부착되어 있는 모든 액터를 제거한다.</li>
+      <li>UI 위젯도 제거하고 Destroy()를 호출한다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+패링 시스템
+</p>
+
+<ul>
+  <li>StartParry()
+    <ul>
+      <li>패링 상태로 전환하고 이미 패링 중이거나 스턴 상태이면 무시한다.</li>
+      <li>패링 지속시간 이후 EndParry()를 호출한다.</li>
+    </ul>
+  </li>
+  <li>EndParry()
+    <ul>
+      <li>패링 상태를 종료한다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+처형 / 스턴
+</p>
+
+<ul>
+  <li>StartExecute()
+    <ul>
+      <li>지상의 처형 애니메이션을 실행한다.</li>
+    </ul>
+  </li>
+  <li>StartAirExecute()
+    <ul>
+      <li>공중 처형 애니메이션을 실행한다.</li>
+    </ul>
+  </li>
+  <li>StartStun()
+    <ul>
+      <li>스턴 상태를 진입하고 스턴 모션을 실행하고 데미지를 입는다.</li>
+    </ul>
+  </li>
+  <li>End_Stun()
+    <ul>
+      <li>스턴이 끝난 후 Idle 상태로 전환한다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+상태 고정 / 해제
+</p>
+
+<ul>
+  <li>OwnerFreeze(float InDuration)
+    <ul>
+      <li>중력을 제거하고 이동을 정지시킨다.</li>
+      <li>일정 시간 이후 RestoreMovement()를 호출한다.</li>
+    </ul>
+  </li>
+  <li>RestoreMovement()
+    <ul>
+      <li>원래 기본 설정되어 있는 중력으로 회복시킨다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+UI 처리
+</p>
+
+<ul>
+  <li>ShowUI()
+    <ul>
+      <li>숨긴 체력바를 보이게 한다.</li>
+    </ul>
+  </li>
+  <li>HideUI()
+    <ul>
+      <li>체력바를 숨긴다.</li>
+    </ul>
+  </li>
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="unrealportfolio" /><category term="character" /><summary type="html"><![CDATA[CCharacter]]></summary></entry><entry><title type="html">[1차] 다트 게임</title><link href="/codingtest/programmers/lv.1/2025-06-04-codingtest_66/" rel="alternate" type="text/html" title="[1차] 다트 게임" /><published>2025-06-04T00:10:00+00:00</published><updated>2025-06-04T08:57:00+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_66</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-04-codingtest_66/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -257,7 +447,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 26분 
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 17682]]></summary></entry><entry><title type="html">CAnimInstance</title><link href="/unrealportfolio/character/2025-06-04-unrealportfolio_caniminstance/" rel="alternate" type="text/html" title="CAnimInstance" /><published>2025-06-04T00:10:00+00:00</published><updated>2025-06-04T07:27:23+00:00</updated><id>/unrealportfolio/character/unrealportfolio_caniminstance</id><content type="html" xml:base="/unrealportfolio/character/2025-06-04-unrealportfolio_caniminstance/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 17682]]></summary></entry><entry><title type="html">CAnimInstance</title><link href="/unrealportfolio/character/2025-06-04-unrealportfolio_caniminstance/" rel="alternate" type="text/html" title="CAnimInstance" /><published>2025-06-04T00:10:00+00:00</published><updated>2025-06-04T08:57:00+00:00</updated><id>/unrealportfolio/character/unrealportfolio_caniminstance</id><content type="html" xml:base="/unrealportfolio/character/2025-06-04-unrealportfolio_caniminstance/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 코드 구조
@@ -272,7 +462,7 @@
 </p>
 
 <ul>
-  <li>애니메이션 블루프린트와 게임플레이의 데이터 연결</li>
+  <li>애니메이션 블루 프린트와 게임 플레이의 데이터 연결</li>
   <li>정교한 캐릭터 자세 및 동작 계산을 통한 자연스러운 모션 설정</li>
   <li>상태 기반 애니메이션 전환 제어</li>
   <li>이벤트 기반 애니메이션 반응 시스템 구축</li>
@@ -282,6 +472,10 @@
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 함수 목록
+</p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+애니메이션 설정
 </p>
 
 <ul>
@@ -294,12 +488,19 @@
       <li>회피 상태가 감지되면 일정 시간 후에 회피 종료 함수를 호출한다.</li>
     </ul>
   </li>
+</ul>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+무기 상태 전환
+</p>
+
+<ul>
   <li>OnWeaponTypeChange()
     <ul>
-      <li>전환된 무기 상태값 설정</li>
+      <li>전환된 무기 상태 값 설정</li>
     </ul>
   </li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="unrealportfolio" /><category term="character" /><summary type="html"><![CDATA[예시글 입니다.]]></summary></entry><entry><title type="html">실패율</title><link href="/codingtest/programmers/lv.1/2025-06-04-codingtest_65/" rel="alternate" type="text/html" title="실패율" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-04T07:27:23+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_65</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-04-codingtest_65/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="unrealportfolio" /><category term="character" /><summary type="html"><![CDATA[CAnimInstance]]></summary></entry><entry><title type="html">실패율</title><link href="/codingtest/programmers/lv.1/2025-06-04-codingtest_65/" rel="alternate" type="text/html" title="실패율" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-04T08:57:00+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_65</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-04-codingtest_65/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -443,7 +644,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 56분 
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 42889]]></summary></entry><entry><title type="html">CAIController</title><link href="/unrealportfolio/character/2025-06-04-unrealportfolio_caicontroller/" rel="alternate" type="text/html" title="CAIController" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-04T07:27:23+00:00</updated><id>/unrealportfolio/character/unrealportfolio_caicontroller</id><content type="html" xml:base="/unrealportfolio/character/2025-06-04-unrealportfolio_caicontroller/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 42889]]></summary></entry><entry><title type="html">CAIController</title><link href="/unrealportfolio/character/2025-06-04-unrealportfolio_caicontroller/" rel="alternate" type="text/html" title="CAIController" /><published>2025-06-04T00:00:00+00:00</published><updated>2025-06-04T08:57:00+00:00</updated><id>/unrealportfolio/character/unrealportfolio_caicontroller</id><content type="html" xml:base="/unrealportfolio/character/2025-06-04-unrealportfolio_caicontroller/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 코드 구조
@@ -470,6 +671,10 @@
 함수 목록
 </p>
 
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+생성자
+</p>
+
 <ul>
   <li>CAIController()
     <ul>
@@ -477,6 +682,13 @@
     </ul>
   </li>
   <li>BeginPlay()</li>
+</ul>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+상태 설정 / 업데이트트
+</p>
+
+<ul>
   <li>OnPossess(APawn* InPawn)
     <ul>
       <li>AI가 가진 BehaviorTree을 실행하고 AIComponent에 BlackBoard를 연결한다.</li>
@@ -532,7 +744,7 @@ AI 설정 값
       <td style="text-align: center">중립, 아군은 감지 안 함</td>
     </tr>
   </tbody>
-</table>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="unrealportfolio" /><category term="character" /><summary type="html"><![CDATA[예시글 입니다.]]></summary></entry><entry><title type="html">[PCCE 기출문제] 9번 / 지폐 접기</title><link href="/codingtest/programmers/lv.1/2025-06-03-codingtest_64/" rel="alternate" type="text/html" title="[PCCE 기출문제] 9번 / 지폐 접기" /><published>2025-06-03T00:20:00+00:00</published><updated>2025-06-04T07:27:23+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_64</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-03-codingtest_64/"><![CDATA[<hr />
+</table>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="unrealportfolio" /><category term="character" /><summary type="html"><![CDATA[CAIController]]></summary></entry><entry><title type="html">[PCCE 기출문제] 9번 / 지폐 접기</title><link href="/codingtest/programmers/lv.1/2025-06-03-codingtest_64/" rel="alternate" type="text/html" title="[PCCE 기출문제] 9번 / 지폐 접기" /><published>2025-06-03T00:20:00+00:00</published><updated>2025-06-04T08:57:00+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_64</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-03-codingtest_64/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -648,7 +860,7 @@ AI 설정 값
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 28분 30초  
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 340199]]></summary></entry><entry><title type="html">옹알이 (2)</title><link href="/codingtest/programmers/lv.1/2025-06-03-codingtest_63/" rel="alternate" type="text/html" title="옹알이 (2)" /><published>2025-06-03T00:10:00+00:00</published><updated>2025-06-04T07:27:23+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_63</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-03-codingtest_63/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 340199]]></summary></entry><entry><title type="html">옹알이 (2)</title><link href="/codingtest/programmers/lv.1/2025-06-03-codingtest_63/" rel="alternate" type="text/html" title="옹알이 (2)" /><published>2025-06-03T00:10:00+00:00</published><updated>2025-06-04T08:57:00+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_63</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-03-codingtest_63/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -776,7 +988,7 @@ AI 설정 값
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 30분 30초  
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 133499]]></summary></entry><entry><title type="html">소수 만들기</title><link href="/codingtest/programmers/lv.1/2025-06-03-codingtest_62/" rel="alternate" type="text/html" title="소수 만들기" /><published>2025-06-03T00:00:00+00:00</published><updated>2025-06-04T07:27:23+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_62</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-03-codingtest_62/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 133499]]></summary></entry><entry><title type="html">소수 만들기</title><link href="/codingtest/programmers/lv.1/2025-06-03-codingtest_62/" rel="alternate" type="text/html" title="소수 만들기" /><published>2025-06-03T00:00:00+00:00</published><updated>2025-06-04T08:57:00+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_62</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-03-codingtest_62/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -871,7 +1083,7 @@ AI 설정 값
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 21분  
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 12977]]></summary></entry><entry><title type="html">소수 찾기</title><link href="/codingtest/programmers/lv.1/2025-06-02-codingtest_61/" rel="alternate" type="text/html" title="소수 찾기" /><published>2025-06-02T00:40:00+00:00</published><updated>2025-06-04T07:27:23+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_61</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-02-codingtest_61/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 12977]]></summary></entry><entry><title type="html">소수 찾기</title><link href="/codingtest/programmers/lv.1/2025-06-02-codingtest_61/" rel="alternate" type="text/html" title="소수 찾기" /><published>2025-06-02T00:40:00+00:00</published><updated>2025-06-04T08:57:00+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_61</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-02-codingtest_61/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -967,136 +1179,4 @@ AI 설정 값
   <li>해당 문제를 풀면서 소수를 찾는 거도 방법이지만, 효율성을 높이기 위해서는 소수가 아닌 것을 제외하는 방법이 빠르다는 것을 알았다.</li>
   <li>배제를 하기 위해서 어떤 숫자가 해당 조건에 성립되지 않는지 빨리 파악할 필요가 있다고 생각했다.</li>
   <li>해당 코드는 에레 스토 테네스의 체를 이용하여 작성하였다.</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 12921]]></summary></entry><entry><title type="html">덧칠하기</title><link href="/codingtest/programmers/lv.1/2025-06-02-codingtest_60/" rel="alternate" type="text/html" title="덧칠하기" /><published>2025-06-02T00:30:00+00:00</published><updated>2025-06-04T07:27:23+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_60</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-02-codingtest_60/"><![CDATA[<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-문제 설명
-</p>
-
-<p>어느 학교에 페인트가 칠해진 길이가 n미터인 벽이 있습니다. 벽에 동아리 · 학회 홍보나 회사 채용 공고 포스터 등을 게시하기 위해 테이프로 붙였다가 철거할 때 떼는 일이 많고 그 과정에서 페인트가 벗겨지곤 합니다. 페인트가 벗겨진 벽이 보기 흉해져 학교는 벽에 페인트를 덧칠하기로 했습니다.</p>
-
-<p>넓은 벽 전체에 페인트를 새로 칠하는 대신, 구역을 나누어 일부만 페인트를 새로 칠 함으로써 예산을 아끼려 합니다. 이를 위해 벽을 1미터 길이의 구역 n개로 나누고, 각 구역에 왼쪽부터 순서대로 1번부터 n번까지 번호를 붙였습니다. 그리고 페인트를 다시 칠해야 할 구역들을 정했습니다.</p>
-
-<p>벽에 페인트를 칠하는 롤러의 길이는 m미터이고, 롤러로 벽에 페인트를 한 번 칠하는 규칙은 다음과 같습니다.</p>
-
-<ul>
-  <li>롤러가 벽에서 벗어나면 안 됩니다.</li>
-  <li>구역의 일부분만 포함되도록 칠하면 안 됩니다.</li>
-</ul>
-
-<p>즉, 롤러의 좌우측 끝을 구역의 경계선 혹은 벽의 좌우측 끝부분에 맞춘 후 롤러를 위아래로 움직이면서 벽을 칠합니다. 현재 페인트를 칠하는 구역들을 완전히 칠한 후 벽에서 롤러를 떼며, 이를 벽을 한 번 칠했다고 정의합니다.</p>
-
-<p>한 구역에 페인트를 여러 번 칠해도 되고 다시 칠해야 할 구역이 아닌 곳에 페인트를 칠해도 되지만 다시 칠하기로 정한 구역은 적어도 한 번 페인트칠을 해야 합니다. 예산을 아끼기 위해 다시 칠할 구역을 정했듯 마찬가지로 롤러로 페인트칠을 하는 횟수를 최소화하려고 합니다.</p>
-
-<p>정수 n, m과 다시 페인트를 칠하기로 정한 구역들의 번호가 담긴 정수 배열 section이 매개변수로 주어질 때 롤러로 페인트칠해야 하는 최소 횟수를 return 하는 solution 함수를 작성해 주세요.</p>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-제한 사항
-</p>
-
-<ul>
-  <li>1 ≤ m ≤ n ≤ 100,000</li>
-  <li>1 ≤ section의 길이 ≤ n
-    <ul>
-      <li>1 ≤ section의 원소 ≤ n</li>
-      <li>section의 원소는 페인트를 다시 칠해야 하는 구역의 번호입니다.</li>
-      <li>section에서 같은 원소가 두 번 이상 나타나지 않습니다.</li>
-      <li>section의 원소는 오름차순으로 정렬되어 있습니다.</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-입출력 예
-</p>
-
-<p><img src="/assets/img/codingtest/161989.png" width="330" height="140" /></p>
-
-<p>입출력 예 #1</p>
-<ul>
-  <li>예제 1번은 2, 3, 6번 영역에 페인트를 다시 칠해야 합니다. 롤러의 길이가 4미터이므로 한 번의 페인트칠에 연속된 4개의 구역을 칠할 수 있습니다. 처음에 3, 4, 5, 6번 영역에 페인트칠을 하면 칠해야 할 곳으로 2번 구역만 남고 1, 2, 3, 4번 구역에 페인트칠을 하면 2번 만에 다시 칠해야 할 곳에 모두 페인트칠을 할 수 있습니다.</li>
-</ul>
-
-<p><img src="/assets/img/codingtest/161989_1.png" width="450" height="140" /></p>
-
-<p>2번보다 적은 횟수로 2, 3, 6번 영역에 페인트를 덧칠하는 방법은 없습니다. 따라서 최소 횟수인 2를 return 합니다.</p>
-
-<p>입출력 예 #2</p>
-<ul>
-  <li>예제 2번은 1, 3번 영역에 페인트를 다시 칠해야 합니다. 롤러의 길이가 4미터이므로 한 번의 페인트칠에 연속된 4개의 구역을 칠할 수 있고 1, 2, 3, 4번 영역에 페인트칠을 하면 한 번에 1, 3번 영역을 모두 칠할 수 있습니다.</li>
-</ul>
-
-<p><img src="/assets/img/codingtest/161989_2.png" width="320" height="120" /></p>
-
-<p>따라서 최소 횟수인 1을 return 합니다.</p>
-
-<p>입출력 예 #3</p>
-<ul>
-  <li>예제 3번은 모든 구역에 페인트칠을 해야 합니다. 롤러의 길이가 1미터이므로 한 번에 한 구역밖에 칠할 수 없습니다. 구역이 4개이므로 각 구역을 한 번씩만 칠하는 4번이 최소 횟수가 됩니다.</li>
-</ul>
-
-<p><img src="/assets/img/codingtest/161989_3.png" width="320" height="210" /></p>
-
-<p>따라서 4를 return 합니다.</p>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-작성 내용
-</p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
-</span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="nf">Paint</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">m</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">Wall</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">Wall</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">l</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span> <span class="n">l</span><span class="o">++</span><span class="p">)</span>
-            <span class="p">{</span>
-                <span class="k">if</span><span class="p">((</span><span class="n">i</span><span class="o">+</span><span class="n">l</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">)</span>
-                    <span class="n">Wall</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">l</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>                
-            <span class="p">}</span>
-            
-            <span class="n">num</span><span class="o">++</span><span class="p">;</span>
-        <span class="p">}</span>       
-    <span class="p">}</span>
-    
-    <span class="k">return</span> <span class="n">num</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">solution</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">m</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">section</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    
-    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">Wall</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-    
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">section</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">Wall</span><span class="p">[</span><span class="n">section</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="n">answer</span> <span class="o">=</span> <span class="n">Paint</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">Wall</span><span class="p">);</span>
-    
-    <span class="k">return</span> <span class="n">answer</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<hr />
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-정답 여부 O
-</p>
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-소요 시간 : 22분  
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 161989]]></summary></entry></feed>
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 12921]]></summary></entry></feed>

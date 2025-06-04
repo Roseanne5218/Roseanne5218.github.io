@@ -25,26 +25,25 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 
 
 
-  <meta name="robots" content="noindex">
-
 
 
   
     
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Scripts | Roseanne</title>
+<title>CCharacter | Roseanne</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Scripts" />
+<meta property="og:title" content="CCharacter" />
 <meta name="author" content="Roseanne5218" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="There are two ways of adding third party scripts. Embedding is ideal for one-off scripts, while global scripts are loaded on every page." />
-<meta property="og:description" content="There are two ways of adding third party scripts. Embedding is ideal for one-off scripts, while global scripts are loaded on every page." />
+<meta name="description" content="CCharacter" />
+<meta property="og:description" content="CCharacter" />
 <meta property="og:site_name" content="Roseanne" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-06-04T00:20:00+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Scripts" />
+<meta property="twitter:title" content="CCharacter" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-04T08:57:00+00:00","description":"There are two ways of adding third party scripts. Embedding is ideal for one-off scripts, while global scripts are loaded on every page.","headline":"Scripts","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/docs/scripts/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-04T08:57:00+00:00","datePublished":"2025-06-04T00:20:00+00:00","description":"CCharacter","headline":"CCharacter","mainEntityOfPage":{"@type":"WebPage","@id":"/unrealportfolio/character/2025-06-04-unrealportfolio_ccharacter/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/unrealportfolio/character/2025-06-04-unrealportfolio_ccharacter/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -76,7 +75,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta name="generator" content="Hydejack v9.2.1" />
 
 
-<link rel="alternate" href="/docs/scripts/" hreflang="ko">
+<link rel="alternate" href="/unrealportfolio/character/2025-06-04-unrealportfolio_ccharacter/" hreflang="ko">
 
 <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Roseanne" />
 
@@ -231,7 +230,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
   <main
   id="_main"
-  class="content layout-page"
+  class="content layout-post"
   role="main"
 >
   <nav id="breadcrumbs" class="screen-only"><ul>
@@ -244,122 +243,405 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
           <span>/</span>
           
           
-          <a href="/docs/">docs</a>
+          <a href="/unrealportfolio/">unrealportfolio</a>
         
       </li>
     
       <li>
         
           <span>/</span>
-          <span>scripts</span>
+          
+          
+          <a href="/unrealportfolio/character/">character</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>2025-06-04-unrealportfolio_ccharacter</span>
         
       </li>
     
   
 </ul></nav>
-  <article class="page mb6" role="article">
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-unrealportfolio-character-unrealportfolio_ccharacter" class="page post mb6" role="article">
   <header>
-    <h1 class="page-title">Scripts</h1>
+    <h1 class="post-title flip-project-title">
+      
+        CCharacter
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2025-06-04T00:20:00+00:00">04 Jun 2025</time> in <a href="/unrealportfolio/" class="flip-title">UNREAL PORTFOLIO</a> / <a href="/character/" class="flip-title">CHARACTER</a> 
+      </span>
+      
+        
+          
+          
+          
+        
+      
+    </div>
+
+    
+    
+
     
 
 
 
   
-    <div class="hr pb0"></div>
+    <p class="note-sm" >
+      CCharacter
+
+    </p>
   
 
 
   </header>
 
-  <p>There are two ways of adding third party scripts.
-<a href="#embedding">Embedding</a> is ideal for one-off scripts, e.g. <code class="language-plaintext highlighter-rouge">widgets.js</code> that is part of embedded tweets (see below).
-Adding <a href="#global-scripts">global scripts</a> is for scripts that should be loaded on every page.</p>
+  
+    <hr />
 
-<ol id="markdown-toc">
-  <li><a href="#embedding" id="markdown-toc-embedding">Embedding</a></li>
-  <li><a href="#global-scripts" id="markdown-toc-global-scripts">Global scripts</a></li>
-  <li><a href="#registering-push-state-event-listeners" id="markdown-toc-registering-push-state-event-listeners">Registering push state event listeners</a></li>
-  <li><a href="#if-everything-else-fails" id="markdown-toc-if-everything-else-fails">If everything else fails</a></li>
-</ol>
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+코드 구조
+</p>
 
-<h2 id="embedding">Embedding</h2>
-<p>Hydejack supports embedding third party scripts directly inside markdown content. This will work in most cases, except when a script can not be loaded on a page more than once (this will occur when a user navigates to the same page twice).</p>
+<p><img src="/assets/img/unrealportfolio/CCharacter.png" width="1000" height="400" /></p>
 
-<p>Example:</p>
+<hr />
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">async</span> <span class="na">src=</span><span class="s">"//platform.twitter.com/widgets.js"</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"twitter-tweet"</span> <span class="na">data-lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">lang=</span><span class="s">"en"</span> <span class="na">dir=</span><span class="s">"ltr"</span><span class="nt">&gt;</span>
-    The next version of Hydejack (v6.3.0) will allow embedding 3rd party scripts,
-    like the one that comes with this tweet for example.
-  <span class="nt">&lt;/p&gt;</span>
-  <span class="ni">&amp;mdash;</span> Florian Klampfer (@qwtel)
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://twitter.com/qwtel/status/871098943505039362"</span><span class="nt">&gt;</span>June 3, 2017<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/blockquote&gt;</span>
-</code></pre></div></div>
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+구현 목적
+</p>
 
-<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<ul>
+  <li>캐릭터들이 상속받을 코드로 적과 플레이어가 같이 사용할 코드 구현</li>
+  <li>전투 상태 관리</li>
+  <li>패링, 스턴, 처형 가드 브레이크 등 복합 전투 로직 처리</li>
+  <li>UI 연동</li>
+  <li>공중 공격 및 시네마틱 전환을 포함한 보스 연출</li>
+  <li>팀 기반 전투 구분 및 아군과 적군 식별</li>
+  <li>물리 반동, 방향 회전, 애니메이션 재생 통합</li>
+</ul>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The next version of Hydejack (v6.3.0) will allow embedding 3rd party scripts, like the one that comes with this tweet for example.</p>&mdash; Florian Klampfer (@qwtel) <a href="https://twitter.com/qwtel/status/871098943505039362">June 3, 2017</a></blockquote>
+<hr />
 
-<h2 id="global-scripts">Global scripts</h2>
-<p>If you have scripts that should be included on every page you can add them globally by
-opening (or creating) <code class="language-plaintext highlighter-rouge">_includes/my-scripts.html</code> and adding them like you normally would:</p>
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+함수 목록
+</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- file: `_includes/my-scripts.html` --&gt;</span>
-<span class="nt">&lt;script
-  </span><span class="na">src=</span><span class="s">"https://code.jquery.com/jquery-3.2.1.slim.min.js"</span>
-  <span class="na">integrity=</span><span class="s">"sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="</span>
-  <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
-</code></pre></div></div>
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+생성자 및 초기화
+</p>
 
-<p><code class="language-plaintext highlighter-rouge">my-scripts.html</code> will be included at the end of the <code class="language-plaintext highlighter-rouge">body</code> tag.</p>
+<ul>
+  <li>CCharacter()</li>
+  <li>BeginPlay()
+    <ul>
+      <li>캐릭터들의 체력 위젯을 설정한다.</li>
+    </ul>
+  </li>
+  <li>Tick(float DeltaTime)
+    <ul>
+      <li>해당 캐릭터가 공중에 있는지 판단한다.</li>
+    </ul>
+  </li>
+</ul>
 
-<h2 id="registering-push-state-event-listeners">Registering push state event listeners</h2>
-<p>When embedding scripts globally you might want to run some init code after each page load. However, the problem with push state-based page loads is that the <code class="language-plaintext highlighter-rouge">load</code> event won’t fire again. Luckily, Hydejack’s push state component exposes an event that you can listen to instead.</p>
+<p><br /></p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- file: `_includes/my-scripts.html` --&gt;</span>
-<span class="nt">&lt;script&gt;</span>
-  <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">_pushState</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">hy-push-state-load</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// </span><span class="o">&lt;</span><span class="nx">your</span> <span class="nx">init</span> <span class="nx">code</span><span class="o">&gt;</span>
-  <span class="p">});</span>
-<span class="nt">&lt;/script&gt;</span>
-</code></pre></div></div>
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+전투 시스템
+</p>
 
-<p>Note that the above code must only run once, so include it in your <code class="language-plaintext highlighter-rouge">my-scripts.html</code>.</p>
+<ul>
+  <li>TakeDamage(float DamagePower, FDamageEvent const&amp; DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+    <ul>
+      <li>공격자, 공격 원인, 데미지 이벤트를 저장한다.</li>
+      <li>State를 Damage로 변경한다.</li>
+    </ul>
+  </li>
+  <li>OnStateTypeChange(EStateType InPrevType, EStateType InNewType)
+    <ul>
+      <li>분기를 이용하여 Damage()나 Dead()를 호출한다.</li>
+    </ul>
+  </li>
+  <li>Damage()
+    <ul>
+      <li>데미지를 적용하고 상태, 애니메이션, 이펙트, 진동 등을 처리한다.</li>
+      <li>패링 : 현재 캐릭터가 패링 상태일 경우 패링 몽타주를 재생하고 반격한다. 공격자는 공격이 실패하고 스턴이 걸린다.</li>
+      <li>가드 : 무기가 가드이고 가드의 체력이 있으면 서브 모션이 실행된다. 가드가 깨지면 가드 파괴 모션과 피해를 적용 후 가드 체력을 초기화한다.</li>
+      <li>처형 : 체력이 30 이하이면 처형 모션이 실행된다. 적이 공중에 있으면 공중 처형 모션, 땅에 있으면 일반 처형을 한다. 보스가 처형을 당하면 카메라 전환되고 카메라 쉐이크가 실행된다.</li>
+      <li>피격 : 일반 피격의 경우 데미지 모션이 재생된다. 적이 공중에 있으면 공중 데미지 모션을 재생하고 런치 처리한다. 피격 시 캐릭터 방향 반동 회전 및 밀림을 처리한다.</li>
+      <li>일반 사망 : 체력이 0 이하이거나 처형 모션이 없으면 일반 사망 처리 한다.</li>
+    </ul>
+  </li>
+  <li>End_Damage()
+    <ul>
+      <li>피격 상태가 종료되면 상태 복귀 처리한다.</li>
+      <li>무기가 가드이면 가드 상태로 아니면 Idle 상태로 복귀해 준다.</li>
+    </ul>
+  </li>
+</ul>
 
-<dl>
-  <dt><code class="language-plaintext highlighter-rouge">hy-push-state-start</code></dt>
-  <dd>Occurs after clicking a link.</dd>
-  <dt><code class="language-plaintext highlighter-rouge">hy-push-state-ready</code></dt>
-  <dd>Animation fished and response has been parsed, ready to swap out the content.</dd>
-  <dt><code class="language-plaintext highlighter-rouge">hy-push-state-after</code></dt>
-  <dd>The old content has been replaced with the new content.</dd>
-  <dt><code class="language-plaintext highlighter-rouge">hy-push-state-progress</code></dt>
-  <dd>Special case when animation is finished, but no response from server has arrived yet.
-This is when the loading spinner will appear.</dd>
-  <dt><code class="language-plaintext highlighter-rouge">hy-push-state-load</code></dt>
-  <dd>All embedded script tags have been inserted into the document and have finished loading.</dd>
-</dl>
+<p><br /></p>
 
-<h2 id="if-everything-else-fails">If everything else fails</h2>
-<p>If you can’t make an external script work with Hydejack’s push state approach to page loading,
-you can disable push state by adding to your config file:</p>
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+사망 처리
+</p>
 
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># file: `_config.yml`</span>
-<span class="na">hydejack</span><span class="pi">:</span>
-  <span class="na">no_push_state</span><span class="pi">:</span> <span class="kc">true</span>
-</code></pre></div></div>
+<ul>
+  <li>Dead()
+    <ul>
+      <li>사망 애니메이션 실행</li>
+    </ul>
+  </li>
+  <li>End_Dead()
+    <ul>
+      <li>부착되어 있는 모든 액터를 제거한다.</li>
+      <li>UI 위젯도 제거하고 Destroy()를 호출한다.</li>
+    </ul>
+  </li>
+</ul>
 
-<p class="read-more">Continue with <a href="/docs/build/" class="heading flip-title">Build</a></p>
+<p><br /></p>
 
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+패링 시스템
+</p>
+
+<ul>
+  <li>StartParry()
+    <ul>
+      <li>패링 상태로 전환하고 이미 패링 중이거나 스턴 상태이면 무시한다.</li>
+      <li>패링 지속시간 이후 EndParry()를 호출한다.</li>
+    </ul>
+  </li>
+  <li>EndParry()
+    <ul>
+      <li>패링 상태를 종료한다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+처형 / 스턴
+</p>
+
+<ul>
+  <li>StartExecute()
+    <ul>
+      <li>지상의 처형 애니메이션을 실행한다.</li>
+    </ul>
+  </li>
+  <li>StartAirExecute()
+    <ul>
+      <li>공중 처형 애니메이션을 실행한다.</li>
+    </ul>
+  </li>
+  <li>StartStun()
+    <ul>
+      <li>스턴 상태를 진입하고 스턴 모션을 실행하고 데미지를 입는다.</li>
+    </ul>
+  </li>
+  <li>End_Stun()
+    <ul>
+      <li>스턴이 끝난 후 Idle 상태로 전환한다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+상태 고정 / 해제
+</p>
+
+<ul>
+  <li>OwnerFreeze(float InDuration)
+    <ul>
+      <li>중력을 제거하고 이동을 정지시킨다.</li>
+      <li>일정 시간 이후 RestoreMovement()를 호출한다.</li>
+    </ul>
+  </li>
+  <li>RestoreMovement()
+    <ul>
+      <li>원래 기본 설정되어 있는 중력으로 회복시킨다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+UI 처리
+</p>
+
+<ul>
+  <li>ShowUI()
+    <ul>
+      <li>숨긴 체력바를 보이게 한다.</li>
+    </ul>
+  </li>
+  <li>HideUI()
+    <ul>
+      <li>체력바를 숨긴다.</li>
+    </ul>
+  </li>
+</ul>
+
+  
 </article>
+
 
 
   <hr class="dingbat related mb6" />
 
 
 
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="/assets/img/logo.jpg"
+    srcset="/assets/img/logo.jpg 1x,/assets/img/logo.jpg 2x"
+    
+  
+  alt="Roseanne"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>게임 프로그래밍 공부중 . . .</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/Roseanne5218" title="Roseanne5218" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">Roseanne5218</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.instagram.com/roseanne_5218/Roseanne_5218" title="roseanne_5218" class="no-mark-external">
+      <span class="icon-instagram"></span>
+      <span class="sr-only">roseanne_5218</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-04-codingtest_67/" class="flip-title"><span>로또의 최고 순위와 최저 순위</span></a>  <time class="faded fine" datetime="2025-06-04T00:20:00+00:00">04 Jun 2025</time></li>                        <li class="h4">  <a href="/unrealportfolio/character/2025-06-04-unrealportfolio_caniminstance/" class="flip-title"><span>CAnimInstance</span></a>  <time class="faded fine" datetime="2025-06-04T00:10:00+00:00">04 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-04-codingtest_66/" class="flip-title"><span>[1차] 다트 게임</span></a>  <time class="faded fine" datetime="2025-06-04T00:10:00+00:00">04 Jun 2025</time></li>            </ul></aside>
+
+  
+
+  
+  
+
+  
+    
+
+  
 
 
   
