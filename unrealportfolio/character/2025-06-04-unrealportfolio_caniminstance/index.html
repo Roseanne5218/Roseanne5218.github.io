@@ -30,20 +30,20 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   
     
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Unreal이 FSM이 아닌 Behavior Tree를 사용하는 이유 | Roseanne</title>
+<title>CAnimInstance | Roseanne</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Unreal이 FSM이 아닌 Behavior Tree를 사용하는 이유" />
+<meta property="og:title" content="CAnimInstance" />
 <meta name="author" content="Roseanne5218" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="Key Words - 52" />
-<meta property="og:description" content="Key Words - 52" />
+<meta name="description" content="예시글 입니다." />
+<meta property="og:description" content="예시글 입니다." />
 <meta property="og:site_name" content="Roseanne" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-01-16T18:00:00+00:00" />
+<meta property="article:published_time" content="2025-06-04T00:10:00+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Unreal이 FSM이 아닌 Behavior Tree를 사용하는 이유" />
+<meta property="twitter:title" content="CAnimInstance" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-04T07:13:55+00:00","datePublished":"2025-01-16T18:00:00+00:00","description":"Key Words - 52","headline":"Unreal이 FSM이 아닌 Behavior Tree를 사용하는 이유","mainEntityOfPage":{"@type":"WebPage","@id":"/keywords/2025-01-16-keywords_52/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/keywords/2025-01-16-keywords_52/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-04T07:13:55+00:00","datePublished":"2025-06-04T00:10:00+00:00","description":"예시글 입니다.","headline":"CAnimInstance","mainEntityOfPage":{"@type":"WebPage","@id":"/unrealportfolio/character/2025-06-04-unrealportfolio_caniminstance/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/unrealportfolio/character/2025-06-04-unrealportfolio_caniminstance/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -75,7 +75,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta name="generator" content="Hydejack v9.2.1" />
 
 
-<link rel="alternate" href="/keywords/2025-01-16-keywords_52/" hreflang="ko">
+<link rel="alternate" href="/unrealportfolio/character/2025-06-04-unrealportfolio_caniminstance/" hreflang="ko">
 
 <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Roseanne" />
 
@@ -243,14 +243,23 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
           <span>/</span>
           
           
-          <a href="/keywords/">keywords</a>
+          <a href="/unrealportfolio/">unrealportfolio</a>
         
       </li>
     
       <li>
         
           <span>/</span>
-          <span>2025-01-16-keywords_52</span>
+          
+          
+          <a href="/unrealportfolio/character/">character</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>2025-06-04-unrealportfolio_caniminstance</span>
         
       </li>
     
@@ -267,31 +276,23 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 
 
-<article id="post-keywords-keywords_52" class="page post mb6" role="article">
+<article id="post-unrealportfolio-character-unrealportfolio_caniminstance" class="page post mb6" role="article">
   <header>
     <h1 class="post-title flip-project-title">
       
-        Unreal이 FSM이 아닌 Behavior Tree를 사용하는 이유
+        CAnimInstance
       
     </h1>
 
     <div class="post-date">
       
       <span class="ellipsis mr1">
-        <time datetime="2025-01-16T18:00:00+00:00">16 Jan 2025</time> in <a href="/keywords/" class="flip-title">KEY WORDS</a> 
+        <time datetime="2025-06-04T00:10:00+00:00">04 Jun 2025</time> in <a href="/unrealportfolio/" class="flip-title">UNREAL PORTFOLIO</a> / <a href="/character/" class="flip-title">CHARACTER</a> 
       </span>
       
         
           
           
-          
-            
-            
-            <span class="ellipsis" data-tippy-content="Last modified at: 04 Jun 2025">
-              <span class="sr-only">Last modified at:</span>
-              <span class="icon-history"></span>
-              <time datetime="2025-06-04T07:13:55+00:00">2025-06-04</time>
-            </span>
           
         
       
@@ -306,7 +307,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
   
     <p class="note-sm" >
-      Key Words - 52
+      예시글 입니다.
 
     </p>
   
@@ -315,40 +316,49 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
   </header>
 
   
-    <p style="color:#8f7cee; font-size:25px; font-weight:bold">
-FSM (Finite State Machine)
-</p>
-
-<hr />
-
-<p>FSM(유한 상태 기계)은 정해진 상태(State)와 전이(Transition) 규칙을 기반으로 동작하는 시스템이다.</p>
-
-<p>FSM은 구현이 단순하여 작은 규모의 AI에는 사용하기 적합하고 상태 전이가 명확하다. 반면 AI가 복잡해질수록 상태가 기하급수적으로 증가하여 코드가 복잡해지고 유지 보수가 어렵다.</p>
-
-<p><br /></p>
+    <hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
-Behavior Tree
+코드 구조
 </p>
 
+<p><img src="/assets/img/unrealportfolio/CAnimInstance.png" width="1000" height="400" /></p>
+
 <hr />
-
-<p>Behavior Tree(행동 트리)는 AI의 행동을 트리 구조로 표현하는 시스템으로 트리를 순차적으로 탐색하면서 AI 행동을 결정한다.</p>
-
-<p>Behavior Tree은 FSM보다 훨씬 확장성이 좋아 복잡한 AI도 쉽게 관리가 가능하다. 행동들을 모듈화 시켜 재사용이 가능하고 게임 플레이 중 동적으로 AI 동작 변경이 가능하다. 반면 FSM보다 초기 설계가 어렵고 복잡하고 디버깅이 어려울 수 있다.</p>
-
-<p><br /></p>
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
-Unreal이 FSM이 아닌 Behavior Tree를 사용하는 이유
+구현 목적
 </p>
+
+<ul>
+  <li>애니메이션 블루프린트와 게임플레이의 데이터 연결</li>
+  <li>정교한 캐릭터 자세 및 동작 계산을 통한 자연스러운 모션 설정</li>
+  <li>상태 기반 애니메이션 전환 제어</li>
+  <li>이벤트 기반 애니메이션 반응 시스템 구축</li>
+</ul>
 
 <hr />
 
-<p>FSM은 상태가 많아질수록 상태 전이 로직이 매우 복잡해지고 유지 보수가 어려워지는 반면 Behavior Tree는 계층적 구조를 사용하여 복잡한 행동을 쉽게 정의할 수 있다.
-FSM은 각 AI 캐릭터가 개별적인 상태 머신을 가져야 하고 Behavior Tree는 공통 행동을 쉽게 모듈화하고 공유할 수 있다.
-FSM은 상태 전이가 미리 정해져 있어서 게임 플레이 도중 동적으로 변경하기 어렵고
-Behavior Tree는 트리 구조에서 특정 노드를 추가하거나 비활성화하여 동적으로 AI의 행동을 변경하기 편하다다.</p>
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+함수 목록
+</p>
+
+<ul>
+  <li>NativeBeginPlay()</li>
+  <li>NativeUpdateAnimation(float DeltaSeconds)
+    <ul>
+      <li>속도를 계산하여 이동 애니메이션에 기준값을 설정한다.</li>
+      <li>이동 방향과 시야 방향의 차이를 계산하여 부드럽게 보간한다.</li>
+      <li>캐릭터 클래스에서 정의한 애니메이션용 상태 플래그를 이용하여 애님 블렌딩 조건으로 사용한다.</li>
+      <li>회피 상태가 감지되면 일정 시간 후에 회피 종료 함수를 호출한다.</li>
+    </ul>
+  </li>
+  <li>OnWeaponTypeChange()
+    <ul>
+      <li>전환된 무기 상태값 설정</li>
+    </ul>
+  </li>
+</ul>
 
   
 </article>
@@ -473,7 +483,7 @@ Behavior Tree는 트리 구조에서 특정 노드를 추가하거나 비활성�
     
 
 
-  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-04-codingtest_67/" class="flip-title"><span>로또의 최고 순위와 최저 순위</span></a>  <time class="faded fine" datetime="2025-06-04T00:20:00+00:00">04 Jun 2025</time></li>                        <li class="h4">  <a href="/unrealportfolio/character/2025-06-04-unrealportfolio_caniminstance/" class="flip-title"><span>CAnimInstance</span></a>  <time class="faded fine" datetime="2025-06-04T00:10:00+00:00">04 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-04-codingtest_66/" class="flip-title"><span>[1차] 다트 게임</span></a>  <time class="faded fine" datetime="2025-06-04T00:10:00+00:00">04 Jun 2025</time></li>            </ul></aside>
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-04-codingtest_67/" class="flip-title"><span>로또의 최고 순위와 최저 순위</span></a>  <time class="faded fine" datetime="2025-06-04T00:20:00+00:00">04 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-04-codingtest_66/" class="flip-title"><span>[1차] 다트 게임</span></a>  <time class="faded fine" datetime="2025-06-04T00:10:00+00:00">04 Jun 2025</time></li>                        <li class="h4">  <a href="/unrealportfolio/character/2025-06-04-unrealportfolio_caicontroller/" class="flip-title"><span>CAIController</span></a>  <time class="faded fine" datetime="2025-06-04T00:00:00+00:00">04 Jun 2025</time></li>            </ul></aside>
 
   
 
