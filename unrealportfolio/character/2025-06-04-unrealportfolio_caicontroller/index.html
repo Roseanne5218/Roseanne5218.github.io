@@ -43,7 +43,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="CAIController" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-04T06:29:49+00:00","datePublished":"2025-06-04T00:00:00+00:00","description":"예시글 입니다.","headline":"CAIController","mainEntityOfPage":{"@type":"WebPage","@id":"/unrealportfolio/character/2025-06-04-unrealportfolio_caicontroller/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/unrealportfolio/character/2025-06-04-unrealportfolio_caicontroller/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-04T06:50:05+00:00","datePublished":"2025-06-04T00:00:00+00:00","description":"예시글 입니다.","headline":"CAIController","mainEntityOfPage":{"@type":"WebPage","@id":"/unrealportfolio/character/2025-06-04-unrealportfolio_caicontroller/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/unrealportfolio/character/2025-06-04-unrealportfolio_caicontroller/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -114,7 +114,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-06-04T06:30:30+00:00',
+    INDEX_KEY: 'index--2025-06-04T06:50:51+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -319,12 +319,55 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
     <hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
-문제 설명
+코드 구조
 </p>
 
-<p>로또 6/45(이하 ‘로또’로 표기)는 1부터 45까지의 숫자 중 6개를 찍어서 맞히는 대표적인 복권입니다. 아래는 로또의 순위를 정하는 방식입니다.</p>
+<p><img src="/assets/img/unrealportfolio/CAIController.png" width="1000" height="400" /></p>
 
-<p><img src="/assets/img/codingtest/77484.png" width="250" height="260" /></p>
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+구현 목적
+</p>
+
+<ul>
+  <li>시야 기반 감지 시스템 설정</li>
+  <li>적 감지 시 BlackBoard 키에 정보 설정</li>
+  <li>BehaviorTree 실행 및 BlackBoard 연동</li>
+  <li>같은 팀끼리 타깃 공유하여 자연스러운 집단전 설정</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+함수 목록
+</p>
+
+<ul>
+  <li>CAIController()
+    <ul>
+      <li>AI에 감지 거리, 시야각, 감지 대상을 설정하여 Perception을 이용하여 플레이어 또는 적을 감지할 수 있도록 해준다.</li>
+    </ul>
+  </li>
+  <li>BeginPlay()</li>
+  <li>OnPossess(APawn* InPawn)
+    <ul>
+      <li>AI가 가진 BehaviorTree을 실행하고 AIComponent에 BlackBoard를 연결한다.</li>
+    </ul>
+  </li>
+  <li>OnPerceptionUpdate(const TArray&lt;AActor*&gt;&amp; UpdatedActors)
+    <ul>
+      <li>감지된 적을 BlackBoard의 키에 저장한다.</li>
+      <li>감지를 잃으면 타깃 BlackBoard 값을 초기화시킨다.</li>
+    </ul>
+  </li>
+  <li>ShareTarget(AActor* Target)
+    <ul>
+      <li>같은 팀의 다른 AI에게 타깃을 공유한다.</li>
+      <li>한 AI가 적을 발견 시, 같은 팀 다른 AI도 해당 적을 추적 가능하도록 한다.</li>
+    </ul>
+  </li>
+</ul>
 
   
 </article>
