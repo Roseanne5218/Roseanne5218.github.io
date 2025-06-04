@@ -81,7 +81,7 @@ menu:
       - title:         NOTIFY
         url:           /notify/
       - title:         WEAPON
-        url:           /wepon/
+        url:           /weapon/
       - title:         WIDGET
         url:           /widget/
       - title:         ELSE
