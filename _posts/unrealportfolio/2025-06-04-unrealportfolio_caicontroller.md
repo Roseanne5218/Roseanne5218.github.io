@@ -50,7 +50,7 @@ description: >
 ---
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
-시아 설정 값
+AI 설정 값
 </p>
 
 | 항목 | 값 | 설명 |
