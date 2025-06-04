@@ -68,14 +68,24 @@ menu:
     - title:           C#
       url:             /clanguage2/
   - title:             KEY WORDS
-    url:               /keywords/
-  - title:             PORTFOLIO
-    url:               /portfolio/
-    submenu:           
-    - title:           UNREAL
-      url:             /unrealportfolio/
-    - title:           DIRECT X
-      url:             /directxportfolio/
+    url:               /keywords/         
+  - title:           UNREAL
+    url:             /unrealportfolio/
+    submenu:        
+      - title:         CHARACTER
+        url:           /character/
+      - title:         BEHAVIORTREE
+        url:           /behaviortree/
+      - title:         COMPONENT
+        url:           /component/
+      - title:         NOTIFY
+        url:           /notify/
+      - title:         WEAPON
+        url:           /wepon/
+      - title:         WIDGET
+        url:           /widget/
+  - title:           DIRECT X
+    url:             /directxportfolio/
   - title:             OS
     url:               /os/
   - title:             CODING TEST
@@ -84,7 +94,7 @@ menu:
     - title:           BACKJOON
       url:             /backjoon/
     - title:           PROGRAMMERS
-    - url:             /programmers/
+      url:             /programmers/
   - title:             ABOUT
     url:               /about/
 
