@@ -13,6 +13,16 @@ description: >
 ---
 
 <p style = "color:#8f7cee; font-size:25px; font-weight:bold">
+부모 클래스
+</p>
+
+<p style = "color:#ed9ece; font-size:20px; font-weight:bold">
+- UAnimInstance
+</p>
+
+---
+
+<p style = "color:#8f7cee; font-size:25px; font-weight:bold">
 코드 구조
 </p>
 
