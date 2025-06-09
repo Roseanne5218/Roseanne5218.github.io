@@ -6,9 +6,9 @@ categories:
   - unrealportfolio
   - behaviortree
 description: >
-  CEnvQueryContext_Enemy
+  CEnvQueryContext_Player
 ---
-## CEnvQueryContext_Enemy
+## CEnvQueryContext_Player
 
 ---
 
@@ -16,7 +16,7 @@ description: >
 코드 구조
 </p>
 
-<img src = "/assets/img/unrealportfolio/CEnvQueryContext_Enemy.png" width = "1000" height = "400">
+<img src = "/assets/img/unrealportfolio/CEnvQueryContext_Player.png" width = "1000" height = "400">
 
 ---
 
@@ -35,7 +35,7 @@ description: >
 </p>
 
 - EQS 쿼리를 수행하는 폰을 문맥으로 제공
-- Enemy를 기준으로 다른 액터들과의 거리, 위치 비교, 필터링
+- Player를 기준으로 다른 액터들과의 거리, 위치 비교, 필터링
 
 ---
 
@@ -49,4 +49,4 @@ description: >
 
 - ProvideContext(FEnvQueryInstance& QueryInstance, FEnvQueryContextData& ContextData) 
   - ContextData에서 QuerierPawn을 Actor 타입 문맥으로 설정한다.
-  - 쿼리 내에서 Enemy 문맥이 필요할 때 해당 폰을 참조한다.
+  - 쿼리 내에서 EQS Context는 항상 Player 폰을 참조한다.

@@ -48,4 +48,4 @@ Task 설정
 </p>
 
 - ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
-  - 게임 모드를 참조하여 게임 모드에서 공유된 토근 값을 블랙보드에 저장하고 성공을 반환한다.
+  - 게임 모드를 참조하여 게임 모드에서 공유된 토큰 값을 블랙보드에 저장하고 성공을 반환한다.

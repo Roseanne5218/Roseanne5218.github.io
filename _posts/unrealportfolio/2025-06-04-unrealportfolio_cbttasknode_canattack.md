@@ -6,9 +6,9 @@ categories:
   - unrealportfolio
   - behaviortree
 description: >
-  CBTTaskNode_BlackBoard
+  CBTTaskNode_CanAttack
 ---
-## CBTTaskNode_BlackBoard
+## CBTTaskNode_CanAttack
 
 ---
 
@@ -16,7 +16,7 @@ description: >
 코드 구조
 </p>
 
-<img src = "/assets/img/unrealportfolio/CBTTaskNode_BlackBoard.png" width = "1000" height = "400">
+<img src = "/assets/img/unrealportfolio/CBTTaskNode_CanAttack.png" width = "1000" height = "400">
 
 ---
 
@@ -34,8 +34,8 @@ description: >
 구현 목적
 </p>
 
-- 게임에서 제공하는 공유 데이터를 AI 블랙보드에 동기화
-- 여러 AI가 공통 상태를 기준으로 행동하도록 설정
+- BlackBoard의 bCanAttack 값을 수정
+- BlackBoard 값을 이용하여 행동 분기나 조건 검사에 사용
 
 ---
 
@@ -48,4 +48,4 @@ Task 설정
 </p>
 
 - ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
-  - 게임 모드를 참조하여 게임 모드에서 공유된 토근 값을 블랙보드에 저장하고 성공을 반환한다.
+  - Behavior에서 설정할 값인 bCanAttack을 정해주어 해당 값을 BlackBoard에 저장한다.
