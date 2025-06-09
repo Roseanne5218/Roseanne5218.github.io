@@ -43,7 +43,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="체육복" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-09T08:56:46+00:00","datePublished":"2025-06-09T00:00:00+00:00","description":"Programmers - 42862","headline":"체육복","mainEntityOfPage":{"@type":"WebPage","@id":"/codingtest/programmers/lv.1/2025-06-09-codingtest_73/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/codingtest/programmers/lv.1/2025-06-09-codingtest_73/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-09T14:04:22+00:00","datePublished":"2025-06-09T00:00:00+00:00","description":"Programmers - 42862","headline":"체육복","mainEntityOfPage":{"@type":"WebPage","@id":"/codingtest/programmers/lv.1/2025-06-09-codingtest_73/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/codingtest/programmers/lv.1/2025-06-09-codingtest_73/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -114,7 +114,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-06-09T08:57:33+00:00',
+    INDEX_KEY: 'index--2025-06-09T14:05:12+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -370,7 +370,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 <hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
-작성 내용
+작성 내용 1
 </p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
@@ -423,15 +423,84 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 <span class="p">}</span>
 </code></pre></div></div>
 
+<p><br /></p>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+작성 내용 2
+</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">solution</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">lost</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">reserve</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+     
+    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">Student</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="n">Student</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">sort</span><span class="p">(</span><span class="n">reserve</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">reserve</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+    
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">lost</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="n">Student</span><span class="p">[</span><span class="n">lost</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span><span class="o">--</span><span class="p">;</span>
+    
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">reserve</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Student</span><span class="p">[</span><span class="n">reserve</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">Student</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">Student</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">Student</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Student</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
+            <span class="n">Student</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">--</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="nf">if</span><span class="p">(</span><span class="n">Student</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">Student</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">Student</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Student</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
+            <span class="n">Student</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">--</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">Student</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">Student</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="n">answer</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="n">answer</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
 <hr />
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
-정답 여부 O
+정답 여부 X
 </p>
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
-소요 시간 : 43분 30초
+소요 시간 : 43분 30초 (1차 풀이), 50분 30초 (2차 풀이)
 </p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+문제 소감
+</p>
+
+<ul>
+  <li>
+    <p>첫 풀이에서 나중에 연산에서 위험요소가 될 수 있는 auto를 사용했어서 다시 한번 풀어보았다.</p>
+  </li>
+  <li>
+    <p>문제를 잘 읽고 순차적으로 접근을 하면 쉽게 풀 수 있는 문제인데 연산 순서를 잘못 배치하여 오류가 있었다.</p>
+  </li>
+  <li>
+    <p>어떤 조건을 먼저 처리해야 할지 더 깊게 생각해 보는 것이 유리할 것 같다.</p>
+  </li>
+</ul>
 
   
 </article>
@@ -556,7 +625,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
     
 
 
-  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-09-codingtest_75/" class="flip-title"><span>숫자 짝꿍</span></a>  <time class="faded fine" datetime="2025-06-09T00:10:00+00:00">09 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-06-codingtest_72/" class="flip-title"><span>완주하지 못한 선수</span></a>  <time class="faded fine" datetime="2025-06-06T00:30:00+00:00">06 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-06-codingtest_71/" class="flip-title"><span>[PCCE 기출문제] 9번 / 이웃한 칸</span></a>  <time class="faded fine" datetime="2025-06-06T00:20:00+00:00">06 Jun 2025</time></li>            </ul></aside>
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-09-codingtest_75/" class="flip-title"><span>햄버거 만들기</span></a>  <time class="faded fine" datetime="2025-06-09T00:20:00+00:00">09 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-09-codingtest_74/" class="flip-title"><span>숫자 짝꿍</span></a>  <time class="faded fine" datetime="2025-06-09T00:10:00+00:00">09 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-06-codingtest_72/" class="flip-title"><span>완주하지 못한 선수</span></a>  <time class="faded fine" datetime="2025-06-06T00:30:00+00:00">06 Jun 2025</time></li>            </ul></aside>
 
   
 

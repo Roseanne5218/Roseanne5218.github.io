@@ -43,7 +43,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="CBTTaskNode_Equip" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-09T08:56:46+00:00","datePublished":"2025-06-04T00:00:00+00:00","description":"CBTTaskNode_Equip","headline":"CBTTaskNode_Equip","mainEntityOfPage":{"@type":"WebPage","@id":"/unrealportfolio/behaviortree/2025-06-04-unrealportfolio_cbttasknode_equip/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/unrealportfolio/behaviortree/2025-06-04-unrealportfolio_cbttasknode_equip/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-09T14:04:22+00:00","datePublished":"2025-06-04T00:00:00+00:00","description":"CBTTaskNode_Equip","headline":"CBTTaskNode_Equip","mainEntityOfPage":{"@type":"WebPage","@id":"/unrealportfolio/behaviortree/2025-06-04-unrealportfolio_cbttasknode_equip/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/unrealportfolio/behaviortree/2025-06-04-unrealportfolio_cbttasknode_equip/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -114,7 +114,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-06-09T08:57:33+00:00',
+    INDEX_KEY: 'index--2025-06-09T14:05:12+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -299,7 +299,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
             <span class="ellipsis" data-tippy-content="Last modified at: 09 Jun 2025">
               <span class="sr-only">Last modified at:</span>
               <span class="icon-history"></span>
-              <time datetime="2025-06-09T08:56:46+00:00">2025-06-09</time>
+              <time datetime="2025-06-09T14:04:22+00:00">2025-06-09</time>
             </span>
           
         
@@ -366,19 +366,18 @@ Task 설정
 <ul>
   <li>ExecuteTask(UBehaviorTreeComponent&amp; OwnerComp, uint8* NodeMemory)
     <ul>
-      <li>무기 유효성을 확인하고 이동을 중단시킨다.</li>
-      <li>분기를 설정하여 DataTable을 바탕으로 적이면 콤보 공격을 보스이면 랜덤 공격을 실행한다.</li>
-      <li>공격이 성공하면 성공을 반환한다.</li>
+      <li>유효성을 검사하여 장비 타입이 Max이거나 같은 무기를 장착 중이면 실패 또는 성공을 반환한다.</li>
+      <li>무기 장착을 시도하고 상태 진행 중을 반환한다.</li>
     </ul>
   </li>
   <li>TickTask(UBehaviorTreeComponent&amp; OwnerComp, uint8* NodeMemory, float DeltaSeconds)
     <ul>
-      <li>매 프레임 호출하여 노드가 종료되었는지 확인하고 조건이 모두 충족되면 성공을 반환한다.</li>
+      <li>무기 장착 여부를 확인하고 상태가 Idle 일 때 완료를 처리한다.</li>
     </ul>
   </li>
   <li>AbortTask(UBehaviorTreeComponent&amp; OwnerComp, uint8* NodeMemory)
     <ul>
-      <li>해당 노드가 강제로 중단되면 호출이 되고 상태가 꼬이지 않도록 해당 노드를 강제 종료 시켜준다.</li>
+      <li>무기 장착 중 중단된다면 무기 장착을 강제로 종료 처리하고 중단을 반환한다.</li>
     </ul>
   </li>
 </ul>
@@ -506,7 +505,7 @@ Task 설정
     
 
 
-  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-09-codingtest_75/" class="flip-title"><span>숫자 짝꿍</span></a>  <time class="faded fine" datetime="2025-06-09T00:10:00+00:00">09 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-09-codingtest_73/" class="flip-title"><span>체육복</span></a>  <time class="faded fine" datetime="2025-06-09T00:00:00+00:00">09 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-06-codingtest_72/" class="flip-title"><span>완주하지 못한 선수</span></a>  <time class="faded fine" datetime="2025-06-06T00:30:00+00:00">06 Jun 2025</time></li>            </ul></aside>
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-09-codingtest_75/" class="flip-title"><span>햄버거 만들기</span></a>  <time class="faded fine" datetime="2025-06-09T00:20:00+00:00">09 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-09-codingtest_74/" class="flip-title"><span>숫자 짝꿍</span></a>  <time class="faded fine" datetime="2025-06-09T00:10:00+00:00">09 Jun 2025</time></li>                        <li class="h4">  <a href="/codingtest/programmers/lv.1/2025-06-09-codingtest_73/" class="flip-title"><span>체육복</span></a>  <time class="faded fine" datetime="2025-06-09T00:00:00+00:00">09 Jun 2025</time></li>            </ul></aside>
 
   
 
