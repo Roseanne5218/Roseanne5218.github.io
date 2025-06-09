@@ -48,10 +48,9 @@ Task 설정
 </p>
 
 - ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
-  - 무기 유효성을 확인하고 이동을 중단시킨다.
-  - 분기를 설정하여 DataTable을 바탕으로 적이면 콤보 공격을 보스이면 랜덤 공격을 실행한다.
-  - 공격이 성공하면 성공을 반환한다.
+  - 유효성을 검사하여 장비 타입이 Max이거나 같은 무기를 장착 중이면 실패 또는 성공을 반환한다.
+  - 무기 장착을 시도하고 상태 진행 중을 반환한다.
 - TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
-  - 매 프레임 호출하여 노드가 종료되었는지 확인하고 조건이 모두 충족되면 성공을 반환한다.
+  - 무기 장착 여부를 확인하고 상태가 Idle 일 때 완료를 처리한다.
 - AbortTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
-  - 해당 노드가 강제로 중단되면 호출이 되고 상태가 꼬이지 않도록 해당 노드를 강제 종료 시켜준다.
+  - 무기 장착 중 중단된다면 무기 장착을 강제로 종료 처리하고 중단을 반환한다.

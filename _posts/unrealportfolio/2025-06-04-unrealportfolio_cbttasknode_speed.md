@@ -49,5 +49,5 @@ Task 설정
 </p>
 
 - ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
-  - MovementComponent의 타입에 따라 속도를 전환시킨다. 
+  - Task에 저장된 타입에 따라 속도를 전환시킨다. 
   - 타입이 Walk 면 Movement를 Walk로 Run 면 Movement를 Run으로 바꾼다.
