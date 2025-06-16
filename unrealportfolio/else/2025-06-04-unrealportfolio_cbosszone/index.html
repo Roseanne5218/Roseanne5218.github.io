@@ -43,7 +43,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="CBossZone" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-16T02:50:53+00:00","datePublished":"2025-06-04T00:00:00+00:00","description":"CBossZone","headline":"CBossZone","mainEntityOfPage":{"@type":"WebPage","@id":"/unrealportfolio/else/2025-06-04-unrealportfolio_cbosszone/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/unrealportfolio/else/2025-06-04-unrealportfolio_cbosszone/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-06-16T03:40:36+00:00","datePublished":"2025-06-04T00:00:00+00:00","description":"CBossZone","headline":"CBossZone","mainEntityOfPage":{"@type":"WebPage","@id":"/unrealportfolio/else/2025-06-04-unrealportfolio_cbosszone/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/unrealportfolio/else/2025-06-04-unrealportfolio_cbosszone/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -114,7 +114,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-06-16T02:51:36+00:00',
+    INDEX_KEY: 'index--2025-06-16T03:41:17+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -299,7 +299,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
             <span class="ellipsis" data-tippy-content="Last modified at: 16 Jun 2025">
               <span class="sr-only">Last modified at:</span>
               <span class="icon-history"></span>
-              <time datetime="2025-06-16T02:50:53+00:00">2025-06-16</time>
+              <time datetime="2025-06-16T03:40:36+00:00">2025-06-16</time>
             </span>
           
         
@@ -339,7 +339,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 </p>
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
-- UInterface
+- AActor
 </p>
 
 <hr />
@@ -387,7 +387,32 @@ Zone 진입 확인
 </p>
 
 <ul>
-  <li>OnComponentBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult&amp; SweepResult)</li>
+  <li>OnComponentBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult&amp; SweepResult)
+    <ul>
+      <li>플레이어가 해당 박스 안에 진입하였으면 시네마틱을 실행한다.</li>
+      <li>시네마틱이 실행하는 동안 플레이어의 UI를 비활성화하고 움직임을 정지시킨다.</li>
+      <li>타이머를 이용하여 시네마틱이 종료될 때 종료 설정을 하는 함수를 실행시킨다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+시네마틱 종료 처리
+</p>
+
+<ul>
+  <li>CinematicFinished()
+    <ul>
+      <li>SequenceActor을 제거하고 플레이어의 이동이 가능하도록 상태를 초기화 시킨다.</li>
+      <li>플레이어의 UI와 보스 UI를 활성화시키고 ToggleBossVisibility()로 보스 설정을 한다.</li>
+    </ul>
+  </li>
+  <li>ToggleBossVisibility()
+    <ul>
+      <li>보스 액터의 숨김을 해제시키고 충돌과 Tick을 활성화시킨다.</li>
+      <li>보스의 AIPerception을 활성화하고 보스의 무기도 같은 처리를 해준다.</li>
+    </ul>
+  </li>
 </ul>
 
   
@@ -796,6 +821,15 @@ Zone 진입 확인
                   href="/widget/"
                   >
                   WIDGET
+                </a>
+              </li>
+            
+              <li>
+                <a
+                  class="sidebar-nav-item "
+                  href="/utility/"
+                  >
+                  UTILITY
                 </a>
               </li>
             
