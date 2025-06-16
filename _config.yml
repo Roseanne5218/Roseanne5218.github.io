@@ -84,6 +84,8 @@ menu:
         url:           /weapon/
       - title:         WIDGET
         url:           /widget/
+      - title:         UTILITY
+        url:           /utility/
       - title:         ELSE
         url:           /else/
   - title:           DIRECT X
