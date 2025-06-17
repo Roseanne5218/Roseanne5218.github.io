@@ -6,9 +6,9 @@ categories:
   - unrealportfolio
   - else
 description: >
-  CGameModeBase
+  Global
 ---
-## CGameModeBase
+## Global
 
 ---
 
