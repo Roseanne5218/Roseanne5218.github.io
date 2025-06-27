@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-06-27T01:04:53+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">택배 상자 꺼내기</title><link href="/codingtest/programmers/lv.1/2025-06-26-codingtest_90/" rel="alternate" type="text/html" title="택배 상자 꺼내기" /><published>2025-06-26T00:00:00+00:00</published><updated>2025-06-27T01:04:12+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_90</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-26-codingtest_90/"><![CDATA[<hr />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-06-27T01:24:47+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">택배 상자 꺼내기</title><link href="/codingtest/programmers/lv.1/2025-06-26-codingtest_90/" rel="alternate" type="text/html" title="택배 상자 꺼내기" /><published>2025-06-26T00:00:00+00:00</published><updated>2025-06-27T01:24:03+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_90</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-26-codingtest_90/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -56,8 +56,9 @@
   <li>문제 예시와 같습니다. 꺼내야 하는 상자의 총개수는 8번 상자를 포함해 3개입니다.</li>
 </ul>
 
-<p>입출력 예 #2
-<img src="/assets/img/codingtest/389478_4.png" width="300" height="420" /></p>
+<p>입출력 예 #2</p>
+
+<p><img src="/assets/img/codingtest/389478_4.png" width="300" height="420" /></p>
 
 <ul>
   <li>6번 상자를 꺼내려면 먼저 13, 12, 7번 상자를 꺼내야 합니다.
@@ -131,7 +132,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 19분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 389478]]></summary></entry><entry><title type="html">[PCCP 기출문제] 1번 / 동영상 재생기</title><link href="/codingtest/programmers/lv.1/2025-06-25-codingtest_89/" rel="alternate" type="text/html" title="[PCCP 기출문제] 1번 / 동영상 재생기" /><published>2025-06-25T00:00:00+00:00</published><updated>2025-06-27T01:04:12+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_89</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-25-codingtest_89/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 389478]]></summary></entry><entry><title type="html">[PCCP 기출문제] 1번 / 동영상 재생기</title><link href="/codingtest/programmers/lv.1/2025-06-25-codingtest_89/" rel="alternate" type="text/html" title="[PCCP 기출문제] 1번 / 동영상 재생기" /><published>2025-06-25T00:00:00+00:00</published><updated>2025-06-27T01:24:03+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_89</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-25-codingtest_89/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -302,7 +303,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 51분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 340213]]></summary></entry><entry><title type="html">신고 결과 받기</title><link href="/codingtest/programmers/lv.1/2025-06-24-codingtest_88/" rel="alternate" type="text/html" title="신고 결과 받기" /><published>2025-06-24T00:00:00+00:00</published><updated>2025-06-27T01:04:12+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_88</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-24-codingtest_88/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 340213]]></summary></entry><entry><title type="html">신고 결과 받기</title><link href="/codingtest/programmers/lv.1/2025-06-24-codingtest_88/" rel="alternate" type="text/html" title="신고 결과 받기" /><published>2025-06-24T00:00:00+00:00</published><updated>2025-06-27T01:24:03+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_88</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-24-codingtest_88/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -450,7 +451,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 38분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 92334]]></summary></entry><entry><title type="html">[PCCP 기출문제] 1번 / 붕대 감기</title><link href="/codingtest/programmers/lv.1/2025-06-20-codingtest_87/" rel="alternate" type="text/html" title="[PCCP 기출문제] 1번 / 붕대 감기" /><published>2025-06-20T00:00:00+00:00</published><updated>2025-06-27T01:04:12+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_87</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-20-codingtest_87/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 92334]]></summary></entry><entry><title type="html">[PCCP 기출문제] 1번 / 붕대 감기</title><link href="/codingtest/programmers/lv.1/2025-06-20-codingtest_87/" rel="alternate" type="text/html" title="[PCCP 기출문제] 1번 / 붕대 감기" /><published>2025-06-20T00:00:00+00:00</published><updated>2025-06-27T01:24:03+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_87</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-20-codingtest_87/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -604,7 +605,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 23분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 250137]]></summary></entry><entry><title type="html">[PCCE 기출문제] 10번 / 공원</title><link href="/codingtest/programmers/lv.1/2025-06-19-codingtest_86/" rel="alternate" type="text/html" title="[PCCE 기출문제] 10번 / 공원" /><published>2025-06-19T00:00:00+00:00</published><updated>2025-06-27T01:04:12+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_86</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-19-codingtest_86/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 250137]]></summary></entry><entry><title type="html">[PCCE 기출문제] 10번 / 공원</title><link href="/codingtest/programmers/lv.1/2025-06-19-codingtest_86/" rel="alternate" type="text/html" title="[PCCE 기출문제] 10번 / 공원" /><published>2025-06-19T00:00:00+00:00</published><updated>2025-06-27T01:24:03+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_86</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-19-codingtest_86/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -714,7 +715,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 38분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 340198]]></summary></entry><entry><title type="html">공원 산책</title><link href="/codingtest/programmers/lv.1/2025-06-18-codingtest_85/" rel="alternate" type="text/html" title="공원 산책" /><published>2025-06-18T00:00:00+00:00</published><updated>2025-06-27T01:04:12+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_85</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-18-codingtest_85/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 340198]]></summary></entry><entry><title type="html">공원 산책</title><link href="/codingtest/programmers/lv.1/2025-06-18-codingtest_85/" rel="alternate" type="text/html" title="공원 산책" /><published>2025-06-18T00:00:00+00:00</published><updated>2025-06-27T01:24:03+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_85</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-18-codingtest_85/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -907,7 +908,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 41분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 172928]]></summary></entry><entry><title type="html">달리기 경주</title><link href="/codingtest/programmers/lv.1/2025-06-17-codingtest_84/" rel="alternate" type="text/html" title="달리기 경주" /><published>2025-06-17T00:00:00+00:00</published><updated>2025-06-27T01:04:12+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_84</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-17-codingtest_84/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 172928]]></summary></entry><entry><title type="html">달리기 경주</title><link href="/codingtest/programmers/lv.1/2025-06-17-codingtest_84/" rel="alternate" type="text/html" title="달리기 경주" /><published>2025-06-17T00:00:00+00:00</published><updated>2025-06-27T01:24:03+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_84</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-17-codingtest_84/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -1011,7 +1012,7 @@
 <ul>
   <li>시간 복잡도를 줄이기 위해 데이터를 하나씩 검사하는 것이 아닌 해시 테이블을 이용하여 탐색이 쉽도록 하는 것이 좋다.</li>
   <li>해시 테이블을 사용하면 다중 for 문을 이용할 필요가 없고 바로 원하는 파일을 찾을 수 있다.</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 178871]]></summary></entry><entry><title type="html">개인정보 수집 유효기간</title><link href="/codingtest/programmers/lv.1/2025-06-16-codingtest_83/" rel="alternate" type="text/html" title="개인정보 수집 유효기간" /><published>2025-06-16T00:00:00+00:00</published><updated>2025-06-27T01:04:12+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_83</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-16-codingtest_83/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 178871]]></summary></entry><entry><title type="html">개인정보 수집 유효기간</title><link href="/codingtest/programmers/lv.1/2025-06-16-codingtest_83/" rel="alternate" type="text/html" title="개인정보 수집 유효기간" /><published>2025-06-16T00:00:00+00:00</published><updated>2025-06-27T01:24:03+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_83</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-16-codingtest_83/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -1248,7 +1249,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 1시간 12분 
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 150370]]></summary></entry><entry><title type="html">유연근무제</title><link href="/codingtest/programmers/lv.1/2025-06-12-codingtest_82/" rel="alternate" type="text/html" title="유연근무제" /><published>2025-06-12T00:10:00+00:00</published><updated>2025-06-27T01:04:12+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_82</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-12-codingtest_82/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 150370]]></summary></entry><entry><title type="html">유연근무제</title><link href="/codingtest/programmers/lv.1/2025-06-12-codingtest_82/" rel="alternate" type="text/html" title="유연근무제" /><published>2025-06-12T00:10:00+00:00</published><updated>2025-06-27T01:24:03+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_82</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-12-codingtest_82/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -1387,7 +1388,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 39분 
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 388351]]></summary></entry><entry><title type="html">바탕화면 정리</title><link href="/codingtest/programmers/lv.1/2025-06-12-codingtest_81/" rel="alternate" type="text/html" title="바탕화면 정리" /><published>2025-06-12T00:00:00+00:00</published><updated>2025-06-27T01:04:12+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_81</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-12-codingtest_81/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 388351]]></summary></entry><entry><title type="html">바탕화면 정리</title><link href="/codingtest/programmers/lv.1/2025-06-12-codingtest_81/" rel="alternate" type="text/html" title="바탕화면 정리" /><published>2025-06-12T00:00:00+00:00</published><updated>2025-06-27T01:24:03+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_81</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-12-codingtest_81/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
