@@ -1,5 +1,125 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-07-03T03:39:32+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">JadenCase 문자열 만들기</title><link href="/codingtest/programmers/lv.2/2025-07-03-codingtest_96/" rel="alternate" type="text/html" title="JadenCase 문자열 만들기" /><published>2025-07-03T00:10:00+00:00</published><updated>2025-07-03T03:38:29+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_96</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-07-03-codingtest_96/"><![CDATA[<hr />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-07-11T12:11:49+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">이진 변환 반복하기</title><link href="/codingtest/programmers/lv.2/2025-07-11-codingtest_97/" rel="alternate" type="text/html" title="이진 변환 반복하기" /><published>2025-07-11T00:00:00+00:00</published><updated>2025-07-11T12:11:03+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_97</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-07-11-codingtest_97/"><![CDATA[<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+문제 설명
+</p>
+
+<p>0과 1로 이루어진 어떤 문자열 x에 대한 이진 변환을 다음과 같이 정의합니다.</p>
+
+<ol>
+  <li>x의 모든 0을 제거합니다.</li>
+  <li>x의 길이를 c라고 하면, x를 “c를 2진법으로 표현한 문자열”로 바꿉니다.</li>
+</ol>
+
+<p>예를 들어, x = “0111010”이라면, x에 이진 변환을 가하면 x = “0111010” -&gt; “1111” -&gt; “100” 이 됩니다.</p>
+
+<p>0과 1로 이루어진 문자열 s가 매개변수로 주어집니다. s가 “1”이 될 때까지 계속해서 s에 이진 변환을 가했을 때, 이진 변환의 횟수와 변환 과정에서 제거된 모든 0의 개수를 각각 배열에 담아 return 하도록 solution 함수를 완성해주세요.</p>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+제한사항
+</p>
+
+<ul>
+  <li>s의 길이는 1 이상 150,000 이하입니다.</li>
+  <li>s에는 ‘1’이 최소 하나 이상 포함되어 있습니다.</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+입출력 예 
+</p>
+
+<p><img src="/assets/img/codingtest/70129_1.png" width="250" height="135" /></p>
+
+<p>입출력 예 #1</p>
+<ul>
+  <li>“110010101001”이 “1”이 될 때까지 이진 변환을 가하는 과정은 다음과 같습니다.</li>
+</ul>
+
+<p><img src="/assets/img/codingtest/70129_2.png" width="600" height="150" /></p>
+
+<ul>
+  <li>3번의 이진 변환을 하는 동안 8개의 0을 제거했으므로, [3,8]을 return 해야 합니다.</li>
+</ul>
+
+<p>입출력 예 #2</p>
+<ul>
+  <li>“01110”이 “1”이 될 때까지 이진 변환을 가하는 과정은 다음과 같습니다.</li>
+</ul>
+
+<p><img src="/assets/img/codingtest/70129_3.png" width="600" height="150" /></p>
+
+<ul>
+  <li>3번의 이진 변환을 하는 동안 3개의 0을 제거했으므로, [3,3]을 return 해야 합니다.</li>
+</ul>
+
+<p>입출력 예 #3</p>
+<ul>
+  <li>“1111111”이 “1”이 될 때까지 이진 변환을 가하는 과정은 다음과 같습니다.</li>
+</ul>
+
+<p><img src="/assets/img/codingtest/70129_4.png" width="600" height="180" /></p>
+
+<ul>
+  <li>4번의 이진 변환을 하는 동안 1개의 0을 제거했으므로, [4,1]을 return 해야 합니다.</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+작성 내용
+</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">solution</span><span class="p">(</span><span class="n">string</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">answer</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    
+    <span class="k">while</span><span class="p">(</span><span class="n">s</span> <span class="o">!=</span> <span class="s">"1"</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">s</span><span class="p">.</span><span class="n">length</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="sc">'0'</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">s</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+                <span class="n">answer</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
+                <span class="n">i</span><span class="o">--</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        
+        <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+        
+        <span class="k">while</span><span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">?</span> <span class="s">"0"</span> <span class="o">:</span> <span class="s">"1"</span><span class="p">)</span> <span class="o">+</span> <span class="n">s</span><span class="p">;</span>
+            <span class="n">num</span> <span class="o">/=</span> <span class="mi">2</span><span class="p">;</span>
+        <span class="p">}</span>
+        
+        <span class="n">answer</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="n">answer</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+정답 여부 O
+</p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+소요 시간 : 30분
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 70129]]></summary></entry><entry><title type="html">JadenCase 문자열 만들기</title><link href="/codingtest/programmers/lv.2/2025-07-03-codingtest_96/" rel="alternate" type="text/html" title="JadenCase 문자열 만들기" /><published>2025-07-03T00:10:00+00:00</published><updated>2025-07-11T12:11:03+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_96</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-07-03-codingtest_96/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -82,7 +202,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 5분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12951]]></summary></entry><entry><title type="html">최솟값 만들기</title><link href="/codingtest/programmers/lv.2/2025-07-03-codingtest_95/" rel="alternate" type="text/html" title="최솟값 만들기" /><published>2025-07-03T00:00:00+00:00</published><updated>2025-07-03T03:38:29+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_95</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-07-03-codingtest_95/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12951]]></summary></entry><entry><title type="html">최솟값 만들기</title><link href="/codingtest/programmers/lv.2/2025-07-03-codingtest_95/" rel="alternate" type="text/html" title="최솟값 만들기" /><published>2025-07-03T00:00:00+00:00</published><updated>2025-07-11T12:11:03+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_95</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-07-03-codingtest_95/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -169,7 +289,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 4분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12941]]></summary></entry><entry><title type="html">올바른 괄호</title><link href="/codingtest/programmers/lv.2/2025-07-02-codingtest_94/" rel="alternate" type="text/html" title="올바른 괄호" /><published>2025-07-02T00:10:00+00:00</published><updated>2025-07-03T03:38:29+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_94</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-07-02-codingtest_94/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12941]]></summary></entry><entry><title type="html">올바른 괄호</title><link href="/codingtest/programmers/lv.2/2025-07-02-codingtest_94/" rel="alternate" type="text/html" title="올바른 괄호" /><published>2025-07-02T00:10:00+00:00</published><updated>2025-07-11T12:11:03+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_94</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-07-02-codingtest_94/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -250,7 +370,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 5분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12909]]></summary></entry><entry><title type="html">최댓값과 최솟값</title><link href="/codingtest/programmers/lv.2/2025-07-02-codingtest_93/" rel="alternate" type="text/html" title="최댓값과 최솟값" /><published>2025-07-02T00:00:00+00:00</published><updated>2025-07-03T03:38:29+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_93</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-07-02-codingtest_93/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12909]]></summary></entry><entry><title type="html">최댓값과 최솟값</title><link href="/codingtest/programmers/lv.2/2025-07-02-codingtest_93/" rel="alternate" type="text/html" title="최댓값과 최솟값" /><published>2025-07-02T00:00:00+00:00</published><updated>2025-07-11T12:11:03+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_93</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-07-02-codingtest_93/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -324,7 +444,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 8분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12939]]></summary></entry><entry><title type="html">[카카오 인턴] 키패드 누르기</title><link href="/codingtest/programmers/lv.1/2025-07-01-codingtest_92/" rel="alternate" type="text/html" title="[카카오 인턴] 키패드 누르기" /><published>2025-07-01T00:00:00+00:00</published><updated>2025-07-03T03:38:29+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_92</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-07-01-codingtest_92/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12939]]></summary></entry><entry><title type="html">[카카오 인턴] 키패드 누르기</title><link href="/codingtest/programmers/lv.1/2025-07-01-codingtest_92/" rel="alternate" type="text/html" title="[카카오 인턴] 키패드 누르기" /><published>2025-07-01T00:00:00+00:00</published><updated>2025-07-11T12:11:03+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_92</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-07-01-codingtest_92/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -477,7 +597,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 12분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 67256]]></summary></entry><entry><title type="html">가장 많이 받은 선물</title><link href="/codingtest/programmers/lv.1/2025-06-30-codingtest_91/" rel="alternate" type="text/html" title="가장 많이 받은 선물" /><published>2025-06-30T00:00:00+00:00</published><updated>2025-07-03T03:38:29+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_91</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-30-codingtest_91/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 67256]]></summary></entry><entry><title type="html">가장 많이 받은 선물</title><link href="/codingtest/programmers/lv.1/2025-06-30-codingtest_91/" rel="alternate" type="text/html" title="가장 많이 받은 선물" /><published>2025-06-30T00:00:00+00:00</published><updated>2025-07-11T12:11:03+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_91</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-30-codingtest_91/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -653,7 +773,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 41분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 258712]]></summary></entry><entry><title type="html">택배 상자 꺼내기</title><link href="/codingtest/programmers/lv.1/2025-06-26-codingtest_90/" rel="alternate" type="text/html" title="택배 상자 꺼내기" /><published>2025-06-26T00:00:00+00:00</published><updated>2025-07-03T03:38:29+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_90</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-26-codingtest_90/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 258712]]></summary></entry><entry><title type="html">택배 상자 꺼내기</title><link href="/codingtest/programmers/lv.1/2025-06-26-codingtest_90/" rel="alternate" type="text/html" title="택배 상자 꺼내기" /><published>2025-06-26T00:00:00+00:00</published><updated>2025-07-11T12:11:03+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_90</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-26-codingtest_90/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -786,7 +906,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 19분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 389478]]></summary></entry><entry><title type="html">[PCCP 기출문제] 1번 / 동영상 재생기</title><link href="/codingtest/programmers/lv.1/2025-06-25-codingtest_89/" rel="alternate" type="text/html" title="[PCCP 기출문제] 1번 / 동영상 재생기" /><published>2025-06-25T00:00:00+00:00</published><updated>2025-07-03T03:38:29+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_89</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-25-codingtest_89/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 389478]]></summary></entry><entry><title type="html">[PCCP 기출문제] 1번 / 동영상 재생기</title><link href="/codingtest/programmers/lv.1/2025-06-25-codingtest_89/" rel="alternate" type="text/html" title="[PCCP 기출문제] 1번 / 동영상 재생기" /><published>2025-06-25T00:00:00+00:00</published><updated>2025-07-11T12:11:03+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_89</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-25-codingtest_89/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -957,7 +1077,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 51분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 340213]]></summary></entry><entry><title type="html">신고 결과 받기</title><link href="/codingtest/programmers/lv.1/2025-06-24-codingtest_88/" rel="alternate" type="text/html" title="신고 결과 받기" /><published>2025-06-24T00:00:00+00:00</published><updated>2025-07-03T03:38:29+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_88</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-24-codingtest_88/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 340213]]></summary></entry><entry><title type="html">신고 결과 받기</title><link href="/codingtest/programmers/lv.1/2025-06-24-codingtest_88/" rel="alternate" type="text/html" title="신고 결과 받기" /><published>2025-06-24T00:00:00+00:00</published><updated>2025-07-11T12:11:03+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_88</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-24-codingtest_88/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -1105,158 +1225,4 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 38분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 92334]]></summary></entry><entry><title type="html">[PCCP 기출문제] 1번 / 붕대 감기</title><link href="/codingtest/programmers/lv.1/2025-06-20-codingtest_87/" rel="alternate" type="text/html" title="[PCCP 기출문제] 1번 / 붕대 감기" /><published>2025-06-20T00:00:00+00:00</published><updated>2025-07-03T03:38:29+00:00</updated><id>/codingtest/programmers/lv.1/codingtest_87</id><content type="html" xml:base="/codingtest/programmers/lv.1/2025-06-20-codingtest_87/"><![CDATA[<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-문제 설명
-</p>
-
-<p>어떤 게임에는 붕대 감기라는 기술이 있습니다.</p>
-
-<p>붕대 감기는 t초 동안 붕대를 감으면서 1초마다 x만큼의 체력을 회복합니다. t초 연속으로 붕대를 감는 데 성공한다면 y만큼의 체력을 추가로 회복합니다. 게임 캐릭터에는 최대 체력이 존재해 현재 체력이 최대 체력보다 커지는 것은 불가능합니다.</p>
-
-<p>기술을 쓰는 도중 몬스터에게 공격을 당하면 기술이 취소되고, 공격을 당하는 순간에는 체력을 회복할 수 없습니다. 몬스터에게 공격당해 기술이 취소당하거나 기술이 끝나면 그 즉시 붕대 감기를 다시 사용하며, 연속 성공 시간이 0으로 초기화됩니다.</p>
-
-<p>몬스터의 공격을 받으면 정해진 피해량만큼 현재 체력이 줄어듭니다. 이때, 현재 체력이 0 이하가 되면 캐릭터가 죽으며 더 이상 체력을 회복할 수 없습니다.</p>
-
-<p>당신은 붕대감기 기술의 정보, 캐릭터가 가진 최대 체력과 몬스터의 공격 패턴이 주어질 때 캐릭터가 끝까지 생존할 수 있는지 궁금합니다.</p>
-
-<p>붕대 감기 기술의 시전 시간, 1초당 회복량, 추가 회복량을 담은 1차원 정수 배열 bandage와 최대 체력을 의미하는 정수 health, 몬스터의 공격 시간과 피해량을 담은 2차원 정수 배열 attacks가 매개변수로 주어집니다. 모든 공격이 끝난 직후 남은 체력을 return 하도록 solution 함수를 완성해 주세요. 만약 몬스터의 공격을 받고 캐릭터의 체력이 0 이하가 되어 죽는다면 -1을 return 해주세요.</p>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-제한사항
-</p>
-
-<ul>
-  <li>bandage는 [시전 시간, 초당 회복량, 추가 회복량] 형태의 길이가 3인 정수 배열입니다.
-    <ul>
-      <li>1 ≤ 시전 시간 = t ≤ 50</li>
-      <li>1 ≤ 초당 회복량 = x ≤ 100</li>
-      <li>1 ≤ 추가 회복량 = y ≤ 100</li>
-    </ul>
-  </li>
-  <li>1 ≤ health ≤ 1,000</li>
-  <li>1 ≤ attacks의 길이 ≤ 100
-    <ul>
-      <li>attacks[i]는 [공격 시간, 피해량] 형태의 길이가 2인 정수 배열입니다.</li>
-      <li>attacks는 공격 시간을 기준으로 오름차순 정렬된 상태입니다.</li>
-      <li>attacks의 공격 시간은 모두 다릅니다.</li>
-      <li>1 ≤ 공격 시간 ≤ 1,000</li>
-      <li>1 ≤ 피해량 ≤ 100</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-입출력 예 
-</p>
-
-<p><img src="/assets/img/codingtest/250137_1.png" width="480" height="170" /></p>
-
-<p>입출력 예 #1</p>
-<ul>
-  <li>몬스터의 마지막 공격은 11초에 이루어집니다. 0초부터 11초까지 캐릭터의 상태는 아래 표와 같습니다.</li>
-</ul>
-
-<p><img src="/assets/img/codingtest/250137_2.png" width="750" height="460" /></p>
-
-<ul>
-  <li>몬스터의 마지막 공격 직후 캐릭터의 체력은 5입니다. 따라서 5을 return 해야 합니다.</li>
-</ul>
-
-<p>입출력 예 #2</p>
-<ul>
-  <li>몬스터의 마지막 공격은 8초에 이루어집니다. 0초부터 8초까지 캐릭터의 상태는 아래 표와 같습니다.</li>
-</ul>
-
-<p><img src="/assets/img/codingtest/250137_3.png" width="750" height="360" /></p>
-
-<ul>
-  <li>몬스터의 공격을 받아 캐릭터의 체력이 0 이하가 됩니다. 따라서 -1을 return 해야 합니다.</li>
-</ul>
-
-<p>입출력 예 #3</p>
-<ul>
-  <li>몬스터의 마지막 공격은 8초에 이루어집니다. 0초부터 5초까지 캐릭터의 상태는 아래 표와 같습니다.</li>
-</ul>
-
-<p><img src="/assets/img/codingtest/250137_4.png" width="750" height="240" /></p>
-
-<ul>
-  <li>몬스터의 공격을 받아 캐릭터의 체력이 0 이하가 됩니다. 따라서 -1을 return 해야 합니다.</li>
-</ul>
-
-<p>입출력 예 #4</p>
-<ul>
-  <li>몬스터의 마지막 공격은 3초에 이루어집니다. 0초부터 3초까지 캐릭터의 상태는 아래 표와 같습니다.</li>
-</ul>
-
-<p><img src="/assets/img/codingtest/250137_4.png" width="750" height="240" /></p>
-
-<ul>
-  <li>몬스터의 마지막 공격 직후 캐릭터의 체력은 3입니다. 따라서 3을 return 해야 합니다.</li>
-</ul>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-작성 내용
-</p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
-</span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="nf">solution</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">bandage</span><span class="p">,</span> <span class="kt">int</span> <span class="n">health</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">attacks</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">answer</span> <span class="o">=</span> <span class="n">health</span><span class="p">;</span>
-    
-    <span class="kt">int</span> <span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">attacks</span><span class="p">[</span><span class="n">attacks</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">];</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="n">attacks</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
-        <span class="p">{</span>
-            <span class="n">answer</span> <span class="o">-=</span> <span class="n">attacks</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="mi">1</span><span class="p">];</span>
-            <span class="n">n</span><span class="o">++</span><span class="p">;</span>
-            <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="k">else</span> <span class="nf">if</span><span class="p">(</span><span class="n">count</span> <span class="o">!=</span> <span class="n">bandage</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-        <span class="p">{</span>
-            <span class="n">count</span><span class="o">++</span><span class="p">;</span>
-            <span class="n">answer</span> <span class="o">+=</span> <span class="n">bandage</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
-        <span class="p">}</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="n">bandage</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-        <span class="p">{</span>
-            <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-            <span class="n">answer</span> <span class="o">+=</span> <span class="n">bandage</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
-        <span class="p">}</span>
-        
-        <span class="k">if</span><span class="p">(</span><span class="n">answer</span> <span class="o">&gt;</span> <span class="n">health</span><span class="p">)</span>
-            <span class="n">answer</span> <span class="o">=</span> <span class="n">health</span><span class="p">;</span>
-        
-        <span class="k">if</span><span class="p">(</span><span class="n">answer</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="n">answer</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-            <span class="k">break</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    
-    <span class="k">return</span> <span class="n">answer</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<hr />
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-정답 여부 O
-</p>
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-소요 시간 : 23분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 250137]]></summary></entry></feed>
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.1" /><summary type="html"><![CDATA[Programmers - 92334]]></summary></entry></feed>
