@@ -4,6 +4,38 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>/codingtest/programmers/lv.2/2025-08-28-codingtest_109/</loc>
+        
+        <lastmod>2025-08-28T00:10:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>/codingtest/programmers/lv.2/2025-08-28-codingtest_108/</loc>
+        
+        <lastmod>2025-08-28T00:00:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>/codingtest/programmers/lv.2/2025-08-25-codingtest_107/</loc>
         
         <lastmod>2025-08-25T00:10:00+00:00</lastmod>
