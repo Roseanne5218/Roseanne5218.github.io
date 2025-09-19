@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-09-19T14:55:07+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">행렬의 곱셈</title><link href="/codingtest/programmers/lv.2/2025-09-16-codingtest_114/" rel="alternate" type="text/html" title="행렬의 곱셈" /><published>2025-09-16T00:00:00+00:00</published><updated>2025-09-19T14:54:12+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_114</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-09-16-codingtest_114/"><![CDATA[<hr />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-09-19T15:00:20+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">행렬의 곱셈</title><link href="/codingtest/programmers/lv.2/2025-09-16-codingtest_114/" rel="alternate" type="text/html" title="행렬의 곱셈" /><published>2025-09-16T00:00:00+00:00</published><updated>2025-09-19T14:59:23+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_114</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-09-16-codingtest_114/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -63,24 +63,25 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 7분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12949]]></summary></entry><entry><title type="html">행렬의 곱셈</title><link href="/codingtest/programmers/lv.2/2025-09-16-codingtest_115/" rel="alternate" type="text/html" title="행렬의 곱셈" /><published>2025-09-16T00:00:00+00:00</published><updated>2025-09-19T14:54:12+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_115</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-09-16-codingtest_115/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12949]]></summary></entry><entry><title type="html">H-Index</title><link href="/codingtest/programmers/lv.2/2025-09-16-codingtest_115/" rel="alternate" type="text/html" title="H-Index" /><published>2025-09-16T00:00:00+00:00</published><updated>2025-09-19T14:59:23+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_115</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-09-16-codingtest_115/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
 </p>
 
-<p>2차원 행렬 arr1과 arr2를 입력받아, arr1에 arr2를 곱한 결과를 반환하는 함수, solution을 완성해주세요.</p>
+<p>H-Index는 과학자의 생산성과 영향력을 나타내는 지표입니다. 어느 과학자의 H-Index를 나타내는 값인 h를 구하려고 합니다. 위키백과1에 따르면, H-Index는 다음과 같이 구합니다.</p>
 
-<hr />
+<p>어떤 과학자가 발표한 논문 n편 중, h번 이상 인용된 논문이 h편 이상이고 나머지 논문이 h번 이하 인용되었다면 h의 최댓값이 이 과학자의 H-Index입니다.</p>
+
+<h2 id="어떤-과학자가-발표한-논문의-인용-횟수를-담은-배열-citations가-매개변수로-주어질-때-이-과학자의-h-index를-return-하도록-solution-함수를-작성해주세요">어떤 과학자가 발표한 논문의 인용 횟수를 담은 배열 citations가 매개변수로 주어질 때, 이 과학자의 H-Index를 return 하도록 solution 함수를 작성해주세요.</h2>
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 제한사항
 </p>
 
 <ul>
-  <li>행렬 arr1, arr2의 행과 열의 길이는 2 이상 100 이하입니다.</li>
-  <li>행렬 arr1, arr2의 원소는 -10 이상 20 이하인 자연수입니다.</li>
-  <li>곱할 수 있는 배열만 주어집니다.</li>
+  <li>과학자가 발표한 논문의 수는 1편 이상 1,000편 이하입니다.</li>
+  <li>논문별 인용 횟수는 0회 이상 10,000회 이하입니다.</li>
 </ul>
 
 <hr />
@@ -89,7 +90,11 @@
 입출력 예 
 </p>
 
-<p><img src="/assets/img/codingtest/12949.png" width="550" height="155" /></p>
+<p><img src="/assets/img/codingtest/42747.png" width="200" height="70" /></p>
+
+<ul>
+  <li>이 과학자가 발표한 논문의 수는 5편이고, 그중 3편의 논문은 3회 이상 인용되었습니다. 그리고 나머지 2편의 논문은 3회 이하 인용되었기 때문에 이 과학자의 H-Index는 3입니다.</li>
+</ul>
 
 <hr />
 
@@ -98,21 +103,21 @@
 </p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
-<span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">solution</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">arr1</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">arr2</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">answer</span><span class="p">(</span><span class="n">arr1</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">arr2</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">size</span><span class="p">(),</span> <span class="mi">0</span><span class="p">));</span>
+<span class="kt">int</span> <span class="nf">solution</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">citations</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">arr1</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="n">sort</span><span class="p">(</span><span class="n">citations</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">citations</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">greater</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">());</span>
+    
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">citations</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">l</span><span class="o">&lt;</span><span class="n">arr2</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">size</span><span class="p">();</span> <span class="n">l</span><span class="o">++</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">arr1</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">size</span><span class="p">();</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="p">{</span>
-                <span class="n">answer</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">l</span><span class="p">]</span> <span class="o">+=</span> <span class="n">arr1</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">arr2</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">l</span><span class="p">];</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">citations</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+            <span class="n">answer</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+        <span class="k">else</span> <span class="k">break</span><span class="p">;</span>
     <span class="p">}</span>
     
     <span class="k">return</span> <span class="n">answer</span><span class="p">;</span>
@@ -126,8 +131,8 @@
 </p>
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
-소요 시간 : 7분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12949]]></summary></entry><entry><title type="html">n^2 배열 자르기</title><link href="/codingtest/programmers/lv.2/2025-09-15-codingtest_113/" rel="alternate" type="text/html" title="n^2 배열 자르기" /><published>2025-09-15T00:00:00+00:00</published><updated>2025-09-19T14:54:12+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_113</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-09-15-codingtest_113/"><![CDATA[<hr />
+소요 시간 : 22분
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42747]]></summary></entry><entry><title type="html">n^2 배열 자르기</title><link href="/codingtest/programmers/lv.2/2025-09-15-codingtest_113/" rel="alternate" type="text/html" title="n^2 배열 자르기" /><published>2025-09-15T00:00:00+00:00</published><updated>2025-09-19T14:59:23+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_113</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-09-15-codingtest_113/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -216,7 +221,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 22분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 87390]]></summary></entry><entry><title type="html">괄호 회전하기</title><link href="/codingtest/programmers/lv.2/2025-09-11-codingtest_112/" rel="alternate" type="text/html" title="괄호 회전하기" /><published>2025-09-11T00:00:00+00:00</published><updated>2025-09-19T14:54:12+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_112</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-09-11-codingtest_112/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 87390]]></summary></entry><entry><title type="html">괄호 회전하기</title><link href="/codingtest/programmers/lv.2/2025-09-11-codingtest_112/" rel="alternate" type="text/html" title="괄호 회전하기" /><published>2025-09-11T00:00:00+00:00</published><updated>2025-09-19T14:59:23+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_112</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-09-11-codingtest_112/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -352,7 +357,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 21분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 76502]]></summary></entry><entry><title type="html">할인 행사</title><link href="/codingtest/programmers/lv.2/2025-09-07-codingtest_111/" rel="alternate" type="text/html" title="할인 행사" /><published>2025-09-07T00:00:00+00:00</published><updated>2025-09-19T14:54:12+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_111</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-09-07-codingtest_111/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 76502]]></summary></entry><entry><title type="html">할인 행사</title><link href="/codingtest/programmers/lv.2/2025-09-07-codingtest_111/" rel="alternate" type="text/html" title="할인 행사" /><published>2025-09-07T00:00:00+00:00</published><updated>2025-09-19T14:59:23+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_111</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-09-07-codingtest_111/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -453,7 +458,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 12분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 131127]]></summary></entry><entry><title type="html">연속 부분 수열 합의 개수</title><link href="/codingtest/programmers/lv.2/2025-09-02-codingtest_110/" rel="alternate" type="text/html" title="연속 부분 수열 합의 개수" /><published>2025-09-02T00:00:00+00:00</published><updated>2025-09-19T14:54:12+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_110</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-09-02-codingtest_110/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 131127]]></summary></entry><entry><title type="html">연속 부분 수열 합의 개수</title><link href="/codingtest/programmers/lv.2/2025-09-02-codingtest_110/" rel="alternate" type="text/html" title="연속 부분 수열 합의 개수" /><published>2025-09-02T00:00:00+00:00</published><updated>2025-09-19T14:59:23+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_110</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-09-02-codingtest_110/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -547,7 +552,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 23분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 131701]]></summary></entry><entry><title type="html">예상 대진표</title><link href="/codingtest/programmers/lv.2/2025-08-28-codingtest_109/" rel="alternate" type="text/html" title="예상 대진표" /><published>2025-08-28T00:10:00+00:00</published><updated>2025-09-19T14:54:12+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_109</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-08-28-codingtest_109/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 131701]]></summary></entry><entry><title type="html">예상 대진표</title><link href="/codingtest/programmers/lv.2/2025-08-28-codingtest_109/" rel="alternate" type="text/html" title="예상 대진표" /><published>2025-08-28T00:10:00+00:00</published><updated>2025-09-19T14:59:23+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_109</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-08-28-codingtest_109/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -620,7 +625,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 40분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12985]]></summary></entry><entry><title type="html">영어 끝말잇기</title><link href="/codingtest/programmers/lv.2/2025-08-28-codingtest_108/" rel="alternate" type="text/html" title="영어 끝말잇기" /><published>2025-08-28T00:00:00+00:00</published><updated>2025-09-19T14:54:12+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_108</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-08-28-codingtest_108/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12985]]></summary></entry><entry><title type="html">영어 끝말잇기</title><link href="/codingtest/programmers/lv.2/2025-08-28-codingtest_108/" rel="alternate" type="text/html" title="영어 끝말잇기" /><published>2025-08-28T00:00:00+00:00</published><updated>2025-09-19T14:59:23+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_108</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-08-28-codingtest_108/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -766,7 +771,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 10분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12981]]></summary></entry><entry><title type="html">멀리 뛰기</title><link href="/codingtest/programmers/lv.2/2025-08-25-codingtest_107/" rel="alternate" type="text/html" title="멀리 뛰기" /><published>2025-08-25T00:10:00+00:00</published><updated>2025-09-19T14:54:12+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_107</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-08-25-codingtest_107/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12981]]></summary></entry><entry><title type="html">멀리 뛰기</title><link href="/codingtest/programmers/lv.2/2025-08-25-codingtest_107/" rel="alternate" type="text/html" title="멀리 뛰기" /><published>2025-08-25T00:10:00+00:00</published><updated>2025-09-19T14:59:23+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_107</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-08-25-codingtest_107/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -847,7 +852,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 20분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12914]]></summary></entry><entry><title type="html">N개의 최소공배수</title><link href="/codingtest/programmers/lv.2/2025-08-25-codingtest_106/" rel="alternate" type="text/html" title="N개의 최소공배수" /><published>2025-08-25T00:00:00+00:00</published><updated>2025-09-19T14:54:12+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_106</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-08-25-codingtest_106/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12914]]></summary></entry><entry><title type="html">N개의 최소공배수</title><link href="/codingtest/programmers/lv.2/2025-08-25-codingtest_106/" rel="alternate" type="text/html" title="N개의 최소공배수" /><published>2025-08-25T00:00:00+00:00</published><updated>2025-09-19T14:59:23+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_106</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-08-25-codingtest_106/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
