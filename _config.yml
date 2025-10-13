@@ -369,17 +369,20 @@ include:
 # ----------------------------------------------------------------------------------------
 
 plugins:
-  - jekyll-remote-theme
-  - jekyll-include-cache
+  - jekyll-default-layout
+  - jekyll-feed
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-redirect-from
+  - jekyll-relative-links
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-redirect-from
   - jekyll-titles-from-headings
-  - jekyll-optional-front-matter
-  - jekyll-readme-index
-  - jekyll-relative-links
+  - jekyll-include-cache
+  - jekyll-last-modified-at
+  - jekyll-remote-theme
+
 
 # SEO Tag
 # ---------------------------------------------------------------------------------------
