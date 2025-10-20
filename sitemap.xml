@@ -4,9 +4,25 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
-        <loc>/codingtest/programmers/lv.2/2025-10-14-codingtest_122/</loc>
+        <loc>/codingtest/programmers/lv.2/2025-10-20-codingtest_123/</loc>
         
-        <lastmod>2025-10-14T00:00:00+00:00</lastmod>
+        <lastmod>2025-10-20T00:00:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>/codingtest/programmers/lv.2/2025-10-19-codingtest_122/</loc>
+        
+        <lastmod>2025-10-19T00:00:00+00:00</lastmod>
         
 
         
