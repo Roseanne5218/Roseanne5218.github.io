@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-10-28T14:57:28+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">뒤에 있는 큰 수 찾기</title><link href="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/" rel="alternate" type="text/html" title="뒤에 있는 큰 수 찾기" /><published>2025-10-28T00:00:00+00:00</published><updated>2025-10-28T14:56:34+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_129</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/"><![CDATA[<hr />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-10-28T15:02:13+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">모음사전</title><link href="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/" rel="alternate" type="text/html" title="모음사전" /><published>2025-10-28T00:00:00+00:00</published><updated>2025-10-28T15:01:20+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_129</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -91,7 +91,7 @@
 
 <ul>
   <li>빠른 연산을 하기 위하여 하나하나 탐색하는 것이 아닌 가중치를 이용해 순서를 더함</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 84512]]></summary></entry><entry><title type="html">뒤에 있는 큰 수 찾기</title><link href="/codingtest/programmers/lv.2/2025-10-27-codingtest_128/" rel="alternate" type="text/html" title="뒤에 있는 큰 수 찾기" /><published>2025-10-27T00:00:00+00:00</published><updated>2025-10-28T14:56:34+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_128</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-27-codingtest_128/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 84512]]></summary></entry><entry><title type="html">뒤에 있는 큰 수 찾기</title><link href="/codingtest/programmers/lv.2/2025-10-27-codingtest_128/" rel="alternate" type="text/html" title="뒤에 있는 큰 수 찾기" /><published>2025-10-27T00:00:00+00:00</published><updated>2025-10-28T15:01:20+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_128</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-27-codingtest_128/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -178,7 +178,7 @@
   <li>다중 for 문 을 사용하면 연산 시간이 너무 오래 걸려 Stack 사용</li>
   <li>본인보다 큰 수를 뒤에서 찾기 위해 인덱스를 Stack에 저장</li>
   <li>for 문 을 돌다 Stack에 저장한 인덱스 값보다 큰 값이 발견되면 해당 인덱스에 값을 삽입하고 Stack 값을 꺼내줌</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 154539]]></summary></entry><entry><title type="html">[1차] 뉴스 클러스터링</title><link href="/codingtest/programmers/lv.2/2025-10-26-codingtest_127/" rel="alternate" type="text/html" title="[1차] 뉴스 클러스터링" /><published>2025-10-26T00:00:00+00:00</published><updated>2025-10-28T14:56:34+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_127</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-26-codingtest_127/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 154539]]></summary></entry><entry><title type="html">[1차] 뉴스 클러스터링</title><link href="/codingtest/programmers/lv.2/2025-10-26-codingtest_127/" rel="alternate" type="text/html" title="[1차] 뉴스 클러스터링" /><published>2025-10-26T00:00:00+00:00</published><updated>2025-10-28T15:01:20+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_127</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-26-codingtest_127/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -343,7 +343,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 46분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17677]]></summary></entry><entry><title type="html">방문 길이</title><link href="/codingtest/programmers/lv.2/2025-10-25-codingtest_126/" rel="alternate" type="text/html" title="방문 길이" /><published>2025-10-25T00:00:00+00:00</published><updated>2025-10-28T14:56:34+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_126</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-25-codingtest_126/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17677]]></summary></entry><entry><title type="html">방문 길이</title><link href="/codingtest/programmers/lv.2/2025-10-25-codingtest_126/" rel="alternate" type="text/html" title="방문 길이" /><published>2025-10-25T00:00:00+00:00</published><updated>2025-10-28T15:01:20+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_126</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-25-codingtest_126/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -477,7 +477,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 26분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 49994]]></summary></entry><entry><title type="html">타겟 넘버</title><link href="/codingtest/programmers/lv.2/2025-10-24-codingtest_125/" rel="alternate" type="text/html" title="타겟 넘버" /><published>2025-10-24T00:00:00+00:00</published><updated>2025-10-28T14:56:34+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_125</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-24-codingtest_125/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 49994]]></summary></entry><entry><title type="html">타겟 넘버</title><link href="/codingtest/programmers/lv.2/2025-10-24-codingtest_125/" rel="alternate" type="text/html" title="타겟 넘버" /><published>2025-10-24T00:00:00+00:00</published><updated>2025-10-28T15:01:20+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_125</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-24-codingtest_125/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -584,7 +584,7 @@
 
 <ul>
   <li>BFS를 이용한 타겟과 일치하는 경우의 수 찾기</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 43165]]></summary></entry><entry><title type="html">게임 맵 최단거리</title><link href="/codingtest/programmers/lv.2/2025-10-21-codingtest_124/" rel="alternate" type="text/html" title="게임 맵 최단거리" /><published>2025-10-21T00:00:00+00:00</published><updated>2025-10-28T14:56:34+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_124</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-21-codingtest_124/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 43165]]></summary></entry><entry><title type="html">게임 맵 최단거리</title><link href="/codingtest/programmers/lv.2/2025-10-21-codingtest_124/" rel="alternate" type="text/html" title="게임 맵 최단거리" /><published>2025-10-21T00:00:00+00:00</published><updated>2025-10-28T15:01:20+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_124</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-21-codingtest_124/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -739,7 +739,7 @@
   <li>움직인 자리를 배열에 삽입하고 해당 위치에서 움직일 수 있는 부분을 탐색</li>
   <li>만약 움직일 부분이 없으면 뒤로 돌아가 다시 탐색</li>
   <li>마지막 지점에 도달하면 최단 거리를 리턴</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 1844]]></summary></entry><entry><title type="html">롤케이크 자르기</title><link href="/codingtest/programmers/lv.2/2025-10-20-codingtest_123/" rel="alternate" type="text/html" title="롤케이크 자르기" /><published>2025-10-20T00:00:00+00:00</published><updated>2025-10-28T14:56:34+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_123</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-20-codingtest_123/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 1844]]></summary></entry><entry><title type="html">롤케이크 자르기</title><link href="/codingtest/programmers/lv.2/2025-10-20-codingtest_123/" rel="alternate" type="text/html" title="롤케이크 자르기" /><published>2025-10-20T00:00:00+00:00</published><updated>2025-10-28T15:01:20+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_123</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-20-codingtest_123/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -840,7 +840,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 32분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 132265]]></summary></entry><entry><title type="html">프로세스</title><link href="/codingtest/programmers/lv.2/2025-10-19-codingtest_122/" rel="alternate" type="text/html" title="프로세스" /><published>2025-10-19T00:00:00+00:00</published><updated>2025-10-28T14:56:34+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_122</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-19-codingtest_122/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 132265]]></summary></entry><entry><title type="html">프로세스</title><link href="/codingtest/programmers/lv.2/2025-10-19-codingtest_122/" rel="alternate" type="text/html" title="프로세스" /><published>2025-10-19T00:00:00+00:00</published><updated>2025-10-28T15:01:20+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_122</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-19-codingtest_122/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -957,7 +957,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 41분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42587]]></summary></entry><entry><title type="html">전화번호 목록</title><link href="/codingtest/programmers/lv.2/2025-10-14-codingtest_121/" rel="alternate" type="text/html" title="전화번호 목록" /><published>2025-10-14T00:00:00+00:00</published><updated>2025-10-28T14:56:34+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_121</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-14-codingtest_121/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42587]]></summary></entry><entry><title type="html">전화번호 목록</title><link href="/codingtest/programmers/lv.2/2025-10-14-codingtest_121/" rel="alternate" type="text/html" title="전화번호 목록" /><published>2025-10-14T00:00:00+00:00</published><updated>2025-10-28T15:01:20+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_121</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-14-codingtest_121/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -1047,7 +1047,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 35분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42577]]></summary></entry><entry><title type="html">튜플</title><link href="/codingtest/programmers/lv.2/2025-10-13-codingtest_120/" rel="alternate" type="text/html" title="튜플" /><published>2025-10-13T00:00:00+00:00</published><updated>2025-10-28T14:56:34+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_120</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-13-codingtest_120/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42577]]></summary></entry><entry><title type="html">튜플</title><link href="/codingtest/programmers/lv.2/2025-10-13-codingtest_120/" rel="alternate" type="text/html" title="튜플" /><published>2025-10-13T00:00:00+00:00</published><updated>2025-10-28T15:01:20+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_120</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-13-codingtest_120/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
