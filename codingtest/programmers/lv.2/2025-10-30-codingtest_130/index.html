@@ -30,20 +30,20 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   
     
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>모음사전 | Roseanne</title>
+<title>k진수에서 소수 개수 구하기 | Roseanne</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="모음사전" />
+<meta property="og:title" content="k진수에서 소수 개수 구하기" />
 <meta name="author" content="Roseanne5218" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="Programmers - 84512" />
-<meta property="og:description" content="Programmers - 84512" />
+<meta name="description" content="Programmers - 92335" />
+<meta property="og:description" content="Programmers - 92335" />
 <meta property="og:site_name" content="Roseanne" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-10-28T00:00:00+00:00" />
+<meta property="article:published_time" content="2025-10-30T00:00:00+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="모음사전" />
+<meta property="twitter:title" content="k진수에서 소수 개수 구하기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-10-29T14:27:37+00:00","datePublished":"2025-10-28T00:00:00+00:00","description":"Programmers - 84512","headline":"모음사전","mainEntityOfPage":{"@type":"WebPage","@id":"/codingtest/programmers/lv.2/2025-10-28-codingtest_130/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/codingtest/programmers/lv.2/2025-10-28-codingtest_130/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Roseanne5218"},"dateModified":"2025-10-30T14:15:56+00:00","datePublished":"2025-10-30T00:00:00+00:00","description":"Programmers - 92335","headline":"k진수에서 소수 개수 구하기","mainEntityOfPage":{"@type":"WebPage","@id":"/codingtest/programmers/lv.2/2025-10-30-codingtest_130/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.jpg"},"name":"Roseanne5218"},"url":"/codingtest/programmers/lv.2/2025-10-30-codingtest_130/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -75,7 +75,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta name="generator" content="Hydejack v9.2.1" />
 
 
-<link rel="alternate" href="/codingtest/programmers/lv.2/2025-10-28-codingtest_130/" hreflang="ko">
+<link rel="alternate" href="/codingtest/programmers/lv.2/2025-10-30-codingtest_130/" hreflang="ko">
 
 <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Roseanne" />
 
@@ -114,7 +114,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-10-29T14:28:32+00:00',
+    INDEX_KEY: 'index--2025-10-30T14:16:47+00:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -268,7 +268,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
       <li>
         
           <span>/</span>
-          <span>2025-10-28-codingtest_130</span>
+          <span>2025-10-30-codingtest_130</span>
         
       </li>
     
@@ -289,27 +289,19 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
   <header>
     <h1 class="post-title flip-project-title">
       
-        모음사전
+        k진수에서 소수 개수 구하기
       
     </h1>
 
     <div class="post-date">
       
       <span class="ellipsis mr1">
-        <time datetime="2025-10-28T00:00:00+00:00">28 Oct 2025</time> in <a href="/codingtest/" class="flip-title">CODING TEST</a> / <a href="/programmers/" class="flip-title">PROGRAMMERS</a> / <a href="/level2/" class="flip-title">Lv.2</a> 
+        <time datetime="2025-10-30T00:00:00+00:00">30 Oct 2025</time> in <a href="/codingtest/" class="flip-title">CODING TEST</a> / <a href="/programmers/" class="flip-title">PROGRAMMERS</a> / <a href="/level2/" class="flip-title">Lv.2</a> 
       </span>
       
         
           
           
-          
-            
-            
-            <span class="ellipsis" data-tippy-content="Last modified at: 29 Oct 2025">
-              <span class="sr-only">Last modified at:</span>
-              <span class="icon-history"></span>
-              <time datetime="2025-10-29T14:27:37+00:00">2025-10-29</time>
-            </span>
           
         
       
@@ -324,7 +316,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
   
     <p class="note-sm" >
-      Programmers - 84512
+      Programmers - 92335
 
     </p>
   
@@ -339,9 +331,23 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 문제 설명
 </p>
 
-<p>사전에 알파벳 모음 ‘A’, ‘E’, ‘I’, ‘O’, ‘U’만을 사용하여 만들 수 있는, 길이 5 이하의 모든 단어가 수록되어 있습니다. 사전에서 첫 번째 단어는 “A”이고, 그다음은 “AA”이며, 마지막 단어는 “UUUUU”입니다.</p>
+<p>양의 정수 n이 주어집니다. 이 숫자를 k진수로 바꿨을 때, 변환된 수 안에 아래 조건에 맞는 소수(Prime number)가 몇 개인지 알아보려 합니다.</p>
 
-<p>단어 하나 word가 매개변수로 주어질 때, 이 단어가 사전에서 몇 번째 단어인지 return 하도록 solution 함수를 완성해주세요.</p>
+<ul>
+  <li>0P0처럼 소수 양쪽에 0이 있는 경우</li>
+  <li>P0처럼 소수 오른쪽에만 0이 있고 왼쪽에는 아무것도 없는 경우</li>
+  <li>0P처럼 소수 왼쪽에만 0이 있고 오른쪽에는 아무것도 없는 경우</li>
+  <li>P처럼 소수 양쪽에 아무것도 없는 경우</li>
+  <li>단, P는 각 자릿수에 0을 포함하지 않는 소수입니다.
+    <ul>
+      <li>예를 들어, 101은 P가 될 수 없습니다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>예를 들어, 437674을 3진수로 바꾸면 211020101011입니다. 여기서 찾을 수 있는 조건에 맞는 소수는 왼쪽부터 순서대로 211, 2, 11이 있으며, 총 3개입니다. (211, 2, 11을 k진법으로 보았을 때가 아닌, 10진법으로 보았을 때 소수여야 한다는 점에 주의합니다.) 211은 P0 형태에서 찾을 수 있으며, 2는 0P0에서, 11은 0P에서 찾을 수 있습니다.</p>
+
+<p>정수 n과 k가 매개변수로 주어집니다. n을 k진수로 바꿨을 때, 변환된 수 안에서 찾을 수 있는 위 조건에 맞는 소수의 개수를 return 하도록 solution 함수를 완성해 주세요.</p>
 
 <hr />
 
@@ -350,8 +356,8 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 </p>
 
 <ul>
-  <li>word의 길이는 1 이상 5 이하입니다.</li>
-  <li>word는 알파벳 대문자 ‘A’, ‘E’, ‘I’, ‘O’, ‘U’로만 이루어져 있습니다.</li>
+  <li>1 ≤ n ≤ 1,000,000</li>
+  <li>3 ≤ k ≤ 10</li>
 </ul>
 
 <hr />
@@ -360,26 +366,16 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 입출력 예
 </p>
 
-<p><img src="/assets/img/codingtest/84512.png" width="200" height="200" /></p>
+<p><img src="/assets/img/codingtest/92335.png" width="200" height="100" /></p>
 
 <p>입출력 예 #1</p>
 <ul>
-  <li>사전에서 첫 번째 단어는 “A”이고, 그다음은 “AA”, “AAA”, “AAAA”, “AAAAA”, “AAAAE”, … 와 같습니다. “AAAAE”는 사전에서 6번째 단어입니다.</li>
+  <li>문제 예시와 같습니다.</li>
 </ul>
 
 <p>입출력 예 #2</p>
 <ul>
-  <li>“AAAE”는 “A”, “AA”, “AAA”, “AAAA”, “AAAAA”, “AAAAE”, “AAAAI”, “AAAAO”, “AAAAU”의 다음인 10번째 단어입니다.</li>
-</ul>
-
-<p>입출력 예 #3</p>
-<ul>
-  <li>“I”는 1563번째 단어입니다.</li>
-</ul>
-
-<p>입출력 예 #4</p>
-<ul>
-  <li>“EIO”는 1189번째 단어입니다.</li>
+  <li>110011을 10진수로 바꾸면 110011입니다. 여기서 찾을 수 있는 조건에 맞는 소수는 11, 11 2개입니다. 이와 같이, 중복되는 소수를 발견하더라도 모두 따로 세어야 합니다.</li>
 </ul>
 
 <hr />
@@ -388,22 +384,59 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 작성 내용
 </p>
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp">
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 #include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
 </span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
-<span class="kt">int</span> <span class="nf">solution</span><span class="p">(</span><span class="n">string</span> <span class="n">word</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kt">bool</span> <span class="nf">isPrime</span><span class="p">(</span><span class="kt">long</span> <span class="kt">long</span> <span class="n">n</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
     
-    <span class="n">string</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"AEIOU"</span><span class="p">;</span>
-    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">weight</span><span class="p">{</span><span class="mi">781</span><span class="p">,</span> <span class="mi">156</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">};</span>
-    
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">word</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">long</span> <span class="kt">long</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="kt">int</span> <span class="n">idx</span> <span class="o">=</span> <span class="n">str</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
-        <span class="n">answer</span> <span class="o">+=</span> <span class="n">idx</span> <span class="o">*</span> <span class="n">weight</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
     <span class="p">}</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">solution</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">k</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">long</span> <span class="kt">long</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">long</span> <span class="kt">long</span> <span class="n">pivot</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    
+    <span class="k">while</span><span class="p">(</span><span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">num</span> <span class="o">+=</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="n">k</span><span class="p">)</span> <span class="o">*</span> <span class="n">pivot</span><span class="p">;</span>
+        <span class="n">pivot</span> <span class="o">*=</span> <span class="mi">10</span><span class="p">;</span>
+        <span class="n">n</span> <span class="o">/=</span> <span class="n">k</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">num</span> <span class="o">+=</span> <span class="n">n</span> <span class="o">*</span> <span class="n">pivot</span> <span class="o">*</span> <span class="mi">10</span><span class="p">;</span>
+
+    <span class="kt">long</span> <span class="n">temp</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">pivot</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+    <span class="k">while</span><span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">isPrime</span><span class="p">(</span><span class="n">temp</span><span class="p">))</span> 
+                <span class="n">answer</span><span class="o">++</span><span class="p">;</span>
+            <span class="n">temp</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="n">pivot</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">else</span>
+        <span class="p">{</span>
+            <span class="n">temp</span> <span class="o">+=</span> <span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="mi">10</span><span class="p">)</span> <span class="o">*</span> <span class="n">pivot</span><span class="p">;</span>
+            <span class="n">pivot</span> <span class="o">*=</span> <span class="mi">10</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">num</span> <span class="o">/=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="k">if</span><span class="p">(</span><span class="n">isPrime</span><span class="p">(</span><span class="n">temp</span><span class="p">))</span> 
+        <span class="n">answer</span><span class="o">++</span><span class="p">;</span>
     
     <span class="k">return</span> <span class="n">answer</span><span class="p">;</span>
 <span class="p">}</span>
@@ -412,20 +445,12 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 <hr />
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
-정답 여부 X
+정답 여부 O
 </p>
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
-소요 시간 : 20분
+소요 시간 : 50분
 </p>
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-문제 소감
-</p>
-
-<ul>
-  <li>빠른 연산을 하기 위하여 하나하나 탐색하는 것이 아닌 가중치를 이용해 순서를 더함</li>
-</ul>
 
   
 </article>
