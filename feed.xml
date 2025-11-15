@@ -1,5 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-11-11T10:47:38+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">[3차] 압축</title><link href="/codingtest/programmers/lv.2/2025-11-11-codingtest_133/" rel="alternate" type="text/html" title="[3차] 압축" /><published>2025-11-11T00:00:00+00:00</published><updated>2025-11-11T10:46:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_133</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-11-codingtest_133/"><![CDATA[<hr />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-11-15T14:13:26+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">주식가격</title><link href="/codingtest/programmers/lv.2/2025-11-15-codingtest_134/" rel="alternate" type="text/html" title="주식가격" /><published>2025-11-15T00:00:00+00:00</published><updated>2025-11-15T14:12:31+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_134</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-15-codingtest_134/"><![CDATA[<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+문제 설명
+</p>
+
+<p>초 단위로 기록된 주식가격이 담긴 배열 prices가 매개변수로 주어질 때, 가격이 떨어지지 않은 기간은 몇 초인지를 return 하도록 solution 함수를 완성하세요.</p>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+제한사항
+</p>
+
+<ul>
+  <li>prices의 각 가격은 1 이상 10,000 이하인 자연수입니다.</li>
+  <li>prices의 길이는 2 이상 100,000 이하입니다.</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+입출력 예
+</p>
+
+<p><img src="/assets/img/codingtest/42584.png" width="250" height="75" /></p>
+
+<ul>
+  <li>1초 시점의 ₩1은 끝까지 가격이 떨어지지 않았습니다.</li>
+  <li>2초 시점의 ₩2은 끝까지 가격이 떨어지지 않았습니다.</li>
+  <li>3초 시점의 ₩3은 1초뒤에 가격이 떨어집니다. 따라서 1초간 가격이 떨어지지 않은 것으로 봅니다.</li>
+  <li>4초 시점의 ₩2은 1초간 가격이 떨어지지 않았습니다.</li>
+  <li>5초 시점의 ₩3은 0초간 가격이 떨어지지 않았습니다.</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+작성 내용
+</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">solution</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">prices</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">answer</span><span class="p">;</span>
+    
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">prices</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">!=</span> <span class="n">prices</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">l</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span> <span class="n">l</span><span class="o">&lt;</span><span class="n">prices</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">l</span><span class="o">++</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">num</span><span class="o">++</span><span class="p">;</span>
+                
+                <span class="k">if</span><span class="p">(</span><span class="n">prices</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">prices</span><span class="p">[</span><span class="n">l</span><span class="p">])</span>
+                    <span class="k">break</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">answer</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="n">answer</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+정답 여부 O
+</p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+소요 시간 : 7분 30초
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42584]]></summary></entry><entry><title type="html">[3차] 압축</title><link href="/codingtest/programmers/lv.2/2025-11-11-codingtest_133/" rel="alternate" type="text/html" title="[3차] 압축" /><published>2025-11-11T00:00:00+00:00</published><updated>2025-11-15T14:12:31+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_133</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-11-codingtest_133/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -134,7 +211,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 35분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17684]]></summary></entry><entry><title type="html">[3차] N진수 게임</title><link href="/codingtest/programmers/lv.2/2025-11-10-codingtest_132/" rel="alternate" type="text/html" title="[3차] N진수 게임" /><published>2025-11-10T00:00:00+00:00</published><updated>2025-11-11T10:46:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_132</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-10-codingtest_132/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17684]]></summary></entry><entry><title type="html">[3차] N진수 게임</title><link href="/codingtest/programmers/lv.2/2025-11-10-codingtest_132/" rel="alternate" type="text/html" title="[3차] N진수 게임" /><published>2025-11-10T00:00:00+00:00</published><updated>2025-11-15T14:12:31+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_132</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-10-codingtest_132/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -256,7 +333,7 @@
 <ul>
   <li>16진수까지의 값을 구하기 위해 문자열 “123456789ABCDEF”을 저장하여 구한 나머지 번지수를 사용</li>
   <li>필요한 숫자의 개수와 참가하는 인원을 기준으로 사용되어야 하는 문자열을 구하여 원하는 순서의 값을 구하여 저장</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17687]]></summary></entry><entry><title type="html">더 맵게</title><link href="/codingtest/programmers/lv.2/2025-11-06-codingtest_131/" rel="alternate" type="text/html" title="더 맵게" /><published>2025-11-06T00:00:00+00:00</published><updated>2025-11-11T10:46:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_131</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-06-codingtest_131/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17687]]></summary></entry><entry><title type="html">더 맵게</title><link href="/codingtest/programmers/lv.2/2025-11-06-codingtest_131/" rel="alternate" type="text/html" title="더 맵게" /><published>2025-11-06T00:00:00+00:00</published><updated>2025-11-15T14:12:31+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_131</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-06-codingtest_131/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -364,7 +441,7 @@ Leo가 가진 음식의 스코빌 지수를 담은 배열 scoville과 원하는 
   <li>연산 속도를 줄이기 위하여 priority 큐 사용</li>
   <li>priority 큐 사용 시 내림차순으로 자동 정렬이 되어 손쉽게 제일 작은 숫자를 구할 수 있음</li>
   <li>제일 작은 숫자 가지고 조건을 확인하며 모든 숫자가 K 이상이 되도록 섞음</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42626]]></summary></entry><entry><title type="html">k진수에서 소수 개수 구하기</title><link href="/codingtest/programmers/lv.2/2025-10-30-codingtest_130/" rel="alternate" type="text/html" title="k진수에서 소수 개수 구하기" /><published>2025-10-30T00:00:00+00:00</published><updated>2025-11-11T10:46:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_130</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-30-codingtest_130/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42626]]></summary></entry><entry><title type="html">k진수에서 소수 개수 구하기</title><link href="/codingtest/programmers/lv.2/2025-10-30-codingtest_130/" rel="alternate" type="text/html" title="k진수에서 소수 개수 구하기" /><published>2025-10-30T00:00:00+00:00</published><updated>2025-11-15T14:12:31+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_130</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-30-codingtest_130/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -489,7 +566,7 @@ Leo가 가진 음식의 스코빌 지수를 담은 배열 scoville과 원하는 
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 50분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 92335]]></summary></entry><entry><title type="html">모음사전</title><link href="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/" rel="alternate" type="text/html" title="모음사전" /><published>2025-10-28T00:00:00+00:00</published><updated>2025-11-11T10:46:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_129</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 92335]]></summary></entry><entry><title type="html">모음사전</title><link href="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/" rel="alternate" type="text/html" title="모음사전" /><published>2025-10-28T00:00:00+00:00</published><updated>2025-11-15T14:12:31+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_129</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -581,7 +658,7 @@ Leo가 가진 음식의 스코빌 지수를 담은 배열 scoville과 원하는 
 
 <ul>
   <li>빠른 연산을 하기 위하여 하나하나 탐색하는 것이 아닌 가중치를 이용해 순서를 더함</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 84512]]></summary></entry><entry><title type="html">뒤에 있는 큰 수 찾기</title><link href="/codingtest/programmers/lv.2/2025-10-27-codingtest_128/" rel="alternate" type="text/html" title="뒤에 있는 큰 수 찾기" /><published>2025-10-27T00:00:00+00:00</published><updated>2025-11-11T10:46:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_128</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-27-codingtest_128/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 84512]]></summary></entry><entry><title type="html">뒤에 있는 큰 수 찾기</title><link href="/codingtest/programmers/lv.2/2025-10-27-codingtest_128/" rel="alternate" type="text/html" title="뒤에 있는 큰 수 찾기" /><published>2025-10-27T00:00:00+00:00</published><updated>2025-11-15T14:12:31+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_128</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-27-codingtest_128/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -668,7 +745,7 @@ Leo가 가진 음식의 스코빌 지수를 담은 배열 scoville과 원하는 
   <li>다중 for 문 을 사용하면 연산 시간이 너무 오래 걸려 Stack 사용</li>
   <li>본인보다 큰 수를 뒤에서 찾기 위해 인덱스를 Stack에 저장</li>
   <li>for 문 을 돌다 Stack에 저장한 인덱스 값보다 큰 값이 발견되면 해당 인덱스에 값을 삽입하고 Stack 값을 꺼내줌</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 154539]]></summary></entry><entry><title type="html">[1차] 뉴스 클러스터링</title><link href="/codingtest/programmers/lv.2/2025-10-26-codingtest_127/" rel="alternate" type="text/html" title="[1차] 뉴스 클러스터링" /><published>2025-10-26T00:00:00+00:00</published><updated>2025-11-11T10:46:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_127</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-26-codingtest_127/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 154539]]></summary></entry><entry><title type="html">[1차] 뉴스 클러스터링</title><link href="/codingtest/programmers/lv.2/2025-10-26-codingtest_127/" rel="alternate" type="text/html" title="[1차] 뉴스 클러스터링" /><published>2025-10-26T00:00:00+00:00</published><updated>2025-11-15T14:12:31+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_127</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-26-codingtest_127/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -833,7 +910,7 @@ Leo가 가진 음식의 스코빌 지수를 담은 배열 scoville과 원하는 
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 46분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17677]]></summary></entry><entry><title type="html">방문 길이</title><link href="/codingtest/programmers/lv.2/2025-10-25-codingtest_126/" rel="alternate" type="text/html" title="방문 길이" /><published>2025-10-25T00:00:00+00:00</published><updated>2025-11-11T10:46:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_126</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-25-codingtest_126/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17677]]></summary></entry><entry><title type="html">방문 길이</title><link href="/codingtest/programmers/lv.2/2025-10-25-codingtest_126/" rel="alternate" type="text/html" title="방문 길이" /><published>2025-10-25T00:00:00+00:00</published><updated>2025-11-15T14:12:31+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_126</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-25-codingtest_126/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -967,7 +1044,7 @@ Leo가 가진 음식의 스코빌 지수를 담은 배열 scoville과 원하는 
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 26분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 49994]]></summary></entry><entry><title type="html">타겟 넘버</title><link href="/codingtest/programmers/lv.2/2025-10-24-codingtest_125/" rel="alternate" type="text/html" title="타겟 넘버" /><published>2025-10-24T00:00:00+00:00</published><updated>2025-11-11T10:46:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_125</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-24-codingtest_125/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 49994]]></summary></entry><entry><title type="html">타겟 넘버</title><link href="/codingtest/programmers/lv.2/2025-10-24-codingtest_125/" rel="alternate" type="text/html" title="타겟 넘버" /><published>2025-10-24T00:00:00+00:00</published><updated>2025-11-15T14:12:31+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_125</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-24-codingtest_125/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -1076,159 +1153,4 @@ Leo가 가진 음식의 스코빌 지수를 담은 배열 scoville과 원하는 
 
 <ul>
   <li>BFS를 이용한 타겟과 일치하는 경우의 수 찾기</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 43165]]></summary></entry><entry><title type="html">게임 맵 최단거리</title><link href="/codingtest/programmers/lv.2/2025-10-21-codingtest_124/" rel="alternate" type="text/html" title="게임 맵 최단거리" /><published>2025-10-21T00:00:00+00:00</published><updated>2025-11-11T10:46:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_124</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-21-codingtest_124/"><![CDATA[<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-문제 설명
-</p>
-
-<p>ROR 게임은 두 팀으로 나누어서 진행하며, 상대 팀 진영을 먼저 파괴하면 이기는 게임입니다. 따라서, 각 팀은 상대 팀 진영에 최대한 빨리 도착하는 것이 유리합니다.</p>
-
-<p>지금부터 당신은 한 팀의 팀원이 되어 게임을 진행하려고 합니다. 다음은 5 x 5 크기의 맵에, 당신의 캐릭터가 (행: 1, 열: 1) 위치에 있고, 상대 팀 진영은 (행: 5, 열: 5) 위치에 있는 경우의 예시입니다.</p>
-
-<p><img src="/assets/img/codingtest/1844_1.png" width="220" height="200" /></p>
-
-<p>위 그림에서 검은색 부분은 벽으로 막혀있어 갈 수 없는 길이며, 흰색 부분은 갈 수 있는 길입니다. 캐릭터가 움직일 때는 동, 서, 남, 북 방향으로 한 칸씩 이동하며, 게임 맵을 벗어난 길은 갈 수 없습니다.
-아래 예시는 캐릭터가 상대 팀 진영으로 가는 두 가지 방법을 나타내고 있습니다.</p>
-
-<ul>
-  <li>첫 번째 방법은 11개의 칸을 지나서 상대 팀 진영에 도착했습니다.</li>
-</ul>
-
-<p><img src="/assets/img/codingtest/1844_2.png" width="220" height="200" /></p>
-
-<ul>
-  <li>두 번째 방법은 15개의 칸을 지나서 상대팀 진영에 도착했습니다.</li>
-</ul>
-
-<p><img src="/assets/img/codingtest/1844_3.png" width="220" height="200" /></p>
-
-<p>위 예시에서는 첫 번째 방법보다 더 빠르게 상대팀 진영에 도착하는 방법은 없으므로, 이 방법이 상대 팀 진영으로 가는 가장 빠른 방법입니다.</p>
-
-<p>만약, 상대 팀이 자신의 팀 진영 주위에 벽을 세워두었다면 상대 팀 진영에 도착하지 못할 수도 있습니다. 예를 들어, 다음과 같은 경우에 당신의 캐릭터는 상대 팀 진영에 도착할 수 없습니다.</p>
-
-<p><img src="/assets/img/codingtest/1844_4.png" width="220" height="200" /></p>
-
-<p>게임 맵의 상태 maps가 매개변수로 주어질 때, 캐릭터가 상대 팀 진영에 도착하기 위해서 지나가야 하는 칸의 개수의 최솟값을 return 하도록 solution 함수를 완성해주세요. 단, 상대 팀 진영에 도착할 수 없을 때는 -1을 return 해주세요.</p>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-제한사항
-</p>
-
-<ul>
-  <li>maps는 n x m 크기의 게임 맵의 상태가 들어있는 2차원 배열로, n과 m은 각각 1 이상 100 이하의 자연수입니다.
-    <ul>
-      <li>n과 m은 서로 같을 수도, 다를 수도 있지만, n과 m이 모두 1인 경우는 입력으로 주어지지 않습니다.</li>
-    </ul>
-  </li>
-  <li>maps는 0과 1로만 이루어져 있으며, 0은 벽이 있는 자리, 1은 벽이 없는 자리를 나타냅니다.</li>
-  <li>처음에 캐릭터는 게임 맵의 좌측 상단인 (1, 1) 위치에 있으며, 상대방 진영은 게임 맵의 우측 하단인 (n, m) 위치에 있습니다.</li>
-</ul>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-입출력 예 
-</p>
-
-<p><img src="/assets/img/codingtest/1844_5.png" width="500" height="110" /></p>
-
-<p>입출력 예 #1</p>
-<ul>
-  <li>주어진 데이터는 다음과 같습니다.</li>
-</ul>
-
-<p><img src="/assets/img/codingtest/1844_6.png" width="220" height="200" /></p>
-
-<ul>
-  <li>캐릭터가 적 팀의 진영까지 이동하는 가장 빠른 길은 다음 그림과 같습니다.</li>
-</ul>
-
-<p><img src="/assets/img/codingtest/1844_7.png" width="220" height="200" /></p>
-
-<ul>
-  <li>따라서 총 11칸을 캐릭터가 지나갔으므로 11을 return 하면 됩니다.</li>
-</ul>
-
-<p>입출력 예 #2</p>
-<ul>
-  <li>문제의 예시와 같으며, 상대 팀 진영에 도달할 방법이 없습니다. 따라서 -1을 return 합니다.</li>
-</ul>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-작성 내용
-</p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;queue&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;utility&gt;</span><span class="cp">
-</span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="nf">solution</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">maps</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">maps</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
-    <span class="kt">int</span> <span class="n">m</span> <span class="o">=</span> <span class="n">maps</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">size</span><span class="p">();</span>
-    
-    <span class="k">if</span><span class="p">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">m</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">maps</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">maps</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">m</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-    
-    <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">Way</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
-    <span class="n">queue</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">Qu</span><span class="p">;</span>
-    
-    <span class="n">Way</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="n">Qu</span><span class="p">.</span><span class="n">push</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">});</span>
-    
-    <span class="kt">int</span> <span class="n">mr</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">};</span>
-    <span class="kt">int</span> <span class="n">mc</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">};</span>
-    
-    <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">Qu</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span>
-    <span class="p">{</span>
-        <span class="kt">int</span> <span class="n">r</span> <span class="o">=</span> <span class="n">Qu</span><span class="p">.</span><span class="n">front</span><span class="p">().</span><span class="n">first</span><span class="p">;</span>
-        <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">Qu</span><span class="p">.</span><span class="n">front</span><span class="p">().</span><span class="n">second</span><span class="p">;</span>
-        <span class="n">Qu</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
-        
-        <span class="k">if</span><span class="p">(</span><span class="n">r</span> <span class="o">==</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">c</span> <span class="o">==</span> <span class="n">m</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-            <span class="k">return</span> <span class="n">Way</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span><span class="p">];</span>
-        
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="kt">int</span> <span class="n">nr</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">mr</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-            <span class="kt">int</span> <span class="n">nc</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="n">mc</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-            
-            <span class="k">if</span><span class="p">(</span><span class="n">nr</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">nr</span> <span class="o">&gt;=</span> <span class="n">n</span> <span class="o">||</span> <span class="n">nc</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">nc</span> <span class="o">&gt;=</span> <span class="n">m</span><span class="p">)</span>
-                <span class="k">continue</span><span class="p">;</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">maps</span><span class="p">[</span><span class="n">nr</span><span class="p">][</span><span class="n">nc</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">Way</span><span class="p">[</span><span class="n">nr</span><span class="p">][</span><span class="n">nc</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
-                <span class="k">continue</span><span class="p">;</span>
-            
-            <span class="n">Way</span><span class="p">[</span><span class="n">nr</span><span class="p">][</span><span class="n">nc</span><span class="p">]</span> <span class="o">=</span> <span class="n">Way</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-            <span class="n">Qu</span><span class="p">.</span><span class="n">push</span><span class="p">({</span><span class="n">nr</span><span class="p">,</span> <span class="n">nc</span><span class="p">});</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<hr />
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-정답 여부 X
-</p>
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-소요 시간 : 23분
-</p>
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-문제 소감
-</p>
-
-<ul>
-  <li>움직인 자리를 배열에 삽입하고 해당 위치에서 움직일 수 있는 부분을 탐색</li>
-  <li>만약 움직일 부분이 없으면 뒤로 돌아가 다시 탐색</li>
-  <li>마지막 지점에 도달하면 최단 거리를 리턴</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 1844]]></summary></entry></feed>
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 43165]]></summary></entry></feed>
