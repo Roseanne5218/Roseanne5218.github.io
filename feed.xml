@@ -1,5 +1,116 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-12-09T14:55:28+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">스킬트리</title><link href="/codingtest/programmers/lv.2/2025-12-09-codingtest_137/" rel="alternate" type="text/html" title="스킬트리" /><published>2025-12-09T00:00:00+00:00</published><updated>2025-12-09T14:54:30+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_137</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-12-09-codingtest_137/"><![CDATA[<hr />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2025-12-10T14:59:40+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">숫자 변환하기</title><link href="/codingtest/programmers/lv.2/2025-12-10-codingtest_138/" rel="alternate" type="text/html" title="숫자 변환하기" /><published>2025-12-10T00:00:00+00:00</published><updated>2025-12-10T14:58:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_138</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-12-10-codingtest_138/"><![CDATA[<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+문제 설명
+</p>
+
+<p>자연수 x를 y로 변환하려고 합니다. 사용할 수 있는 연산은 다음과 같습니다.</p>
+
+<ul>
+  <li>x에 n을 더합니다</li>
+  <li>x에 2를 곱합니다.</li>
+  <li>x에 3을 곱합니다.</li>
+</ul>
+
+<p>자연수 x, y, n이 매개변수로 주어질 때, x를 y로 변환하기 위해 필요한 최소 연산 횟수를 return하도록 solution 함수를 완성해주세요. 이때 x를 y로 만들 수 없다면 -1을 return 해주세요.</p>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+제한사항
+</p>
+
+<ul>
+  <li>1 ≤ x ≤ y ≤ 1,000,000</li>
+  <li>1 ≤ n &lt; y</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+입출력 예
+</p>
+
+<p><img src="/assets/img/codingtest/154538.png" width="260" height="130" /></p>
+
+<p>입출력 예 #1</p>
+<ul>
+  <li>x에 2를 2번 곱하면 40이 되고 이때가 최소 횟수입니다.</li>
+</ul>
+
+<p>입출력 예 #2</p>
+<ul>
+  <li>x에 n인 30을 1번 더하면 40이 되고 이때가 최소 횟수입니다.</li>
+</ul>
+
+<p>입출력 예 #3</p>
+<ul>
+  <li>x를 y로 변환할 수 없기 때문에 -1을 return합니다.</li>
+</ul>
+
+<hr />
+
+<p style="color:#8f7cee; font-size:25px; font-weight:bold">
+작성 내용
+</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;queue&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">solution</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    
+    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">List</span><span class="p">(</span><span class="n">y</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+    <span class="n">queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">q</span><span class="p">;</span>
+    
+    <span class="n">List</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+    
+    <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">cur</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span>
+        <span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+        
+        <span class="k">if</span><span class="p">(</span><span class="n">cur</span> <span class="o">==</span> <span class="n">y</span><span class="p">)</span> <span class="k">return</span> <span class="n">List</span><span class="p">[</span><span class="n">cur</span><span class="p">];</span>
+        
+        <span class="kt">int</span> <span class="n">next</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="n">cur</span> <span class="o">+</span> <span class="n">n</span><span class="p">,</span> <span class="n">cur</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="n">cur</span> <span class="o">*</span> <span class="mi">3</span><span class="p">};</span>
+        
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">nx</span> <span class="o">=</span> <span class="n">next</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">nx</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">List</span><span class="p">[</span><span class="n">nx</span><span class="p">]</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+            
+            <span class="n">List</span><span class="p">[</span><span class="n">nx</span><span class="p">]</span> <span class="o">=</span> <span class="n">List</span><span class="p">[</span><span class="n">cur</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">nx</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+정답 여부 X 
+</p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+소요 시간 : 1시간 23분
+</p>
+
+<p style="color:#ed9ece; font-size:20px; font-weight:bold">
+문제 소감
+</p>
+
+<ul>
+  <li>DFS를 사용하면 너무 많은 경우를 탐색하기 때문에 시간 초과가 발생, 연산 시간을 줄이기 위해 BFS를 사용</li>
+  <li>이전 경우보다 많은 경우를 돌았거나 이전에 나왔던 숫자에서 카운트가 더 많은 경우의 수가 나오면 멈춰서 예외 처리</li>
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 154538]]></summary></entry><entry><title type="html">스킬트리</title><link href="/codingtest/programmers/lv.2/2025-12-09-codingtest_137/" rel="alternate" type="text/html" title="스킬트리" /><published>2025-12-09T00:00:00+00:00</published><updated>2025-12-10T14:58:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_137</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-12-09-codingtest_137/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -100,7 +211,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 13분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 49993]]></summary></entry><entry><title type="html">택배상자</title><link href="/codingtest/programmers/lv.2/2025-11-17-codingtest_136/" rel="alternate" type="text/html" title="택배상자" /><published>2025-11-17T00:00:00+00:00</published><updated>2025-12-09T14:54:30+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_136</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-17-codingtest_136/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 49993]]></summary></entry><entry><title type="html">택배상자</title><link href="/codingtest/programmers/lv.2/2025-11-17-codingtest_136/" rel="alternate" type="text/html" title="택배상자" /><published>2025-11-17T00:00:00+00:00</published><updated>2025-12-10T14:58:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_136</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-17-codingtest_136/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -194,7 +305,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 50분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 131704]]></summary></entry><entry><title type="html">땅따먹기</title><link href="/codingtest/programmers/lv.2/2025-11-16-codingtest_135/" rel="alternate" type="text/html" title="땅따먹기" /><published>2025-11-16T00:00:00+00:00</published><updated>2025-12-09T14:54:30+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_135</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-16-codingtest_135/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 131704]]></summary></entry><entry><title type="html">땅따먹기</title><link href="/codingtest/programmers/lv.2/2025-11-16-codingtest_135/" rel="alternate" type="text/html" title="땅따먹기" /><published>2025-11-16T00:00:00+00:00</published><updated>2025-12-10T14:58:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_135</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-16-codingtest_135/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -311,7 +422,7 @@
   <li>이전 경우의 수를 체크하기 위하여 DP(동적 계획법) 사용</li>
   <li>모든 열을 돌아가며 한 가지 열을 기준으로 해당 열을 선택하면 이전 경우에서 고를 수 있는 가장 큰 값을 골라 모든 경우를 구함</li>
   <li>구한 모든 경우 중 가장 큰 경우의 수를 구함</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12913]]></summary></entry><entry><title type="html">주식가격</title><link href="/codingtest/programmers/lv.2/2025-11-15-codingtest_134/" rel="alternate" type="text/html" title="주식가격" /><published>2025-11-15T00:00:00+00:00</published><updated>2025-12-09T14:54:30+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_134</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-15-codingtest_134/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12913]]></summary></entry><entry><title type="html">주식가격</title><link href="/codingtest/programmers/lv.2/2025-11-15-codingtest_134/" rel="alternate" type="text/html" title="주식가격" /><published>2025-11-15T00:00:00+00:00</published><updated>2025-12-10T14:58:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_134</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-15-codingtest_134/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -388,7 +499,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 7분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42584]]></summary></entry><entry><title type="html">[3차] 압축</title><link href="/codingtest/programmers/lv.2/2025-11-11-codingtest_133/" rel="alternate" type="text/html" title="[3차] 압축" /><published>2025-11-11T00:00:00+00:00</published><updated>2025-12-09T14:54:30+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_133</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-11-codingtest_133/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42584]]></summary></entry><entry><title type="html">[3차] 압축</title><link href="/codingtest/programmers/lv.2/2025-11-11-codingtest_133/" rel="alternate" type="text/html" title="[3차] 압축" /><published>2025-11-11T00:00:00+00:00</published><updated>2025-12-10T14:58:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_133</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-11-codingtest_133/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -523,7 +634,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 35분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17684]]></summary></entry><entry><title type="html">[3차] N진수 게임</title><link href="/codingtest/programmers/lv.2/2025-11-10-codingtest_132/" rel="alternate" type="text/html" title="[3차] N진수 게임" /><published>2025-11-10T00:00:00+00:00</published><updated>2025-12-09T14:54:30+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_132</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-10-codingtest_132/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17684]]></summary></entry><entry><title type="html">[3차] N진수 게임</title><link href="/codingtest/programmers/lv.2/2025-11-10-codingtest_132/" rel="alternate" type="text/html" title="[3차] N진수 게임" /><published>2025-11-10T00:00:00+00:00</published><updated>2025-12-10T14:58:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_132</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-10-codingtest_132/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -645,7 +756,7 @@
 <ul>
   <li>16진수까지의 값을 구하기 위해 문자열 “123456789ABCDEF”을 저장하여 구한 나머지 번지수를 사용</li>
   <li>필요한 숫자의 개수와 참가하는 인원을 기준으로 사용되어야 하는 문자열을 구하여 원하는 순서의 값을 구하여 저장</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17687]]></summary></entry><entry><title type="html">더 맵게</title><link href="/codingtest/programmers/lv.2/2025-11-06-codingtest_131/" rel="alternate" type="text/html" title="더 맵게" /><published>2025-11-06T00:00:00+00:00</published><updated>2025-12-09T14:54:30+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_131</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-06-codingtest_131/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17687]]></summary></entry><entry><title type="html">더 맵게</title><link href="/codingtest/programmers/lv.2/2025-11-06-codingtest_131/" rel="alternate" type="text/html" title="더 맵게" /><published>2025-11-06T00:00:00+00:00</published><updated>2025-12-10T14:58:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_131</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-06-codingtest_131/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -753,7 +864,7 @@ Leo가 가진 음식의 스코빌 지수를 담은 배열 scoville과 원하는 
   <li>연산 속도를 줄이기 위하여 priority 큐 사용</li>
   <li>priority 큐 사용 시 내림차순으로 자동 정렬이 되어 손쉽게 제일 작은 숫자를 구할 수 있음</li>
   <li>제일 작은 숫자 가지고 조건을 확인하며 모든 숫자가 K 이상이 되도록 섞음</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42626]]></summary></entry><entry><title type="html">k진수에서 소수 개수 구하기</title><link href="/codingtest/programmers/lv.2/2025-10-30-codingtest_130/" rel="alternate" type="text/html" title="k진수에서 소수 개수 구하기" /><published>2025-10-30T00:00:00+00:00</published><updated>2025-12-09T14:54:30+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_130</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-30-codingtest_130/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42626]]></summary></entry><entry><title type="html">k진수에서 소수 개수 구하기</title><link href="/codingtest/programmers/lv.2/2025-10-30-codingtest_130/" rel="alternate" type="text/html" title="k진수에서 소수 개수 구하기" /><published>2025-10-30T00:00:00+00:00</published><updated>2025-12-10T14:58:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_130</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-30-codingtest_130/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -878,7 +989,7 @@ Leo가 가진 음식의 스코빌 지수를 담은 배열 scoville과 원하는 
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 50분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 92335]]></summary></entry><entry><title type="html">모음사전</title><link href="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/" rel="alternate" type="text/html" title="모음사전" /><published>2025-10-28T00:00:00+00:00</published><updated>2025-12-09T14:54:30+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_129</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 92335]]></summary></entry><entry><title type="html">모음사전</title><link href="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/" rel="alternate" type="text/html" title="모음사전" /><published>2025-10-28T00:00:00+00:00</published><updated>2025-12-10T14:58:42+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_129</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -970,91 +1081,4 @@ Leo가 가진 음식의 스코빌 지수를 담은 배열 scoville과 원하는 
 
 <ul>
   <li>빠른 연산을 하기 위하여 하나하나 탐색하는 것이 아닌 가중치를 이용해 순서를 더함</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 84512]]></summary></entry><entry><title type="html">뒤에 있는 큰 수 찾기</title><link href="/codingtest/programmers/lv.2/2025-10-27-codingtest_128/" rel="alternate" type="text/html" title="뒤에 있는 큰 수 찾기" /><published>2025-10-27T00:00:00+00:00</published><updated>2025-12-09T14:54:30+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_128</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-27-codingtest_128/"><![CDATA[<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-문제 설명
-</p>
-
-<p>정수로 이루어진 배열 numbers가 있습니다. 배열 의 각 원소들에 대해 자신보다 뒤에 있는 숫자 중에서 자신보다 크면서 가장 가까이 있는 수를 뒷 큰수라고 합니다.
-정수 배열 numbers가 매개변수로 주어질 때, 모든 원소에 대한 뒷 큰수들을 차례로 담은 배열을 return 하도록 solution 함수를 완성해주세요. 단, 뒷 큰수가 존재하지 않는 원소는 -1을 담습니다.</p>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-제한사항
-</p>
-
-<ul>
-  <li>4 ≤ numbers의 길이 ≤ 1,000,000
-    <ul>
-      <li>1 ≤ numbers[i] ≤ 1,000,000</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-입출력 예
-</p>
-
-<p><img src="/assets/img/codingtest/154539.png" width="300" height="105" /></p>
-
-<p>입출력 예 #1</p>
-<ul>
-  <li>2의 뒷 큰수는 3입니다. 첫 번째 3의 뒷 큰수는 5입니다. 두 번째 3 또한 마찬가지입니다. 5는 뒷 큰수가 없으므로 -1입니다. 위 수들을 차례대로 배열에 담으면 [3, 5, 5, -1]이 됩니다.</li>
-</ul>
-
-<p>입출력 예 #2</p>
-<ul>
-  <li>9는 뒷 큰수가 없으므로 -1입니다. 1의 뒷 큰수는 5이며, 5와 3의 뒷 큰수는 6입니다. 6과 2는 뒷 큰수가 없으므로 -1입니다. 위 수들을 차례대로 배열에 담으면 [-1, 5, 6, 6, -1, -1]이 됩니다.</li>
-</ul>
-
-<hr />
-
-<p style="color:#8f7cee; font-size:25px; font-weight:bold">
-작성 내용
-</p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
-</span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">solution</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">numbers</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">answer</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
-    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">stack</span><span class="p">;</span>
-    
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">numbers</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">stack</span><span class="p">.</span><span class="n">empty</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">numbers</span><span class="p">[</span><span class="n">stack</span><span class="p">.</span><span class="n">back</span><span class="p">()]</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-        <span class="p">{</span>
-            <span class="n">answer</span><span class="p">[</span><span class="n">stack</span><span class="p">.</span><span class="n">back</span><span class="p">()]</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-            <span class="n">stack</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
-        <span class="p">}</span>
-        <span class="n">stack</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-    <span class="p">}</span>
-    
-    <span class="k">return</span> <span class="n">answer</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<hr />
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-정답 여부 X
-</p>
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-소요 시간 : 17분 30초
-</p>
-
-<p style="color:#ed9ece; font-size:20px; font-weight:bold">
-문제 소감
-</p>
-
-<ul>
-  <li>다중 for 문 을 사용하면 연산 시간이 너무 오래 걸려 Stack 사용</li>
-  <li>본인보다 큰 수를 뒤에서 찾기 위해 인덱스를 Stack에 저장</li>
-  <li>for 문 을 돌다 Stack에 저장한 인덱스 값보다 큰 값이 발견되면 해당 인덱스에 값을 삽입하고 Stack 값을 꺼내줌</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 154539]]></summary></entry></feed>
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 84512]]></summary></entry></feed>
