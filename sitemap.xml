@@ -1236,7 +1236,39 @@
     </url>
     
     <url>
+        <loc>/unrealportfolio/weapon/2025-06-04-unrealportfolio_cweaponasset/</loc>
+        
+        <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>/unrealportfolio/widget/2025-06-04-unrealportfolio_cuserwidget/</loc>
+        
+        <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>/unrealportfolio/weapon/2025-06-04-unrealportfolio_csubaction/</loc>
         
         <lastmod>2025-06-04T00:00:00+00:00</lastmod>
         
@@ -1332,6 +1364,22 @@
     </url>
     
     <url>
+        <loc>/unrealportfolio/weapon/2025-06-04-unrealportfolio_cequip/</loc>
+        
+        <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>/unrealportfolio/character/2025-06-04-unrealportfolio_cenemy_ai/</loc>
         
         <lastmod>2025-06-04T00:00:00+00:00</lastmod>
@@ -1349,6 +1397,22 @@
     
     <url>
         <loc>/unrealportfolio/character/2025-06-04-unrealportfolio_cenemy/</loc>
+        
+        <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>/unrealportfolio/weapon/2025-06-04-unrealportfolio_cdoaction/</loc>
         
         <lastmod>2025-06-04T00:00:00+00:00</lastmod>
         
@@ -1781,6 +1845,22 @@
     
     <url>
         <loc>/unrealportfolio/component/2025-06-04-unrealportfolio_caicomponent/</loc>
+        
+        <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>/unrealportfolio/weapon/2025-06-04-unrealportfolio_acattach/</loc>
         
         <lastmod>2025-06-04T00:00:00+00:00</lastmod>
         
