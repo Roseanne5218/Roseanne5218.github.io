@@ -18,15 +18,15 @@ description: >
 
 <p style = "color:#ed9ece; font-size:20px; font-weight:bold">
 - ACharacter
-<p>
+</p>
 
 <p style = "color:#ed9ece; font-size:20px; font-weight:bold">
 - IIStatable
-<p>
+</p>
 
 <p style = "color:#ed9ece; font-size:20px; font-weight:bold">
 - IGenericTeamAgentInterface
-<p>
+</p>
 
 ---
 
