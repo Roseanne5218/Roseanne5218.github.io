@@ -19,18 +19,26 @@ no_toc: true
     <div class="rp-desc">보스 패턴 · 서비스/데코레이터 · 블랙보드</div>
   </a>
 
-  <br/>
+<br/>
 
-  <a class="rp-card" href="/weapon/">
-    <div class="rp-title">WEAPON</div>
-    <div class="rp-desc">무기 전환 · 공격 콤보 · 히트 판정</div>
+  <a class="rp-card" href="/component/">
+    <div class="rp-title">COMPONENT</div>
+    <div class="rp-desc">상태/이동 · 무기 · AI · UI 컴포넌트</div>
   </a>
+
 
   <br/>
 
   <a class="rp-card" href="/notify/">
     <div class="rp-title">NOTIFY</div>
     <div class="rp-desc">AnimNotify · 타이밍 제어 · 액션 트리거</div>
+  </a>
+
+  <br/>
+
+  <a class="rp-card" href="/weapon/">
+    <div class="rp-title">WEAPON</div>
+    <div class="rp-desc">무기 전환 · 공격 콤보 · 히트 판정</div>
   </a>
 
   <br/>
