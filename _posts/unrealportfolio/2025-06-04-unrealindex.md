@@ -28,9 +28,23 @@ no_toc: true
 
   <br/>
 
+  <a class="rp-card" href="/notify/">
+    <div class="rp-title">NOTIFY</div>
+    <div class="rp-desc">AnimNotify · 타이밍 제어 · 액션 트리거</div>
+  </a>
+
+  <br/>
+
   <a class="rp-card" href="/widget/">
     <div class="rp-title">WIDGET</div>
     <div class="rp-desc">HP바 · 보스프레임 · UI 연동</div>
+  </a>
+
+  <br/>
+
+  <a class="rp-card" href="/else/">
+    <div class="rp-title">ELSE</div>
+    <div class="rp-desc">기타 시스템</div>
   </a>
 
   <br/>
