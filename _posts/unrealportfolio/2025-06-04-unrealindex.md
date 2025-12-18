@@ -42,16 +42,16 @@ no_toc: true
 
   <br/>
 
-  <a class="rp-card" href="/else/">
-    <div class="rp-title">ELSE</div>
-    <div class="rp-desc">기타 시스템</div>
+  <a class="rp-card" href="/utility/">
+    <div class="rp-title">UTILITY</div>
+    <div class="rp-desc">공용 함수 · 디버그 · 데이터 처리</div>
   </a>
 
   <br/>
 
-  <a class="rp-card" href="/utility/">
-    <div class="rp-title">UTILITY</div>
-    <div class="rp-desc">공용 함수 · 디버그 · 데이터 처리</div>
+  <a class="rp-card" href="/else/">
+    <div class="rp-title">ELSE</div>
+    <div class="rp-desc">기타 시스템</div>
   </a>
 
   <br/>
