@@ -4,7 +4,7 @@ title:  "UNREAL PORTFOLIO"
 date:   2025-06-04 09:00:00 +0900
 categories:
   - unrealportfolio
-  - norify
+  - notify
 description: >
   CAnimNotifyState_Equip
 ---
