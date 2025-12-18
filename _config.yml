@@ -54,8 +54,8 @@ menu:
     submenu:
     - title:           UNREAL
       url:             /unreal/
-    - title:           UNITY
-      url:             /unity/
+#    - title:           UNITY
+#      url:             /unity/
     - title:           DIRECT X
       url:             /directx/
   - title:             LANGUAGE
@@ -63,10 +63,10 @@ menu:
     submenu:
     - title:           VISUAL C++
       url:             /visualc/
-    - title:           C++
-      url:             /clanguage1/
-    - title:           C#
-      url:             /clanguage2/
+#    - title:           C++
+#      url:             /clanguage1/
+#    - title:           C#
+#      url:             /clanguage2/
   - title:             KEY WORDS
     url:               /keywords/         
   - title:           UE5 PROTFOLIO
@@ -88,8 +88,8 @@ menu:
         url:           /utility/
       - title:         ELSE
         url:           /else/
-  - title:           DIRECT X
-    url:             /directxportfolio/
+#  - title:           DIRECT X
+#    url:             /directxportfolio/
   - title:             OS
     url:               /os/
   - title:             CODING TEST
