@@ -1,6 +1,6 @@
 ---
 layout: list
-title: WIDGET
+title: UTILITY
 slug: utility
 description: >
   Utility
