@@ -98,11 +98,36 @@ html, body {
   font-family: "BM", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
 }
 
-/* 2) 본문/네비/목차/리스트 등: 확실히 Boardmarker 유지 */
-#_content, #_content *,
-#_sidebar, #_sidebar *,
-#_drawer,  #_drawer * {
+/* 2) 본문(컨텐츠)만 Boardmarker 강제 */
+#_content, #_content * {
   font-family: "BM", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
+}
+
+/* 사이드바 글자만 Boardmarker (아이콘 제외) */
+#_sidebar, #_drawer {
+  font-family: "BM", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
+}
+
+/* ✅ Material Icons / Symbols 폰트 복구 (arrow_drop_down 해결) */
+#_sidebar .material-icons,
+#_drawer  .material-icons,
+#_sidebar i.material-icons,
+#_drawer  i.material-icons,
+#_sidebar [class*="material-icons"],
+#_drawer  [class*="material-icons"] {
+  font-family: "Material Icons" !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+#_sidebar [class*="material-symbols"],
+#_drawer  [class*="material-symbols"] {
+  font-family: "Material Symbols Outlined" !important;
 }
 
 /* 3) ✅ 제목만 POP (페이지 제목 + 글 제목 + 모든 헤딩) */
@@ -122,5 +147,3 @@ html, body {
 #_drawer  i, #_drawer  .icon, #_drawer  .icon * {
   font-family: inherit !important;
 }
-
-#_sidebar [class*="icon"], #_drawer [class*="icon"] { font-family: inherit !important; }
