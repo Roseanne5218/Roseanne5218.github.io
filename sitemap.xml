@@ -5364,57 +5364,57 @@
     </url>
     
     <url>
-        <loc>/language/clanguage2/2024-12-09-clanguage2_example/</loc>
-        
-        <lastmod>2024-12-09T17:35:00+00:00</lastmod>
-        
-
-        
-        <changefreq>weekly</changefreq>
-        
-
-        
-        <priority>0.5</priority>
-        
-
-    </url>
-    
-    <url>
-        <loc>/language/clanguage1/2024-12-09-clanguage1_example/</loc>
-        
-        <lastmod>2024-12-09T17:35:00+00:00</lastmod>
-        
-
-        
-        <changefreq>weekly</changefreq>
-        
-
-        
-        <priority>0.5</priority>
-        
-
-    </url>
-    
-    <url>
-        <loc>/gameengine/unity/2024-12-09-unity_example/</loc>
-        
-        <lastmod>2024-12-09T17:35:00+00:00</lastmod>
-        
-
-        
-        <changefreq>weekly</changefreq>
-        
-
-        
-        <priority>0.5</priority>
-        
-
-    </url>
-    
-    <url>
         <loc>/portfolio/directxportfolio/2024-12-09-directxportfolio_example/</loc>
         
         <lastmod>2024-12-09T17:35:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>/2024-12-09-clanguage2_example/</loc>
+        
+        <lastmod>2024-12-09T00:00:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>/2024-12-09-clanguage1_example/</loc>
+        
+        <lastmod>2024-12-09T00:00:00+00:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>/2024-12-09-unity_example/</loc>
+        
+        <lastmod>2024-12-09T00:00:00+00:00</lastmod>
         
 
         
