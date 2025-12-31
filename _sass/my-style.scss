@@ -59,7 +59,7 @@
 /* 본문 폰트 */
 @font-face {
   font-family: "FontBody";
-  src: url("/assets/fonts/Body-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -77,6 +77,14 @@
   font-family: "FontTitle";
   src: url("/assets/fonts/ONE Mobile POP.otf") format("opentype");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* 제목이 800/900으로 잡히는 경우 대비(같은 파일로 매핑) */
+@font-face {
+  font-family: "FontTitle";
+  src: url("/assets/fonts/MemomentKkukkukkP.otf") format("opentype");
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
@@ -109,27 +117,39 @@ html, body {
 /* =========================
    2) 제목(헤딩)만 다른 폰트
    ========================= */
+#_content h1, #_content h2, #_content h3, #_content h4, #_content h5, #_content h6,
 h1, h2, h3, h4, h5, h6,
 .page-title, .post-title {
-  font-family: "FontTitle", "FontBody", system-ui, sans-serif;
+  font-family: "FontTitle", "FontBody", system-ui, sans-serif !important;
 }
 
 /* =========================
    3) 목차(TOC)만 다른 폰트
-   - Hydejack/Markdown TOC 케이스들 넓게 커버
    ========================= */
-.toc, nav.toc, .toc-wrapper, #markdown-toc, .js-toc {
-  font-family: "FontToc", "FontBody", system-ui, sans-serif;
+#markdown-toc, .toc, nav.toc, .toc-wrapper, .js-toc, #_toc, #_table-of-contents {
+  font-family: "FontToc", "FontBody", system-ui, sans-serif !important;
 }
-.toc a, nav.toc a, #markdown-toc a, .js-toc a {
-  font-family: inherit;
+#markdown-toc a, .toc a, nav.toc a, .toc-wrapper a, .js-toc a, #_toc a, #_table-of-contents a {
+  font-family: inherit !important;
 }
 
 /* =========================
    4) 사이드바만 다른 폰트
-   - Hydejack은 #_sidebar / #_drawer 를 자주 씀
+   - 전체(*)에 적용하면 아이콘이 깨질 수 있어서 텍스트 요소만
    ========================= */
-#_sidebar, #_drawer,
-#_sidebar *, #_drawer * {
-  font-family: "FontSidebar", "FontBody", system-ui, sans-serif;
+#_sidebar .sidebar-about,
+#_sidebar .sidebar-about *,
+#_sidebar .sidebar-nav,
+#_sidebar .sidebar-nav a,
+#_sidebar .sidebar-nav-item,
+#_sidebar .sidebar-social,
+#_sidebar .sidebar-social a,
+#_drawer  .sidebar-about,
+#_drawer  .sidebar-about *,
+#_drawer  .sidebar-nav,
+#_drawer  .sidebar-nav a,
+#_drawer  .sidebar-nav-item,
+#_drawer  .sidebar-social,
+#_drawer  .sidebar-social a {
+  font-family: "FontSidebar", "FontBody", system-ui, sans-serif !important;
 }
