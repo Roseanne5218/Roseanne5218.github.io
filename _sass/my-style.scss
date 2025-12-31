@@ -122,3 +122,5 @@ html, body {
 #_drawer  i, #_drawer  .icon, #_drawer  .icon * {
   font-family: inherit !important;
 }
+
+#_sidebar [class*="icon"], #_drawer [class*="icon"] { font-family: inherit !important; }
