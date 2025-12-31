@@ -58,8 +58,7 @@
 
 
 /* =========================================================
-   Font Faces (안전하게 상대/절대 경로 둘 다 시도)
-   - 폰트 파일은 /assets/fonts/ 에 있어야 함
+   Font Faces
    ========================================================= */
 
 /* MemomentKkukkukk */
@@ -82,14 +81,14 @@
   font-display:swap;
 }
 
-/* ONEMobilePOP (파일명이 ONE Mobile POP.ttf 라면 %20 경로도 커버) */
+/* ONEMobilePOP (ONEMobilePOP.ttf / ONE Mobile POP.ttf 둘 다 커버) */
 @font-face{
   font-family:"ONEMobilePOP";
   src:
     url("../fonts/ONEMobilePOP.ttf") format("truetype"),
     url("/assets/fonts/ONEMobilePOP.ttf") format("truetype"),
-    url("../fonts/ONEMobilePOP.ttf") format("truetype"),
-    url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
+    url("../fonts/ONE%20Mobile%20POP.ttf") format("truetype"),
+    url("/assets/fonts/ONE%20Mobile%20POP.ttf") format("truetype");
   font-weight:400;
   font-style:normal;
   font-display:swap;
@@ -99,8 +98,8 @@
   src:
     url("../fonts/ONEMobilePOP.ttf") format("truetype"),
     url("/assets/fonts/ONEMobilePOP.ttf") format("truetype"),
-    url("../fonts/ONEMobilePOP.ttf") format("truetype"),
-    url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
+    url("../fonts/ONE%20Mobile%20POP.ttf") format("truetype"),
+    url("/assets/fonts/ONE%20Mobile%20POP.ttf") format("truetype");
   font-weight:700;
   font-style:normal;
   font-display:swap;
@@ -127,26 +126,27 @@
 }
 
 /* =========================================================
-   0) 기본값: "나머지"는 ONEMobilePOP
-   (페이지/목록 화면의 기본 폰트)
+   ✅ 기본(페이지/목록 화면): ONEMobilePOP
    ========================================================= */
 html, body, #_content {
   font-family:"ONEMobilePOP", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
 }
 
 /* =========================================================
-   1) 사이드바 전체: MemomentKkukkukk
-   - arrow_drop_down 같은 아이콘 글자 깨짐 방지 포함
+   ✅ 사이드바 전체: MemomentKkukkukk (아이콘 깨짐 방지 포함)
+   - 전체에 폰트를 주되, 아이콘 계열은 강제로 원래 폰트로 복구
    ========================================================= */
 #_sidebar, #_drawer{
   font-family:"MemomentKkukkukk", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
 }
 
-/* Material Icons / Symbols 복구 (아이콘이 글자로 보이는 문제 해결) */
+/* 아이콘 폰트 복구: material-icons / material-symbols / 기타 아이콘 클래스까지 넓게 */
 #_sidebar .material-icons,
 #_drawer  .material-icons,
 #_sidebar i.material-icons,
-#_drawer  i.material-icons{
+#_drawer  i.material-icons,
+#_sidebar [class*="material-icons"],
+#_drawer  [class*="material-icons"]{
   font-family:"Material Icons" !important;
   font-weight:normal !important;
   font-style:normal !important;
@@ -162,8 +162,7 @@ html, body, #_content {
 }
 
 /* =========================================================
-   2) "UE5 PORTFOLIO" 같은 페이지 상단 큰 제목(page-title): MemomentKkukkukk
-   - (예시: UE5 PORTFOLIO, KEY WORDS, CHARACTER 등)
+   ✅ 페이지 상단 큰 제목(page-title): MemomentKkukkukk
    ========================================================= */
 #_content .page-title,
 #_content h1.page-title{
@@ -172,9 +171,7 @@ html, body, #_content {
 }
 
 /* =========================================================
-   3) "목록/카테고리" 화면에서 왼쪽 DESCRIPTION/목차(TOC)만 MemomentKkukkukk
-   - (예시: CHARACTER 화면의 왼쪽 Character)
-   - 글 상세(포스트)에서는 적용되면 안 되니 body.post 제외
+   ✅ 목록/카테고리 화면에서 왼쪽 TOC만 Memoment (포스트 상세 제외)
    ========================================================= */
 body:not(.post) #_content #markdown-toc,
 body:not(.post) #_content nav.toc,
@@ -195,18 +192,15 @@ body:not(.post) #_content .js-toc *{
 }
 
 /* =========================================================
-   4) 글 상세(포스트) 화면: 규칙 변경
-   - 제목 + GAME ENGINE / UNREAL 라인: ONEMobilePOP
-   - 나머지 본문 전체: Hakgyoansim_BoardmarkerR
+   ✅ 포스트 상세 화면:
+   - 본문 전체: Hakgyoansim_BoardmarkerR
+   - 제목/메타(카테고리 라인): ONEMobilePOP
    ========================================================= */
-
-/* 포스트 본문 전체를 Boardmarker로 */
 body.post #_content,
 body.post #_content *{
   font-family:"Hakgyoansim_BoardmarkerR", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
 }
 
-/* 단, 글 제목 + 상단 카테고리/브레드크럼/메타 라인은 POP으로 */
 body.post #_content .post-title,
 body.post #_content h1.post-title,
 body.post #_content header h1,
@@ -224,42 +218,10 @@ body.post #_content .categories *{
   font-weight:700 !important;
 }
 
-/* 코드 블록은 글꼴 고정(가독성 보호) */
+/* 코드 블록은 고정 */
 body.post pre,
 body.post code,
 body.post kbd,
 body.post samp{
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
-}
-
-#_content .page-title,
-#_content h1.page-title {
-  font-family: "ONEMobilePOP", system-ui, sans-serif !important;
-  font-weight: 700 !important;
-}
-
-/* 사이드바(왼쪽/드로어) 글자 폰트 */
-#_sidebar, #_drawer {
-  font-family: "MemomentKkukkukk", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
-}
-
-/* ✅ 아이콘(arrow_drop_down 등) 글자로 깨지는 경우 복구 */
-#_sidebar .material-icons,
-#_drawer  .material-icons,
-#_sidebar i.material-icons,
-#_drawer  i.material-icons {
-  font-family: "Material Icons" !important;
-  font-weight: normal !important;
-  font-style: normal !important;
-  letter-spacing: normal !important;
-  text-transform: none !important;
-  display: inline-block;
-  white-space: nowrap;
-  direction: ltr;
-}
-
-/* Material Symbols 쓰는 경우까지 */
-#_sidebar [class*="material-symbols"],
-#_drawer  [class*="material-symbols"] {
-  font-family: "Material Symbols Outlined" !important;
 }
