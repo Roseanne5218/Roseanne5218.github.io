@@ -8,7 +8,7 @@ no_toc: true
 <div style="max-width: 1100px; margin: 0 auto 24px auto;">
   <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 16px; overflow: hidden;">
     <iframe
-      src="https://www.youtube-nocookie.com/watch?v=nUXComY7V7I&t=1s"
+      src="https://www.youtube-nocookie.com/embed/nUXComY7V7I?start=1&rel=0"
       title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
