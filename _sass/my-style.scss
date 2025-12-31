@@ -69,7 +69,7 @@
   font-display: swap;
 }
 
-/* 2번: 페이지 큰 제목 폰트 */
+/* 2번: 페이지 큰 제목 폰트 (공백 %20 처리) */
 @font-face {
   font-family: "FontPageTitlePop";
   src: url("/assets/fonts/ONE Mobile POP.ttf") format("truetype");
@@ -126,17 +126,17 @@
 */
 
 /* =========================
-   2) (2번 사진) 페이지 상단 큰 제목(UE5 PORTFOLIO)
+   2) (2번 사진) 페이지 상단 큰 제목(UE5 PORTFOLIO / KEY WORDS 등)
    ========================= */
 #_content .page-title,
-#_content h1.page-title {
+#_content h1.page-title,
+#_content header h1 {
   font-family: "FontPageTitlePop", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
   font-weight: 700 !important;
 }
 
 /* =========================
    3) (2번 사진) 포트폴리오 카드 제목/설명(CHARACTER, 설명 문구)
-   - 너가 쓰는 클래스가 rp-title / rp-desc라서 그걸 직접 지정
    ========================= */
 .rp-title,
 .rp-desc,
@@ -146,7 +146,6 @@
 
 /* =========================
    4) (3번 사진) 글 목록(archive/list) 'Unreal Engine ...' 부분
-   - Hydejack에서 자주 쓰는 목록 셀렉터를 넓게 커버
    ========================= */
 .archive a,
 .archive li,
@@ -160,15 +159,9 @@
   font-family: "FontBoardmarker", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
 }
 
-
-/* 1) 페이지 큰 제목 (KEY WORDS) */
-#_content .page-title,
-#_content h1.page-title {
-  font-family: "PT_Pop", "FontPageTitlePop", system-ui, sans-serif !important;
-  font-weight: 700 !important;
-}
-
-/* 2) 왼쪽 목차(TOC) - DESCRIPTION / KEY WORDS */
+/* =========================
+   5) KEY WORDS 페이지 목차(TOC) - DESCRIPTION / KEY WORDS
+   ========================= */
 #_content #markdown-toc,
 #_content .toc,
 #_content nav.toc,
@@ -176,7 +169,7 @@
 #_content .js-toc,
 #_content #_toc,
 #_content #_table-of-contents {
-  font-family: "BM_Board", "FontBoardmarker", system-ui, sans-serif !important;
+  font-family: "FontBoardmarker", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
 }
 
 /* 목차 링크도 동일 폰트 유지 */
