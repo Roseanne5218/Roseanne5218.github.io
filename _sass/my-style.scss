@@ -56,86 +56,53 @@
   }
 }
 
-/* 본문 폰트 */
+/* =========================
+   0) Font Faces
+   ========================= */
+
+/* 1번: 사이드바 폰트 */
 @font-face {
-  font-family: "FontBody";
+  font-family: "FontSidebarMemo";
+  src: url("/assets/fonts/MemomentKkukkukkP.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2번: 페이지 큰 제목 폰트 */
+@font-face {
+  font-family: "FontPageTitlePop";
+  src: url("/assets/fonts/ONE%20Mobile%20POP.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FontPageTitlePop";
+  src: url("/assets/fonts/ONE%20Mobile%20POP.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2,3번: 카드/목차/글목록 폰트 */
+@font-face {
+  font-family: "FontBoardmarker";
   src: url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "FontBody";
+  font-family: "FontBoardmarker";
   src: url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
-/* 제목 폰트(예: otf) */
-@font-face {
-  font-family: "FontTitle";
-  src: url("/assets/fonts/ONE Mobile POP.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-/* 제목이 800/900으로 잡히는 경우 대비(같은 파일로 매핑) */
-@font-face {
-  font-family: "FontTitle";
-  src: url("/assets/fonts/MemomentKkukkukkP.otf") format("opentype");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* 목차 폰트 */
-@font-face {
-  font-family: "FontToc";
-  src: url("/assets/fonts/Toc-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* 사이드바 폰트 */
-@font-face {
-  font-family: "FontSidebar";
-  src: url("/assets/fonts/ONE Mobile POPss.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* =========================
-   1) 전역(본문) 적용
-   ========================= */
-html, body {
-  font-family: "FontBody", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif;
-}
-
-/* =========================
-   2) 제목(헤딩)만 다른 폰트
-   ========================= */
-#_content h1, #_content h2, #_content h3, #_content h4, #_content h5, #_content h6,
-h1, h2, h3, h4, h5, h6,
-.page-title, .post-title {
-  font-family: "FontTitle", "FontBody", system-ui, sans-serif !important;
-}
-
-/* =========================
-   3) 목차(TOC)만 다른 폰트
-   ========================= */
-#markdown-toc, .toc, nav.toc, .toc-wrapper, .js-toc, #_toc, #_table-of-contents {
-  font-family: "FontToc", "FontBody", system-ui, sans-serif !important;
-}
-#markdown-toc a, .toc a, nav.toc a, .toc-wrapper a, .js-toc a, #_toc a, #_table-of-contents a {
-  font-family: inherit !important;
-}
-
-/* =========================
-   4) 사이드바만 다른 폰트
-   - 전체(*)에 적용하면 아이콘이 깨질 수 있어서 텍스트 요소만
+   1) (1번 사진) Sidebar: 글자만 적용 (아이콘/버튼은 건드리지 않음)
    ========================= */
 #_sidebar .sidebar-about,
 #_sidebar .sidebar-about *,
@@ -151,5 +118,44 @@ h1, h2, h3, h4, h5, h6,
 #_drawer  .sidebar-nav-item,
 #_drawer  .sidebar-social,
 #_drawer  .sidebar-social a {
-  font-family: "FontSidebar", "FontBody", system-ui, sans-serif !important;
+  font-family: "FontSidebarMemo", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
+}
+
+/* ✅ 중요: 아래 같은 규칙이 어딘가에 있으면 반드시 제거
+#_sidebar *, #_drawer * { font-family: ... }
+*/
+
+/* =========================
+   2) (2번 사진) 페이지 상단 큰 제목(UE5 PORTFOLIO)
+   ========================= */
+#_content .page-title,
+#_content h1.page-title {
+  font-family: "FontPageTitlePop", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* =========================
+   3) (2번 사진) 포트폴리오 카드 제목/설명(CHARACTER, 설명 문구)
+   - 너가 쓰는 클래스가 rp-title / rp-desc라서 그걸 직접 지정
+   ========================= */
+.rp-title,
+.rp-desc,
+.rp-card {
+  font-family: "FontBoardmarker", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
+}
+
+/* =========================
+   4) (3번 사진) 글 목록(archive/list) 'Unreal Engine ...' 부분
+   - Hydejack에서 자주 쓰는 목록 셀렉터를 넓게 커버
+   ========================= */
+.archive a,
+.archive li,
+.archive .post-title,
+.post-list a,
+.post-list li,
+.posts a,
+.posts li,
+.entries a,
+.entries li {
+  font-family: "FontBoardmarker", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
 }
