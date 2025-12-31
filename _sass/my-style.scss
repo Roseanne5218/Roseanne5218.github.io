@@ -72,14 +72,14 @@
 /* 2번: 페이지 큰 제목 폰트 (공백 %20 처리) */
 @font-face {
   font-family: "FontPageTitlePop";
-  src: url("/assets/fonts/ONE Mobile POP.ttf") format("truetype");
+  src: url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "FontPageTitlePop";
-  src: url("/assets/fonts/ONE Mobile POP.ttf") format("truetype");
+  src: url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -192,14 +192,14 @@
 /* 폰트 등록 (이미 있으면 중복돼도 큰 문제 없음) */
 @font-face {
   font-family: "FontPageTitlePop";
-  src: url("/assets/fonts/ONE Mobile POP.ttf") format("truetype");
+  src: url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "FontPageTitlePop";
-  src: url("/assets/fonts/ONE Mobile POP.ttf") format("truetype");
+  src: url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -271,14 +271,14 @@ body[data-page="keywords"] #_content h1.page-title {
 
 @font-face {
   font-family: "POP";
-  src: url("/assets/fonts/ONE Mobile POP.ttf") format("truetype");
+  src: url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "POP";
-  src: url("/assets/fonts/ONE Mobile POP.ttf") format("truetype");
+  src: url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -312,4 +312,25 @@ html, body {
 #_sidebar i, #_sidebar .icon, #_sidebar .icon * ,
 #_drawer  i, #_drawer  .icon, #_drawer  .icon * {
   font-family: inherit !important;
+}
+
+/* 사이드바 아이콘(arrow_drop_down 등) 복구 */
+#_sidebar .material-icons,
+#_drawer  .material-icons,
+#_sidebar i.material-icons,
+#_drawer  i.material-icons {
+  font-family: "Material Icons" !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+/* Material Symbols 쓰는 경우까지 커버 */
+#_sidebar [class*="material-symbols"],
+#_drawer  [class*="material-symbols"] {
+  font-family: "Material Symbols Outlined" !important;
 }
