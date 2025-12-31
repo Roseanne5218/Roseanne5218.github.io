@@ -57,171 +57,56 @@
 }
 
 
-/* =========================================================
-   Font Faces
-   ========================================================= */
+/* 0) 폰트 등록(@font-face)은 이미 해둔 걸 그대로 사용한다고 가정 */
 
-/* MemomentKkukkukk */
-@font-face{
-  font-family:"MemomentKkukkukk";
-  src:
-    url("../fonts/MemomentKkukkukk.ttf") format("truetype"),
-    url("/assets/fonts/MemomentKkukkukk.ttf") format("truetype");
-  font-weight:400;
-  font-style:normal;
-  font-display:swap;
-}
-@font-face{
-  font-family:"MemomentKkukkukk";
-  src:
-    url("../fonts/MemomentKkukkukk.ttf") format("truetype"),
-    url("/assets/fonts/MemomentKkukkukk.ttf") format("truetype");
-  font-weight:700;
-  font-style:normal;
-  font-display:swap;
+/* 1) ✅ 전체 기본 폰트(사이트 전체) */
+html, body {
+  font-family: "ONEMobilePOP", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
 }
 
-/* ONEMobilePOP (ONEMobilePOP.ttf / ONE Mobile POP.ttf 둘 다 커버) */
-@font-face{
-  font-family:"ONEMobilePOP";
-  src:
-    url("../fonts/ONEMobilePOP.ttf") format("truetype"),
-    url("/assets/fonts/ONEMobilePOP.ttf") format("truetype"),
-    url("../fonts/ONE%20Mobile%20POP.ttf") format("truetype"),
-    url("/assets/fonts/ONE%20Mobile%20POP.ttf") format("truetype");
-  font-weight:400;
-  font-style:normal;
-  font-display:swap;
-}
-@font-face{
-  font-family:"ONEMobilePOP";
-  src:
-    url("../fonts/ONEMobilePOP.ttf") format("truetype"),
-    url("/assets/fonts/ONEMobilePOP.ttf") format("truetype"),
-    url("../fonts/ONE%20Mobile%20POP.ttf") format("truetype"),
-    url("/assets/fonts/ONE%20Mobile%20POP.ttf") format("truetype");
-  font-weight:700;
-  font-style:normal;
-  font-display:swap;
+/* 2) ✅ 사이드바만 다른 폰트 */
+#_sidebar, #_drawer {
+  font-family: "MemomentKkukkukk", system-ui, sans-serif !important;
 }
 
-/* Hakgyoansim_BoardmarkerR */
-@font-face{
-  font-family:"Hakgyoansim_BoardmarkerR";
-  src:
-    url("../fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype"),
-    url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
-  font-weight:400;
-  font-style:normal;
-  font-display:swap;
-}
-@font-face{
-  font-family:"Hakgyoansim_BoardmarkerR";
-  src:
-    url("../fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype"),
-    url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
-  font-weight:700;
-  font-style:normal;
-  font-display:swap;
-}
-
-/* =========================================================
-   ✅ 기본(페이지/목록 화면): ONEMobilePOP
-   ========================================================= */
-html, body, #_content {
-  font-family:"ONEMobilePOP", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
-}
-
-/* =========================================================
-   ✅ 사이드바 전체: MemomentKkukkukk (아이콘 깨짐 방지 포함)
-   - 전체에 폰트를 주되, 아이콘 계열은 강제로 원래 폰트로 복구
-   ========================================================= */
-#_sidebar, #_drawer{
-  font-family:"MemomentKkukkukk", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
-}
-
-/* 아이콘 폰트 복구: material-icons / material-symbols / 기타 아이콘 클래스까지 넓게 */
+/* 사이드바 아이콘 글자 깨짐 방지 */
 #_sidebar .material-icons,
 #_drawer  .material-icons,
 #_sidebar i.material-icons,
-#_drawer  i.material-icons,
-#_sidebar [class*="material-icons"],
-#_drawer  [class*="material-icons"]{
-  font-family:"Material Icons" !important;
-  font-weight:normal !important;
-  font-style:normal !important;
-  letter-spacing:normal !important;
-  text-transform:none !important;
-  display:inline-block;
-  white-space:nowrap;
-  direction:ltr;
+#_drawer  i.material-icons {
+  font-family: "Material Icons" !important;
 }
 #_sidebar [class*="material-symbols"],
-#_drawer  [class*="material-symbols"]{
-  font-family:"Material Symbols Outlined" !important;
+#_drawer  [class*="material-symbols"] {
+  font-family: "Material Symbols Outlined" !important;
 }
 
-/* =========================================================
-   ✅ 페이지 상단 큰 제목(page-title): MemomentKkukkukk
-   ========================================================= */
+/* 3) ✅ 모든 페이지의 "제일 큰 제목"(page-title)만 다른 폰트 */
 #_content .page-title,
-#_content h1.page-title{
-  font-family:"MemomentKkukkukk", system-ui, sans-serif !important;
-  font-weight:700 !important;
+#_content h1.page-title {
+  font-family: "MemomentKkukkukk", system-ui, sans-serif !important;
+  font-weight: 700 !important;
 }
 
-/* =========================================================
-   ✅ 목록/카테고리 화면에서 왼쪽 TOC만 Memoment (포스트 상세 제외)
-   ========================================================= */
-body:not(.post) #_content #markdown-toc,
-body:not(.post) #_content nav.toc,
-body:not(.post) #_content .toc,
-body:not(.post) #_content .toc-wrapper,
-body:not(.post) #_content .js-toc,
-body:not(.post) #_content #_toc,
-body:not(.post) #_content #_table-of-contents{
-  font-family:"MemomentKkukkukk", system-ui, sans-serif !important;
-  font-weight:700 !important;
-}
-body:not(.post) #_content #markdown-toc *,
-body:not(.post) #_content nav.toc *,
-body:not(.post) #_content .toc *,
-body:not(.post) #_content .toc-wrapper *,
-body:not(.post) #_content .js-toc *{
-  font-family:inherit !important;
-}
-
-/* =========================================================
-   ✅ 포스트 상세 화면:
-   - 본문 전체: Hakgyoansim_BoardmarkerR
-   - 제목/메타(카테고리 라인): ONEMobilePOP
-   ========================================================= */
+/* 4) ✅ 글 상세(포스트)에서는 '본문만' 다른 폰트로 */
 body.post #_content,
-body.post #_content *{
-  font-family:"Hakgyoansim_BoardmarkerR", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
+body.post #_content * {
+  font-family: "Hakgyoansim_BoardmarkerR", system-ui, sans-serif !important;
 }
 
+/* 5) ✅ 대신 포스트 제목/메타 라인은 다시 POP으로 덮기 */
 body.post #_content .post-title,
 body.post #_content h1.post-title,
 body.post #_content header h1,
 body.post #_content .post-meta,
 body.post #_content .post-meta *,
 body.post #_content .breadcrumbs,
-body.post #_content .breadcrumbs *,
-body.post #_content .kicker,
-body.post #_content .kicker *,
-body.post #_content .taxonomy,
-body.post #_content .taxonomy *,
-body.post #_content .categories,
-body.post #_content .categories *{
-  font-family:"ONEMobilePOP", system-ui, sans-serif !important;
-  font-weight:700 !important;
+body.post #_content .breadcrumbs * {
+  font-family: "ONEMobilePOP", system-ui, sans-serif !important;
+  font-weight: 700 !important;
 }
 
-/* 코드 블록은 고정 */
-body.post pre,
-body.post code,
-body.post kbd,
-body.post samp{
+/* 6) 코드블록은 고정(가독성) */
+pre, code, kbd, samp {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
 }
