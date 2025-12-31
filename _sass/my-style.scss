@@ -55,3 +55,137 @@
     display: block;
   }
 }
+
+/* =========================================================
+   Font Faces
+   ========================================================= */
+
+/* MemomentKkukkukk */
+@font-face {
+  font-family: "MemomentKkukkukk";
+  src: url("/assets/fonts/MemomentKkukkukk.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MemomentKkukkukk";
+  src: url("/assets/fonts/MemomentKkukkukk.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ONEMobilePOP */
+@font-face {
+  font-family: "ONEMobilePOP";
+  src: url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ONEMobilePOP";
+  src: url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Hakgyoansim_BoardmarkerR */
+@font-face {
+  font-family: "Hakgyoansim_BoardmarkerR";
+  src: url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hakgyoansim_BoardmarkerR";
+  src: url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================================================
+   ✅ 기본 규칙(전체)
+   - 기본은 ONEMobilePOP
+   ========================================================= */
+html, body, #_content {
+  font-family: "ONEMobilePOP", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
+}
+
+/* =========================================================
+   ✅ 사이드바 전체: MemomentKkukkukk
+   - 아이콘(arrow_drop_down) 깨짐 방지 포함
+   ========================================================= */
+#_sidebar, #_drawer {
+  font-family: "MemomentKkukkukk", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
+}
+
+/* 아이콘 폰트 복구 (Material Icons) */
+#_sidebar .material-icons,
+#_drawer  .material-icons,
+#_sidebar i.material-icons,
+#_drawer  i.material-icons {
+  font-family: "Material Icons" !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+/* Material Symbols 쓰는 경우까지 */
+#_sidebar [class*="material-symbols"],
+#_drawer  [class*="material-symbols"] {
+  font-family: "Material Symbols Outlined" !important;
+}
+
+/* =========================================================
+   ✅ 페이지 최상단 큰 제목(page-title): MemomentKkukkukk
+   ========================================================= */
+#_content .page-title,
+#_content h1.page-title {
+  font-family: "MemomentKkukkukk", system-ui, sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* =========================================================
+   ✅ 글 상세(포스트) 페이지:
+   - 본문 전체: Hakgyoansim_BoardmarkerR
+   - 글 제목/상단 메타 라인: ONEMobilePOP
+   ========================================================= */
+body.post #_content,
+body.post #_content * {
+  font-family: "Hakgyoansim_BoardmarkerR", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
+}
+
+/* 제목 + GAME ENGINE / UNREAL 같은 라인(메타/브레드크럼)만 POP */
+body.post #_content .post-title,
+body.post #_content h1.post-title,
+body.post #_content header h1,
+body.post #_content .post-meta,
+body.post #_content .post-meta *,
+body.post #_content .breadcrumbs,
+body.post #_content .breadcrumbs *,
+body.post #_content .kicker,
+body.post #_content .kicker *,
+body.post #_content .taxonomy,
+body.post #_content .taxonomy *,
+body.post #_content .categories,
+body.post #_content .categories * {
+  font-family: "ONEMobilePOP", system-ui, sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* 코드 블록은 고정 */
+body.post pre,
+body.post code,
+body.post kbd,
+body.post samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
