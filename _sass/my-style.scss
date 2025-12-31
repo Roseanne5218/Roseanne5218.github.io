@@ -56,29 +56,80 @@
   }
 }
 
-/* 1) 폰트 등록 */
+/* 본문 폰트 */
 @font-face {
-  font-family: "MyFont";
-  src: url("/assets/fonts/ONE Mobile POP.ttf") format("truetype");
+  font-family: "FontBody";
+  src: url("/assets/fonts/Body-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: "MyFont";
-  src: url("/assets/fonts/ONE Mobile POP.ttf") format("truetype");
+  font-family: "FontBody";
+  src: url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
-/* 2) 사이트 전체 적용 */
-html, body {
-  font-family: "MyFont", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif;
+/* 제목 폰트(예: otf) */
+@font-face {
+  font-family: "FontTitle";
+  src: url("/assets/fonts/ONE Mobile POP.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* (선택) 제목만 더 굵게/다르게 */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "MyFont", system-ui, sans-serif;
+/* 목차 폰트 */
+@font-face {
+  font-family: "FontToc";
+  src: url("/assets/fonts/Toc-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 사이드바 폰트 */
+@font-face {
+  font-family: "FontSidebar";
+  src: url("/assets/fonts/ONE Mobile POPss.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================
+   1) 전역(본문) 적용
+   ========================= */
+html, body {
+  font-family: "FontBody", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif;
+}
+
+/* =========================
+   2) 제목(헤딩)만 다른 폰트
+   ========================= */
+h1, h2, h3, h4, h5, h6,
+.page-title, .post-title {
+  font-family: "FontTitle", "FontBody", system-ui, sans-serif;
+}
+
+/* =========================
+   3) 목차(TOC)만 다른 폰트
+   - Hydejack/Markdown TOC 케이스들 넓게 커버
+   ========================= */
+.toc, nav.toc, .toc-wrapper, #markdown-toc, .js-toc {
+  font-family: "FontToc", "FontBody", system-ui, sans-serif;
+}
+.toc a, nav.toc a, #markdown-toc a, .js-toc a {
+  font-family: inherit;
+}
+
+/* =========================
+   4) 사이드바만 다른 폰트
+   - Hydejack은 #_sidebar / #_drawer 를 자주 씀
+   ========================= */
+#_sidebar, #_drawer,
+#_sidebar *, #_drawer * {
+  font-family: "FontSidebar", "FontBody", system-ui, sans-serif;
 }
