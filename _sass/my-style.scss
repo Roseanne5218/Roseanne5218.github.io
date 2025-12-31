@@ -56,281 +56,178 @@
   }
 }
 
-/* =========================
-   0) Font Faces
-   ========================= */
 
-/* 1번: 사이드바 폰트 */
-@font-face {
-  font-family: "FontSidebarMemo";
-  src: url("/assets/fonts/MemomentKkukkukk.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+/* =========================================================
+   Font Faces (안전하게 상대/절대 경로 둘 다 시도)
+   - 폰트 파일은 /assets/fonts/ 에 있어야 함
+   ========================================================= */
 
-/* 2번: 페이지 큰 제목 폰트 (공백 %20 처리) */
-@font-face {
-  font-family: "FontPageTitlePop";
-  src: url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+/* MemomentKkukkukk */
+@font-face{
+  font-family:"MemomentKkukkukk";
+  src:
+    url("../fonts/MemomentKkukkukk.ttf") format("truetype"),
+    url("/assets/fonts/MemomentKkukkukk.ttf") format("truetype");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
 }
-@font-face {
-  font-family: "FontPageTitlePop";
-  src: url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+@font-face{
+  font-family:"MemomentKkukkukk";
+  src:
+    url("../fonts/MemomentKkukkukk.ttf") format("truetype"),
+    url("/assets/fonts/MemomentKkukkukk.ttf") format("truetype");
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
 }
 
-/* 2,3번: 카드/목차/글목록 폰트 */
-@font-face {
-  font-family: "FontBoardmarker";
-  src: url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+/* ONEMobilePOP (파일명이 ONE Mobile POP.ttf 라면 %20 경로도 커버) */
+@font-face{
+  font-family:"ONEMobilePOP";
+  src:
+    url("../fonts/ONEMobilePOP.ttf") format("truetype"),
+    url("/assets/fonts/ONEMobilePOP.ttf") format("truetype"),
+    url("../fonts/ONE%20Mobile%20POP.ttf") format("truetype"),
+    url("/assets/fonts/ONE%20Mobile%20POP.ttf") format("truetype");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
 }
-@font-face {
-  font-family: "FontBoardmarker";
-  src: url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* =========================
-   1) (1번 사진) Sidebar: 글자만 적용 (아이콘/버튼은 건드리지 않음)
-   ========================= */
-#_sidebar .sidebar-about,
-#_sidebar .sidebar-about *,
-#_sidebar .sidebar-nav,
-#_sidebar .sidebar-nav a,
-#_sidebar .sidebar-nav-item,
-#_sidebar .sidebar-social,
-#_sidebar .sidebar-social a,
-#_drawer  .sidebar-about,
-#_drawer  .sidebar-about *,
-#_drawer  .sidebar-nav,
-#_drawer  .sidebar-nav a,
-#_drawer  .sidebar-nav-item,
-#_drawer  .sidebar-social,
-#_drawer  .sidebar-social a {
-  font-family: "FontSidebarMemo", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
+@font-face{
+  font-family:"ONEMobilePOP";
+  src:
+    url("../fonts/ONEMobilePOP.ttf") format("truetype"),
+    url("/assets/fonts/ONEMobilePOP.ttf") format("truetype"),
+    url("../fonts/ONE%20Mobile%20POP.ttf") format("truetype"),
+    url("/assets/fonts/ONE%20Mobile%20POP.ttf") format("truetype");
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
 }
 
-/* ✅ 중요: 아래 같은 규칙이 어딘가에 있으면 반드시 제거
-#_sidebar *, #_drawer * { font-family: ... }
-*/
-
-/* =========================
-   2) (2번 사진) 페이지 상단 큰 제목(UE5 PORTFOLIO / KEY WORDS 등)
-   ========================= */
-#_content .page-title,
-#_content h1.page-title,
-#_content header h1 {
-  font-family: "FontPageTitlePop", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
-  font-weight: 700 !important;
+/* Hakgyoansim_BoardmarkerR */
+@font-face{
+  font-family:"Hakgyoansim_BoardmarkerR";
+  src:
+    url("../fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype"),
+    url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"Hakgyoansim_BoardmarkerR";
+  src:
+    url("../fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype"),
+    url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
 }
 
-/* =========================
-   3) (2번 사진) 포트폴리오 카드 제목/설명(CHARACTER, 설명 문구)
-   ========================= */
-.rp-title,
-.rp-desc,
-.rp-card {
-  font-family: "FontBoardmarker", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
+/* =========================================================
+   0) 기본값: "나머지"는 ONEMobilePOP
+   (페이지/목록 화면의 기본 폰트)
+   ========================================================= */
+html, body, #_content {
+  font-family:"ONEMobilePOP", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
 }
 
-/* =========================
-   4) (3번 사진) 글 목록(archive/list) 'Unreal Engine ...' 부분
-   ========================= */
-.archive a,
-.archive li,
-.archive .post-title,
-.post-list a,
-.post-list li,
-.posts a,
-.posts li,
-.entries a,
-.entries li {
-  font-family: "FontBoardmarker", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
+/* =========================================================
+   1) 사이드바 전체: MemomentKkukkukk
+   - arrow_drop_down 같은 아이콘 글자 깨짐 방지 포함
+   ========================================================= */
+#_sidebar, #_drawer{
+  font-family:"MemomentKkukkukk", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
 }
 
-/* =========================
-   5) KEY WORDS 페이지 목차(TOC) - DESCRIPTION / KEY WORDS
-   ========================= */
-#_content #markdown-toc,
-#_content .toc,
-#_content nav.toc,
-#_content .toc-wrapper,
-#_content .js-toc,
-#_content #_toc,
-#_content #_table-of-contents {
-  font-family: "FontBoardmarker", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
-}
-
-/* 목차 링크도 동일 폰트 유지 */
-#_content #markdown-toc a,
-#_content .toc a,
-#_content nav.toc a,
-#_content .toc-wrapper a,
-#_content .js-toc a,
-#_content #_toc a,
-#_content #_table-of-contents a {
-  font-family: inherit !important;
-}
-
-/* =========================
-   KEYWORDS 페이지 전용 폰트 세팅
-   - 전체: Boardmarker
-   - 페이지 큰 제목(KEY WORDS)만: POP
-   ========================= */
-
-/* 폰트 등록 (이미 있으면 중복돼도 큰 문제 없음) */
-@font-face {
-  font-family: "FontPageTitlePop";
-  src: url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "FontPageTitlePop";
-  src: url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "FontBoardmarker";
-  src: url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "FontBoardmarker";
-  src: url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* ✅ 1) KEYWORDS 페이지 전체를 Boardmarker로 강제
-   - Hydejack에서 페이지는 보통 body에 page-<slug> 같은 클래스가 붙음
-   - 아래는 여러 케이스를 동시에 커버
-*/
-body.page-keywords #_content,
-body.page-keywords #_content *,
-body.page-key-words #_content,
-body.page-key-words #_content *,
-body.keywords #_content,
-body.keywords #_content *,
-body[data-page="keywords"] #_content,
-body[data-page="keywords"] #_content * {
-  font-family: "FontBoardmarker", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
-}
-
-/* ✅ 2) 단, 페이지 큰 제목(KEY WORDS)만 POP 폰트 */
-body.page-keywords #_content .page-title,
-body.page-key-words #_content .page-title,
-body.keywords #_content .page-title,
-body[data-page="keywords"] #_content .page-title,
-body.page-keywords #_content h1.page-title,
-body.page-key-words #_content h1.page-title,
-body.keywords #_content h1.page-title,
-body[data-page="keywords"] #_content h1.page-title {
-  font-family: "FontPageTitlePop", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
-  font-weight: 700 !important;
-}
-
-/* =========================
-   Global Fonts
-   - Body/Everything: Hakgyoansim_BoardmarkerR
-   - Titles only: ONE Mobile POP
-   ========================= */
-
-/* 0) Font Faces */
-@font-face {
-  font-family: "BM";
-  src: url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "BM";
-  src: url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "POP";
-  src: url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "POP";
-  src: url("/assets/fonts/ONEMobilePOP.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* 1) 전체 기본 폰트: Boardmarker */
-html, body {
-  font-family: "BM", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
-}
-
-/* 2) 본문/네비/목차/리스트 등: 확실히 Boardmarker 유지 */
-#_content, #_content *,
-#_sidebar, #_sidebar *,
-#_drawer,  #_drawer * {
-  font-family: "BM", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
-}
-
-/* 3) ✅ 제목만 POP (페이지 제목 + 글 제목 + 모든 헤딩) */
-#_content .page-title,
-#_content .post-title,
-#_content h1, #_content h2, #_content h3, #_content h4, #_content h5, #_content h6 {
-  font-family: "POP", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
-  font-weight: 700 !important;
-}
-
-/* 4) 사이드바 아이콘 깨짐 방지
-   - 위에서 #_sidebar * 를 잡았기 때문에 아이콘이 문자로 깨질 수 있음.
-   - 아이콘은 보통 svg이므로 svg는 폰트 영향 없지만,
-     아이콘 폰트 쓰는 경우를 대비해 'i, .icon'류는 제외 처리.
-*/
-#_sidebar i, #_sidebar .icon, #_sidebar .icon * ,
-#_drawer  i, #_drawer  .icon, #_drawer  .icon * {
-  font-family: inherit !important;
-}
-
-/* 사이드바 아이콘(arrow_drop_down 등) 복구 */
+/* Material Icons / Symbols 복구 (아이콘이 글자로 보이는 문제 해결) */
 #_sidebar .material-icons,
 #_drawer  .material-icons,
 #_sidebar i.material-icons,
-#_drawer  i.material-icons {
-  font-family: "Material Icons" !important;
-  font-weight: normal !important;
-  font-style: normal !important;
-  letter-spacing: normal !important;
-  text-transform: none !important;
-  display: inline-block;
-  white-space: nowrap;
-  direction: ltr;
+#_drawer  i.material-icons{
+  font-family:"Material Icons" !important;
+  font-weight:normal !important;
+  font-style:normal !important;
+  letter-spacing:normal !important;
+  text-transform:none !important;
+  display:inline-block;
+  white-space:nowrap;
+  direction:ltr;
+}
+#_sidebar [class*="material-symbols"],
+#_drawer  [class*="material-symbols"]{
+  font-family:"Material Symbols Outlined" !important;
 }
 
-/* Material Symbols 쓰는 경우까지 커버 */
-#_sidebar [class*="material-symbols"],
-#_drawer  [class*="material-symbols"] {
-  font-family: "Material Symbols Outlined" !important;
+/* =========================================================
+   2) "UE5 PORTFOLIO" 같은 페이지 상단 큰 제목(page-title): MemomentKkukkukk
+   - (예시: UE5 PORTFOLIO, KEY WORDS, CHARACTER 등)
+   ========================================================= */
+#_content .page-title,
+#_content h1.page-title{
+  font-family:"MemomentKkukkukk", system-ui, sans-serif !important;
+  font-weight:700 !important;
+}
+
+/* =========================================================
+   3) "목록/카테고리" 화면에서 왼쪽 DESCRIPTION/목차(TOC)만 MemomentKkukkukk
+   - (예시: CHARACTER 화면의 왼쪽 Character)
+   - 글 상세(포스트)에서는 적용되면 안 되니 body.post 제외
+   ========================================================= */
+body:not(.post) #_content #markdown-toc,
+body:not(.post) #_content nav.toc,
+body:not(.post) #_content .toc,
+body:not(.post) #_content .toc-wrapper,
+body:not(.post) #_content .js-toc,
+body:not(.post) #_content #_toc,
+body:not(.post) #_content #_table-of-contents{
+  font-family:"MemomentKkukkukk", system-ui, sans-serif !important;
+  font-weight:700 !important;
+}
+body:not(.post) #_content #markdown-toc *,
+body:not(.post) #_content nav.toc *,
+body:not(.post) #_content .toc *,
+body:not(.post) #_content .toc-wrapper *,
+body:not(.post) #_content .js-toc *{
+  font-family:inherit !important;
+}
+
+/* =========================================================
+   4) 글 상세(포스트) 화면: 규칙 변경
+   - 제목 + GAME ENGINE / UNREAL 라인: ONEMobilePOP
+   - 나머지 본문 전체: Hakgyoansim_BoardmarkerR
+   ========================================================= */
+
+/* 포스트 본문 전체를 Boardmarker로 */
+body.post #_content,
+body.post #_content *{
+  font-family:"Hakgyoansim_BoardmarkerR", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
+}
+
+/* 단, 글 제목 + 상단 카테고리/브레드크럼/메타 라인은 POP으로 */
+body.post #_content .post-title,
+body.post #_content h1.post-title,
+body.post #_content header h1,
+body.post #_content .post-meta,
+body.post #_content .post-meta *,
+body.post #_content .breadcrumbs,
+body.post #_content .breadcrumbs *,
+body.post #_content .kicker,
+body.post #_content .kicker *,
+body.post #_content .taxonomy,
+body.post #_content .taxonomy *,
+body.post #_content .categories,
+body.post #_content .categories *{
+  font-family:"ONEMobilePOP", system-ui, sans-serif !important;
+  font-weight:700 !important;
+}
+
+/* 코드 블록은 글꼴 고정(가독성 보호) */
+body.post pre,
+body.post code,
+body.post kbd,
+body.post samp{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
 }
