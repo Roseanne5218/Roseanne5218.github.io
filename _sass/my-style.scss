@@ -189,3 +189,47 @@ body.post kbd,
 body.post samp {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
 }
+
+/* =========================
+   Sidebar font FORCE
+   ========================= */
+
+/* 사이드바 컨테이너 후보를 전부 잡음 */
+#_sidebar,
+#_drawer,
+#sidebar,
+#drawer,
+.sidebar,
+.drawer,
+.sidebar-sticky,
+.sidebar-about,
+.sidebar-nav,
+.sidebar-nav-item,
+.sidebar-nav a {
+  font-family: "MemomentKkukkukk", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
+}
+
+/* 사이드바 내부 텍스트까지 확실히 */
+#_sidebar *:not(.material-icons):not([class*="material-icons"]):not([class*="material-symbols"]),
+#_drawer  *:not(.material-icons):not([class*="material-icons"]):not([class*="material-symbols"]),
+#sidebar  *:not(.material-icons):not([class*="material-icons"]):not([class*="material-symbols"]),
+#drawer   *:not(.material-icons):not([class*="material-icons"]):not([class*="material-symbols"]) {
+  font-family: "MemomentKkukkukk", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif !important;
+}
+
+/* 아이콘 폰트 복구(arrow_drop_down 글자 방지) */
+.material-icons,
+i.material-icons,
+[class*="material-icons"]{
+  font-family: "Material Icons" !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+}
+[class*="material-symbols"]{
+  font-family: "Material Symbols Outlined" !important;
+}
