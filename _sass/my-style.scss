@@ -96,3 +96,15 @@ h1, h2, h3, h4, h5, h6,
 .sidebar * {
   font-family: "MemomentKkukkukk", "ONEMobilePOP", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
+
+/* =========================
+   Post meta (date + categories) font fix
+   ========================= */
+.content .post-meta,
+.content .post-meta a,
+.content .post-meta span,
+.content .post-meta time,
+.content .post-meta .categories,
+.content .post-meta .categories a {
+  font-family: "ONEMobilePOP", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+}
