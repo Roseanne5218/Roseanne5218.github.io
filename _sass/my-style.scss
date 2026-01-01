@@ -130,3 +130,34 @@ h1, h2, h3, h4, h5, h6,
 .content a[rel="bookmark"] {
   font-family: "Hakgyoansim_BoardmarkerR", "ONEMobilePOP", system-ui, sans-serif !important;
 }
+
+/* ===== Post body text font (exclude code blocks) ===== */
+.content .post,
+.content .post p,
+.content .post li,
+.content .post blockquote,
+.content .post dd,
+.content .post dt,
+.content .post table,
+.content .post .post-content,
+.content .post .post-body,
+.content .post .content {
+  font-family: "Hakgyoansim_BoardmarkerR", "ONEMobilePOP", system-ui, sans-serif !important;
+}
+
+/* 코드/인라인코드는 기존 모노스페이스 유지 */
+.content .post pre,
+.content .post code,
+.content .post kbd,
+.content .post samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
+
+.content .post h1,
+.content .post h2,
+.content .post h3,
+.content .post h4,
+.content .post h5,
+.content .post h6 {
+  font-family: "Hakgyoansim_BoardmarkerR", "ONEMobilePOP", system-ui, sans-serif !important;
+}
