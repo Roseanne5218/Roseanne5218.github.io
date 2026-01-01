@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2026-01-01T07:01:08+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">숫자 변환하기</title><link href="/codingtest/programmers/lv.2/2025-12-10-codingtest_138/" rel="alternate" type="text/html" title="숫자 변환하기" /><published>2025-12-10T00:00:00+00:00</published><updated>2026-01-01T07:00:28+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_138</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-12-10-codingtest_138/"><![CDATA[<hr />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="ko" /><updated>2026-01-01T07:10:35+00:00</updated><id>/feed.xml</id><title type="html">Roseanne</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><entry><title type="html">숫자 변환하기</title><link href="/codingtest/programmers/lv.2/2025-12-10-codingtest_138/" rel="alternate" type="text/html" title="숫자 변환하기" /><published>2025-12-10T00:00:00+00:00</published><updated>2026-01-01T07:09:56+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_138</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-12-10-codingtest_138/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -110,7 +110,7 @@
 <ul>
   <li>DFS를 사용하면 너무 많은 경우를 탐색하기 때문에 시간 초과가 발생, 연산 시간을 줄이기 위해 BFS를 사용</li>
   <li>이전 경우보다 많은 경우를 돌았거나 이전에 나왔던 숫자에서 카운트가 더 많은 경우의 수가 나오면 멈춰서 예외 처리</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 154538]]></summary></entry><entry><title type="html">스킬트리</title><link href="/codingtest/programmers/lv.2/2025-12-09-codingtest_137/" rel="alternate" type="text/html" title="스킬트리" /><published>2025-12-09T00:00:00+00:00</published><updated>2026-01-01T07:00:28+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_137</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-12-09-codingtest_137/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 154538]]></summary></entry><entry><title type="html">스킬트리</title><link href="/codingtest/programmers/lv.2/2025-12-09-codingtest_137/" rel="alternate" type="text/html" title="스킬트리" /><published>2025-12-09T00:00:00+00:00</published><updated>2026-01-01T07:09:56+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_137</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-12-09-codingtest_137/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -211,7 +211,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 13분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 49993]]></summary></entry><entry><title type="html">택배상자</title><link href="/codingtest/programmers/lv.2/2025-11-17-codingtest_136/" rel="alternate" type="text/html" title="택배상자" /><published>2025-11-17T00:00:00+00:00</published><updated>2026-01-01T07:00:28+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_136</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-17-codingtest_136/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 49993]]></summary></entry><entry><title type="html">택배상자</title><link href="/codingtest/programmers/lv.2/2025-11-17-codingtest_136/" rel="alternate" type="text/html" title="택배상자" /><published>2025-11-17T00:00:00+00:00</published><updated>2026-01-01T07:09:56+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_136</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-17-codingtest_136/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -305,7 +305,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 50분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 131704]]></summary></entry><entry><title type="html">땅따먹기</title><link href="/codingtest/programmers/lv.2/2025-11-16-codingtest_135/" rel="alternate" type="text/html" title="땅따먹기" /><published>2025-11-16T00:00:00+00:00</published><updated>2026-01-01T07:00:28+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_135</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-16-codingtest_135/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 131704]]></summary></entry><entry><title type="html">땅따먹기</title><link href="/codingtest/programmers/lv.2/2025-11-16-codingtest_135/" rel="alternate" type="text/html" title="땅따먹기" /><published>2025-11-16T00:00:00+00:00</published><updated>2026-01-01T07:09:56+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_135</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-16-codingtest_135/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -422,7 +422,7 @@
   <li>이전 경우의 수를 체크하기 위하여 DP(동적 계획법) 사용</li>
   <li>모든 열을 돌아가며 한 가지 열을 기준으로 해당 열을 선택하면 이전 경우에서 고를 수 있는 가장 큰 값을 골라 모든 경우를 구함</li>
   <li>구한 모든 경우 중 가장 큰 경우의 수를 구함</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12913]]></summary></entry><entry><title type="html">주식가격</title><link href="/codingtest/programmers/lv.2/2025-11-15-codingtest_134/" rel="alternate" type="text/html" title="주식가격" /><published>2025-11-15T00:00:00+00:00</published><updated>2026-01-01T07:00:28+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_134</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-15-codingtest_134/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 12913]]></summary></entry><entry><title type="html">주식가격</title><link href="/codingtest/programmers/lv.2/2025-11-15-codingtest_134/" rel="alternate" type="text/html" title="주식가격" /><published>2025-11-15T00:00:00+00:00</published><updated>2026-01-01T07:09:56+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_134</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-15-codingtest_134/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -499,7 +499,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 7분 30초
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42584]]></summary></entry><entry><title type="html">[3차] 압축</title><link href="/codingtest/programmers/lv.2/2025-11-11-codingtest_133/" rel="alternate" type="text/html" title="[3차] 압축" /><published>2025-11-11T00:00:00+00:00</published><updated>2026-01-01T07:00:28+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_133</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-11-codingtest_133/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42584]]></summary></entry><entry><title type="html">[3차] 압축</title><link href="/codingtest/programmers/lv.2/2025-11-11-codingtest_133/" rel="alternate" type="text/html" title="[3차] 압축" /><published>2025-11-11T00:00:00+00:00</published><updated>2026-01-01T07:09:56+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_133</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-11-codingtest_133/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -634,7 +634,7 @@
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 35분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17684]]></summary></entry><entry><title type="html">[3차] N진수 게임</title><link href="/codingtest/programmers/lv.2/2025-11-10-codingtest_132/" rel="alternate" type="text/html" title="[3차] N진수 게임" /><published>2025-11-10T00:00:00+00:00</published><updated>2026-01-01T07:00:28+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_132</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-10-codingtest_132/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17684]]></summary></entry><entry><title type="html">[3차] N진수 게임</title><link href="/codingtest/programmers/lv.2/2025-11-10-codingtest_132/" rel="alternate" type="text/html" title="[3차] N진수 게임" /><published>2025-11-10T00:00:00+00:00</published><updated>2026-01-01T07:09:56+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_132</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-10-codingtest_132/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -756,7 +756,7 @@
 <ul>
   <li>16진수까지의 값을 구하기 위해 문자열 “123456789ABCDEF”을 저장하여 구한 나머지 번지수를 사용</li>
   <li>필요한 숫자의 개수와 참가하는 인원을 기준으로 사용되어야 하는 문자열을 구하여 원하는 순서의 값을 구하여 저장</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17687]]></summary></entry><entry><title type="html">더 맵게</title><link href="/codingtest/programmers/lv.2/2025-11-06-codingtest_131/" rel="alternate" type="text/html" title="더 맵게" /><published>2025-11-06T00:00:00+00:00</published><updated>2026-01-01T07:00:28+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_131</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-06-codingtest_131/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 17687]]></summary></entry><entry><title type="html">더 맵게</title><link href="/codingtest/programmers/lv.2/2025-11-06-codingtest_131/" rel="alternate" type="text/html" title="더 맵게" /><published>2025-11-06T00:00:00+00:00</published><updated>2026-01-01T07:09:56+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_131</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-11-06-codingtest_131/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -864,7 +864,7 @@ Leo가 가진 음식의 스코빌 지수를 담은 배열 scoville과 원하는 
   <li>연산 속도를 줄이기 위하여 priority 큐 사용</li>
   <li>priority 큐 사용 시 내림차순으로 자동 정렬이 되어 손쉽게 제일 작은 숫자를 구할 수 있음</li>
   <li>제일 작은 숫자 가지고 조건을 확인하며 모든 숫자가 K 이상이 되도록 섞음</li>
-</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42626]]></summary></entry><entry><title type="html">k진수에서 소수 개수 구하기</title><link href="/codingtest/programmers/lv.2/2025-10-30-codingtest_130/" rel="alternate" type="text/html" title="k진수에서 소수 개수 구하기" /><published>2025-10-30T00:00:00+00:00</published><updated>2026-01-01T07:00:28+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_130</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-30-codingtest_130/"><![CDATA[<hr />
+</ul>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 42626]]></summary></entry><entry><title type="html">k진수에서 소수 개수 구하기</title><link href="/codingtest/programmers/lv.2/2025-10-30-codingtest_130/" rel="alternate" type="text/html" title="k진수에서 소수 개수 구하기" /><published>2025-10-30T00:00:00+00:00</published><updated>2026-01-01T07:09:56+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_130</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-30-codingtest_130/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
@@ -989,7 +989,7 @@ Leo가 가진 음식의 스코빌 지수를 담은 배열 scoville과 원하는 
 
 <p style="color:#ed9ece; font-size:20px; font-weight:bold">
 소요 시간 : 50분
-</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 92335]]></summary></entry><entry><title type="html">모음사전</title><link href="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/" rel="alternate" type="text/html" title="모음사전" /><published>2025-10-28T00:00:00+00:00</published><updated>2026-01-01T07:00:28+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_129</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/"><![CDATA[<hr />
+</p>]]></content><author><name>Roseanne5218</name><email>Roseanne5218@gmail.com</email></author><category term="codingtest" /><category term="programmers" /><category term="Lv.2" /><summary type="html"><![CDATA[Programmers - 92335]]></summary></entry><entry><title type="html">모음사전</title><link href="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/" rel="alternate" type="text/html" title="모음사전" /><published>2025-10-28T00:00:00+00:00</published><updated>2026-01-01T07:09:56+00:00</updated><id>/codingtest/programmers/lv.2/codingtest_129</id><content type="html" xml:base="/codingtest/programmers/lv.2/2025-10-28-codingtest_129/"><![CDATA[<hr />
 
 <p style="color:#8f7cee; font-size:25px; font-weight:bold">
 문제 설명
