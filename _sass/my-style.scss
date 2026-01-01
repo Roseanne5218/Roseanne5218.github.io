@@ -131,33 +131,37 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Hakgyoansim_BoardmarkerR", "ONEMobilePOP", system-ui, sans-serif !important;
 }
 
-/* ===== Post body text font (exclude code blocks) ===== */
-.content .post,
-.content .post p,
-.content .post li,
-.content .post blockquote,
-.content .post dd,
-.content .post dt,
-.content .post table,
+/* =========================
+   Post body only (from "Template" and below)
+   ========================= */
+
+/* 본문 영역만 폰트 적용 (헤더/메타는 건드리지 않음) */
 .content .post .post-content,
-.content .post .post-body,
-.content .post .content {
+.content .post .post-content p,
+.content .post .post-content li,
+.content .post .post-content blockquote,
+.content .post .post-content dd,
+.content .post .post-content dt,
+.content .post .post-content table,
+.content .post .post-content th,
+.content .post .post-content td {
   font-family: "Hakgyoansim_BoardmarkerR", "ONEMobilePOP", system-ui, sans-serif !important;
 }
 
-/* 코드/인라인코드는 기존 모노스페이스 유지 */
-.content .post pre,
-.content .post code,
-.content .post kbd,
-.content .post samp {
+/* 본문 제목(Template 같은 h2 포함)도 본문 영역에서만 */
+.content .post .post-content h1,
+.content .post .post-content h2,
+.content .post .post-content h3,
+.content .post .post-content h4,
+.content .post .post-content h5,
+.content .post .post-content h6 {
+  font-family: "Hakgyoansim_BoardmarkerR", "ONEMobilePOP", system-ui, sans-serif !important;
+}
+
+/* 코드 블록은 모노스페이스 유지 */
+.content .post .post-content pre,
+.content .post .post-content code,
+.content .post .post-content kbd,
+.content .post .post-content samp {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
-}
-
-.content .post h1,
-.content .post h2,
-.content .post h3,
-.content .post h4,
-.content .post h5,
-.content .post h6 {
-  font-family: "Hakgyoansim_BoardmarkerR", "ONEMobilePOP", system-ui, sans-serif !important;
 }
