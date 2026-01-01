@@ -109,3 +109,28 @@ h1, h2, h3, h4, h5, h6,
 .content .post .breadcrumbs a {
   font-family: "ONEMobilePOP", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
 }
+
+/* =========================
+   1) Font-face 등록
+   ========================= */
+@font-face {
+  font-family: "Hakgyoansim_BoardmarkerR";
+  src: url("/assets/fonts/Hakgyoansim_BoardmarkerR.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================
+   2) 카테고리/아카이브 목록의 "글 제목"만 적용
+   (Hydejack 테마에서 목록 구조가 버전마다 달라서
+    여러 후보 선택자를 같이 걸어 안정적으로 먹게 함)
+   ========================= */
+.content .related-posts a,
+.content .post-list a,
+.content .entries a,
+.content .listing a,
+.content .archive a,
+.content .content-list a {
+  font-family: "Hakgyoansim_BoardmarkerR", "ONEMobilePOP", system-ui, sans-serif !important;
+}
