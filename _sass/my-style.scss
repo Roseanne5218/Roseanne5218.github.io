@@ -108,3 +108,9 @@ h1, h2, h3, h4, h5, h6,
 .content .post-meta .categories a {
   font-family: "ONEMobilePOP", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
 }
+
+/* Fallback: only inside main content area */
+.content .post,
+.content .post * {
+  font-family: "ONEMobilePOP", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
