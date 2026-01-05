@@ -98,17 +98,16 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ===== Post meta / breadcrumbs: force ONEMobilePOP ===== */
-.content .post,
-.content .post a,
-.content .post time,
-.content .post small,
-.content .post span,
-.content .post strong,
-.content .post em,
+
 .content .post .breadcrumbs,
-.content .post .breadcrumbs a {
+.content .post .breadcrumbs *,
+.content .post .post-meta,
+.content .post .post-meta *,
+.content .post header,
+.content .post header * {
   font-family: "ONEMobilePOP", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
 }
+
 
 @font-face {
   font-family: "Hakgyoansim_BoardmarkerR";
