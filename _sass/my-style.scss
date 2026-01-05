@@ -1,12 +1,17 @@
-@supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
-  .dl-table a { text-underline-offset: .8rem; }
-}
-@supports not ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
-  .dl-table a { padding-bottom: .45rem; }
-}
+.dl-table {
+  a {
+    @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+      text-underline-offset: .8rem;
+    }
+    @supports not ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+      padding-bottom: .45rem;
+    }
+  }
 
-.dl-table .btn,
-.dl-table .gumroad-button { margin: 1rem 0; }
+  .btn, .gumroad-button  {
+    margin: 1rem 0;
+  }
+}
 
 .sidebar-sticky {
   height: 100%;
@@ -36,21 +41,20 @@
   text-align: left;
   margin-left: 10%;
   margin-bottom: 0%;
+  
+  input[type=checkbox]{
+    display: none;
+  }
+  
+  input[type=checkbox] ~ ul{
+    display: none;
+    list-style: none;
+  }
+  
+  input[type=checkbox]:checked ~ ul{
+    display: block;
+  }
 }
-
-.menu-wrapper input[type=checkbox]{
-  display: none;
-}
-
-.menu-wrapper input[type=checkbox] ~ ul{
-  display: none;
-  list-style: none;
-}
-
-.menu-wrapper input[type=checkbox]:checked ~ ul{
-  display: block;
-}
-
 
 /* =========================
    Local Fonts
@@ -94,13 +98,12 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ===== Post meta / breadcrumbs: force ONEMobilePOP ===== */
-
-.content .post .breadcrumbs,
-.content .post .breadcrumbs *,
-.content .post .post-meta,
-.content .post .post-meta *,
-.content .post header,
-.content .post header * {
+.content :is(.post, .page) .breadcrumbs,
+.content :is(.post, .page) .breadcrumbs *,
+.content :is(.post, .page) .post-meta,
+.content :is(.post, .page) .post-meta *,
+.content :is(.post, .page) header,
+.content :is(.post, .page) header * {
   font-family: "ONEMobilePOP", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
 }
 
@@ -127,25 +130,36 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* =========================
-   Body font for Post + Page + Listing (keywords/archive)
+   Post body only (from "Template" and below)
    ========================= */
 
-/* 본문 래퍼 후보들을 post/page/listing 전부 커버 */
-.content :is(.post, .page, .entries, .listing, .archive)
-  :is(.post-body, .post-content, .page-content, .entry-content, .content-body, .post__content, .page__content) {
+/* 본문 영역만 폰트 적용 (헤더/메타는 건드리지 않음) */
+.content .post .post-content,
+.content .post .post-content p,
+.content .post .post-content li,
+.content .post .post-content blockquote,
+.content .post .post-content dd,
+.content .post .post-content dt,
+.content .post .post-content table,
+.content .post .post-content th,
+.content .post .post-content td {
   font-family: "Hakgyoansim_BoardmarkerR", "ONEMobilePOP", system-ui, sans-serif !important;
 }
 
-/* 본문 내부 요소들 */
-.content :is(.post, .page, .entries, .listing, .archive)
-  :is(.post-body, .post-content, .page-content, .entry-content, .content-body, .post__content, .page__content)
-  :is(p, li, blockquote, dd, dt, table, th, td, a, span, strong, em, h1, h2, h3, h4, h5, h6) {
+/* 본문 제목(Template 같은 h2 포함)도 본문 영역에서만 */
+.content .post .post-content h1,
+.content .post .post-content h2,
+.content .post .post-content h3,
+.content .post .post-content h4,
+.content .post .post-content h5,
+.content .post .post-content h6 {
   font-family: "Hakgyoansim_BoardmarkerR", "ONEMobilePOP", system-ui, sans-serif !important;
 }
 
-/* 코드류는 고정폭 */
-.content :is(.post, .page, .entries, .listing, .archive)
-  :is(.post-body, .post-content, .page-content, .entry-content, .content-body, .post__content, .page__content)
-  :is(pre, code, kbd, samp) {
+/* 코드 블록은 모노스페이스 유지 */
+.content .post .post-content pre,
+.content .post .post-content code,
+.content .post .post-content kbd,
+.content .post .post-content samp {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
 }
