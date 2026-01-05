@@ -36,20 +36,21 @@
   text-align: left;
   margin-left: 10%;
   margin-bottom: 0%;
-  
-  input[type=checkbox]{
-    display: none;
-  }
-  
-  input[type=checkbox] ~ ul{
-    display: none;
-    list-style: none;
-  }
-  
-  input[type=checkbox]:checked ~ ul{
-    display: block;
-  }
 }
+
+.menu-wrapper input[type=checkbox]{
+  display: none;
+}
+
+.menu-wrapper input[type=checkbox] ~ ul{
+  display: none;
+  list-style: none;
+}
+
+.menu-wrapper input[type=checkbox]:checked ~ ul{
+  display: block;
+}
+
 
 /* =========================
    Local Fonts
