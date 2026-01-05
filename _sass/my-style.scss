@@ -165,3 +165,24 @@ h1, h2, h3, h4, h5, h6,
 .content .post .post-content samp {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
 }
+
+/* =========================
+   Post body (purple title and below)
+   ========================= */
+
+/* 본문(보라색 제목이 들어있는 영역) 래퍼가 테마마다 달라서 후보를 같이 잡음 */
+.content .post :is(.post-body, .post-content, .page-content, .entry-content) {
+  font-family: "Hakgyoansim_BoardmarkerR", "ONEMobilePOP", system-ui, sans-serif !important;
+}
+
+/* 본문 텍스트 요소들 */
+.content .post :is(.post-body, .post-content, .page-content, .entry-content)
+  :is(p, li, blockquote, dd, dt, table, th, td, a, span, strong, em, h1, h2, h3, h4, h5, h6) {
+  font-family: "Hakgyoansim_BoardmarkerR", "ONEMobilePOP", system-ui, sans-serif !important;
+}
+
+/* 코드류는 모노스페이스 유지 */
+.content .post :is(.post-body, .post-content, .page-content, .entry-content)
+  :is(pre, code, kbd, samp) {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
